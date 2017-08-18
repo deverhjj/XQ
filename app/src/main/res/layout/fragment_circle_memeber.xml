@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.biu.modulebase.binfenjiari.widget.SearchEditText
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/searchView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="@dimen/view_margin_8dp"
+            android:layout_marginTop="@dimen/view_margin_8dp"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:background="@drawable/rr_gray_5"
+            android:imeOptions="actionSearch"
+            android:paddingBottom="@dimen/view_margin_4dp"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/view_margin_4dp"
+            android:singleLine="true"
+            android:textColor="@color/colorTextGray"
+            android:textColorHint="@color/colorTextGray"
+            android:textSize="@dimen/text_size_14"
+            app:hintTextColor="@color/colorTextGray"
+            app:textHint="搜索"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <ExpandableListView
+                android:id="@+id/expandListView"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:background="@color/white"
+                android:divider="@color/colorDividerLight"
+                android:childDivider="@color/colorDividerLight"
+                android:dividerHeight="1dp"
+                android:groupIndicator="@null"
+                android:listSelector="#00000000"
+                android:scrollbars="none" />
+
+            <com.biu.modulebase.binfenjiari.widget.expandablelistview.AssortView
+                android:id="@+id/assort"
+                android:layout_width="25dip"
+                android:layout_height="fill_parent"
+                android:background="#00000000" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</FrameLayout>

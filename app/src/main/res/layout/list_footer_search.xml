@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white" >
+
+    <TextView
+        android:id="@+id/delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_vertical"
+        android:paddingBottom="@dimen/view_margin_10dp"
+        android:paddingLeft="@dimen/view_margin_60dp"
+        android:paddingRight="@dimen/view_margin_60dp"
+        android:paddingTop="@dimen/view_margin_10dp"
+        android:text="清空历史记录"
+        android:textColor="@color/grey_light"
+        android:textSize="@dimen/text_size_14" />
+
+    <!--android:background="@drawable/rrs_white_2_bg_rest2"-->
+
+</RelativeLayout>

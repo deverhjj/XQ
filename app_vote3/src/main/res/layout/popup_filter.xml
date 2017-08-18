@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_color_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="8dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="8dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:text="活动分类"
+            android:textSize="14sp"/>
+
+        <com.github.huajianjiang.expandablerecyclerview.widget.PatchedRecyclerView
+            android:id="@+id/actiFilterGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            app:hasFixedSize="true"
+            app:layoutManager="@string/gridLayoutManager"
+            app:nestedScrollingEnabled="false"
+            app:spanCount="4"
+            tools:listitem="@layout/item_filter"/>
+
+        <include
+            layout="@layout/divider_hor_light"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="12dp"
+            android:text="适应年龄段"
+            android:textSize="14sp"/>
+
+        <com.github.huajianjiang.expandablerecyclerview.widget.PatchedRecyclerView
+            android:id="@+id/ageFilterGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            app:hasFixedSize="true"
+            app:layoutManager="@string/gridLayoutManager"
+            app:nestedScrollingEnabled="false"
+            app:spanCount="4"
+            tools:listitem="@layout/item_filter"/>
+
+        <include
+            layout="@layout/divider_hor_light"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="12dp"
+            android:text="活动地点"
+            android:textSize="14sp"/>
+
+        <com.github.huajianjiang.expandablerecyclerview.widget.PatchedRecyclerView
+            android:id="@+id/addressFilterGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            app:hasFixedSize="true"
+            app:layoutManager="@string/gridLayoutManager"
+            app:nestedScrollingEnabled="false"
+            app:spanCount="4"
+            tools:listitem="@layout/item_filter"/>
+
+        <include
+            layout="@layout/divider_hor_light"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="12dp"
+            android:text="收费情况"
+            android:textSize="14sp"/>
+
+        <com.github.huajianjiang.expandablerecyclerview.widget.PatchedRecyclerView
+            android:id="@+id/payingFilterGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            app:hasFixedSize="true"
+            app:layoutManager="@string/gridLayoutManager"
+            app:nestedScrollingEnabled="false"
+            app:spanCount="4"
+            tools:listitem="@layout/item_filter"/>
+
+        <include
+            layout="@layout/divider_hor_light"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="12dp"
+            android:text="活动时间"
+            android:textSize="14sp"/>
+
+        <com.github.huajianjiang.expandablerecyclerview.widget.PatchedRecyclerView
+            android:id="@+id/dateFilterGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            app:hasFixedSize="true"
+            app:layoutManager="@string/gridLayoutManager"
+            app:nestedScrollingEnabled="false"
+            app:spanCount="4"
+            tools:listitem="@layout/item_filter"/>
+
+        <include
+            layout="@layout/divider_hor_light"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_outline_gray"
+                android:paddingBottom="4dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="4dp"
+                android:text="重置"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:background="@drawable/bg_acc"
+                android:paddingBottom="4dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="4dp"
+                android:text="完成"
+                android:textColor="@color/white_ful"/>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

@@ -1,0 +1,9 @@
+<!--删除 dialog抖动动画-->
+<translate
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:fromXDelta="0"
+        android:fromYDelta="0"
+        android:toYDelta="10"
+        android:toXDelta="10"
+        android:duration="500"
+        android:interpolator="@anim/cycle_7"/>

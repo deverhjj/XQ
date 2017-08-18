@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_search"
+        android:orderInCategory="90"
+        android:title="搜索"
+        android:icon="@mipmap/search"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/action_filter"
+        android:orderInCategory="100"
+        android:title="筛选"
+        android:icon="@mipmap/nav_screening"
+        app:showAsAction="always"/>
+
+</menu>

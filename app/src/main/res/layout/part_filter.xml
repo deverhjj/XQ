@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:visibility="gone"
+    tools:showIn="@layout/activity_main">
+
+    <!--<include-->
+    <!--layout="@layout/item_divider_gray"/>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryCenter"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/rl_region"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center"
+            android:paddingBottom="@dimen/padding_bottom_10dp"
+            android:paddingLeft="@dimen/view_margin_8dp"
+            android:paddingRight="@dimen/view_margin_8dp"
+            android:paddingTop="@dimen/padding_top_10dp">
+
+            <TextView
+                android:id="@+id/tv_region"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:drawablePadding="6dp"
+                android:drawableRight="@drawable/selector_jidi_tab_icon"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="区域"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_16" />
+        </RelativeLayout>
+        <!--style="@style/Ripple.Item.Background"-->
+
+        <!--<include-->
+        <!--layout="@layout/item_divider_vertical"/>-->
+
+        <RelativeLayout
+            android:id="@+id/rl_date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center"
+            android:paddingBottom="@dimen/padding_bottom_10dp"
+            android:paddingLeft="@dimen/view_margin_8dp"
+            android:paddingRight="@dimen/view_margin_8dp"
+            android:paddingTop="@dimen/padding_top_10dp">
+
+            <TextView
+                android:id="@+id/tv_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:drawablePadding="6dp"
+                android:drawableRight="@drawable/selector_jidi_tab_icon"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="筛选"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_16" />
+        </RelativeLayout>
+        <!--style="@style/Ripple.Item.Background"-->
+
+        <!--     <include
+                 layout="@layout/item_divider_vertical"/>-->
+
+        <TextView
+            android:id="@+id/tv_cost"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:drawablePadding="0dp"
+            android:drawableRight="@drawable/selector_jidi_tab_icon"
+            android:gravity="center"
+            android:paddingBottom="@dimen/padding_bottom_10dp"
+            android:paddingLeft="@dimen/view_margin_8dp"
+            android:paddingRight="@dimen/view_margin_8dp"
+            android:paddingTop="@dimen/padding_top_10dp"
+            android:singleLine="true"
+            android:text="费用"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_16"
+
+            android:visibility="gone" />
+
+        <!--style="@style/Ripple.Item.Background"-->
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/app_color_foreground"
+              android:orientation="vertical"
+              android:paddingBottom="@dimen/padding_bottom_8dp"
+              android:paddingLeft="@dimen/padding_left_16dp"
+              android:paddingRight="@dimen/padding_right_16dp"
+              android:paddingTop="@dimen/padding_top_16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="确认删除此内容？"
+        android:textColor="@color/app_text_color_primary"
+        android:textSize="@dimen/text_size_14"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_8dp"
+            android:text="取消"
+            android:textColor="@color/app_text_color_secondary"
+            android:textSize="@dimen/text_size_14"
+            android:clickable="true"
+            style="@style/Ripple.Item.Background"/>
+
+
+        <TextView
+            android:id="@+id/tv_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_8dp"
+            android:text="确定"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/text_size_14"
+            android:clickable="true"
+            style="@style/Ripple.Item.Background"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

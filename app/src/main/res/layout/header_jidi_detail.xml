@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/app_color_foreground"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/padding_left_16dp"
+        android:paddingRight="@dimen/padding_right_16dp"
+        android:paddingBottom="@dimen/padding_bottom_8dp"
+        android:paddingTop="@dimen/padding_top_8dp">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="常州日日春农庄"
+            android:textColor="@color/app_text_color_primary"
+            android:textSize="@dimen/text_size_16"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/app_color_foreground"
+            >
+
+            <com.biu.modulebase.binfenjiari.widget.FlowLayout
+                android:id="@+id/layout_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <!--<include layout="@layout/part_service_tag"/>-->
+
+                <!--<include layout="@layout/part_service_tag"/>-->
+
+                <!--<include layout="@layout/part_service_tag"/>-->
+
+                <!--<include layout="@layout/part_service_tag"/>-->
+
+                <!--<include layout="@layout/part_service_tag"/>-->
+
+                <!--<include layout="@layout/part_service_tag"/>-->
+
+                <!--<include layout="@layout/part_service_tag"/>-->
+
+            </com.biu.modulebase.binfenjiari.widget.FlowLayout>
+        </FrameLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_top_8dp"
+            android:gravity="top">
+
+            <ImageView
+                android:id="@+id/icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin_left_8dp"
+                android:visibility="gone"
+                android:src="@mipmap/hd_dz"/>
+
+            <TextView
+                android:id="@+id/tv_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="地址：常州新北区 23km 说说说说当时发生的发生的山山水水"
+                android:textColor="@color/colorTextGray"
+                android:textSize="@dimen/text_size_14"/>
+
+        </LinearLayout>
+
+
+        <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:paddingTop="@dimen/padding_top_16dp"-->
+        <!--android:paddingBottom="@dimen/padding_bottom_16dp"-->
+        <!--android:gravity="center"-->
+        <!--android:drawableLeft="@mipmap/hd_sj"-->
+        <!--android:drawablePadding="@dimen/padding_8dp"-->
+        <!--android:textSize="@dimen/text_size_16"-->
+        <!--android:textColor="@color/app_text_color_primary"-->
+        <!--android:text="2015/3/6-2016/2/8"/>-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_top_8dp"
+            android:layout_marginBottom="@dimen/margin_bottom_8dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/flag"/>
+
+            <TextView
+                android:id="@+id/tv_activity_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_left_8dp"
+                android:text="举办活动: 8"
+                android:textColor="@color/colorTextGray"
+                android:textSize="@dimen/text_size_14"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ps"/>
+
+            <TextView
+                android:id="@+id/tv_remark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_left_8dp"
+                android:text="备注: 需要提前一天预约身上撒美女撒没洒洒安顺达大厦对面"
+                android:textColor="@color/colorTextGray"
+                android:textSize="@dimen/text_size_14"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginTop="@dimen/margin_top_8dp"-->
+    <!--android:background="@color/app_color_foreground"-->
+    <!--android:orientation="vertical"-->
+    <!--android:padding="@dimen/padding_16dp">-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:drawableLeft="@drawable/ic_menu_send"-->
+    <!--android:text="时时刻刻"-->
+    <!--android:textColor="@color/app_text_color_primary"-->
+    <!--android:textSize="@dimen/text_size_16"/>-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="horizontal">-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:background="@color/app_text_color_primary"-->
+    <!--android:padding="@dimen/padding_3dp"-->
+    <!--android:text="AAAAAAA"-->
+    <!--android:textColor="@color/colorAccent"-->
+    <!--android:textSize="@dimen/text_size_16"/>-->
+
+    <!--</LinearLayout>-->
+
+    <!--</LinearLayout>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_top_8dp"
+        android:orientation="vertical">
+
+        <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:drawableLeft="@drawable/ic_menu_send"-->
+        <!--android:padding="@dimen/padding_16dp"-->
+        <!--android:text="时时刻刻"-->
+        <!--android:textColor="@color/app_text_color_primary"-->
+        <!--android:textSize="@dimen/text_size_16"/>-->
+
+        <!--        <com.biu.modulebase.binfenjiari.widget.searchtips.SearchTipsGroupView
+                    android:id="@+id/layout_label"
+                    android:layout_width="match_parent"
+                    android:paddingTop="@dimen/view_margin_8dp"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:paddingRight="@dimen/activity_horizontal_margin"
+                    android:paddingBottom="@dimen/view_margin_8dp"
+                    android:background="@color/app_color_foreground"
+                    android:layout_height="wrap_content">
+                </com.biu.modulebase.binfenjiari.widget.searchtips.SearchTipsGroupView>-->
+
+        <!--<HorizontalScrollView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:fillViewport="true">-->
+
+
+
+
+        <!--</HorizontalScrollView>-->
+
+        <LinearLayout
+            android:id="@+id/layout_it"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/app_color_foreground"
+            android:orientation="vertical">
+
+            <include
+                layout="@layout/part_image_text_detail"/>
+
+        </LinearLayout>
+
+
+        <include layout="@layout/part_ratings"/>
+
+    </LinearLayout>
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="vertical"-->
+    <!--android:background="@color/app_color_foreground"-->
+    <!--android:layout_marginTop="@dimen/margin_top_8dp">-->
+
+    <include layout="@layout/part_comment_all"/>
+
+    <!--<include-->
+    <!--layout="@layout/item_divider_gray"/>-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="vertical">-->
+
+    <!--<include-->
+    <!--layout="@layout/item_card_detail_comment_parent"/>-->
+
+    <!--<include-->
+    <!--layout="@layout/item_card_detail_comment_parent"/>-->
+
+    <!--<include-->
+    <!--layout="@layout/item_card_detail_comment_parent"/>-->
+
+    <!--</LinearLayout>-->
+
+    <!--</LinearLayout>-->
+
+</LinearLayout>

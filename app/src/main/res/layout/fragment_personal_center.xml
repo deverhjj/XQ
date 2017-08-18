@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingBottom="20dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/icon_person_top_green" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <FrameLayout
+                        android:id="@+id/huodong"
+                        style="@style/Ripple.Item.Foreground"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:drawablePadding="@dimen/margin_8dp"
+                            android:drawableTop="@drawable/icon_person_activity"
+                            android:gravity="center_horizontal"
+                            android:paddingTop="4dp"
+                            android:text="活动"
+                            android:textColor="@color/app_text_color_primary"
+                            android:textSize="@dimen/text_size_14" />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/circle"
+                        style="@style/Ripple.Item.Foreground"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:drawablePadding="@dimen/margin_8dp"
+                            android:drawableTop="@drawable/icon_person_circle"
+                            android:gravity="center_horizontal"
+                            android:paddingTop="4dp"
+                            android:text="圈子"
+                            android:textColor="@color/app_text_color_primary"
+                            android:textSize="@dimen/text_size_14" />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/shoucang"
+                        style="@style/Ripple.Item.Foreground"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:drawablePadding="@dimen/margin_8dp"
+                            android:drawableTop="@drawable/icon_person_shoucang"
+                            android:gravity="center_horizontal"
+                            android:paddingTop="4dp"
+                            android:text="收藏"
+                            android:textColor="@color/app_text_color_primary"
+                            android:textSize="@dimen/text_size_14" />
+                    </FrameLayout>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="@dimen/margin_16dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <FrameLayout
+                        android:id="@+id/share"
+                        style="@style/Ripple.Item.Foreground"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:drawablePadding="@dimen/margin_8dp"
+                            android:drawableTop="@drawable/icon_person_share"
+                            android:gravity="center_horizontal"
+                            android:paddingTop="4dp"
+                            android:text="邀请好友"
+                            android:textColor="@color/app_text_color_primary"
+                            android:textSize="@dimen/text_size_14" />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/setting"
+                        style="@style/Ripple.Item.Foreground"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:drawablePadding="@dimen/margin_8dp"
+                            android:drawableTop="@drawable/icon_person_setting"
+                            android:gravity="center_horizontal"
+                            android:paddingTop="4dp"
+                            android:text="设置"
+                            android:textColor="@color/app_text_color_primary"
+                            android:textSize="@dimen/text_size_14" />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        style="@style/Ripple.Item.Foreground"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:visibility="invisible">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:drawablePadding="@dimen/margin_8dp"
+                            android:drawableTop="@drawable/icon_person_shoucang"
+                            android:gravity="center_horizontal"
+                            android:paddingTop="4dp"
+                            android:text="收藏"
+                            android:textColor="@color/app_text_color_primary"
+                            android:textSize="@dimen/text_size_14" />
+                    </FrameLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="55dp"
+                android:elevation="4dp"
+                app:layout_anchorGravity="bottom"
+                card_view:cardCornerRadius="4dp"
+                card_view:contentPadding="8dp">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:id="@+id/rl_layout_login"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="visible">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical">
+
+                            <com.biu.modulebase.binfenjiari.widget.CircleImageView
+                                android:id="@+id/img_info"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@mipmap/personal_header" />
+
+                            <TextView
+                                android:id="@+id/tv_small_title"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/height_8dp"
+                                android:ellipsize="end"
+                                android:maxLines="1"
+                                android:text="蔡慧慧"
+                                android:textSize="16sp" />
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:paddingTop="8dp">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center_horizontal"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:paddingTop="4dp"
+                                        android:text="学校"
+                                        android:textColor="@color/app_text_color_primary"
+                                        android:textSize="@dimen/text_size_14" />
+
+                                    <TextView
+                                        android:id="@+id/tv_schoolname"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:maxLines="1"
+                                        android:paddingTop="8dp"
+                                        android:text="博爱小学"
+                                        android:textColor="@color/app_text_color_secondary"
+                                        android:textSize="@dimen/text_size_14" />
+
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center_horizontal"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:paddingTop="4dp"
+                                        android:text="年级"
+                                        android:textColor="@color/app_text_color_primary"
+                                        android:textSize="@dimen/text_size_14" />
+
+                                    <TextView
+                                        android:id="@+id/tv_classname"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:maxLines="1"
+                                        android:paddingTop="8dp"
+                                        android:text="6年级"
+                                        android:textColor="@color/app_text_color_secondary"
+                                        android:textSize="@dimen/text_size_14" />
+
+
+                                </LinearLayout>
+
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center_horizontal"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:paddingTop="4dp"
+                                        android:text="爱好"
+                                        android:textColor="@color/app_text_color_primary"
+                                        android:textSize="@dimen/text_size_14" />
+
+                                    <TextView
+                                        android:id="@+id/tv_hobby"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:maxLines="1"
+                                        android:paddingTop="8dp"
+                                        android:text="看书，打球"
+                                        android:textColor="@color/app_text_color_secondary"
+                                        android:textSize="@dimen/text_size_14" />
+
+
+                                </LinearLayout>
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/img_person_edit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:src="@drawable/icon_person_edit" />
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_layout_unlogin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center_horizontal"
+                        android:paddingTop="@dimen/padding_top_16dp"
+                        android:paddingBottom="@dimen/padding_top_16dp"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/header_pic" />
+
+                        <TextView
+                            android:id="@+id/tv_login"
+                            style="@style/Ripple.Button_Brown"
+                            android:layout_width="250dp"
+                            android:layout_height="@dimen/height_40dp"
+                            android:layout_marginTop="@dimen/margin_bottom_15dp"
+                            android:gravity="center"
+                            android:text="去登录"
+                            android:textColor="@color/white"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+
+                </FrameLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+
+</FrameLayout>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/layout_circle_recommend_2"
+        style="@style/Ripple.Item.Foreground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/padding_16dp"
+        android:paddingRight="@dimen/padding_16dp"
+        android:paddingBottom="@dimen/view_margin_8dp"
+        android:paddingTop="@dimen/view_margin_8dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+
+                android:layout_toLeftOf="@+id/btn_join2"
+                android:orientation="horizontal">
+
+                <com.biu.modulebase.binfenjiari.widget.CircleImageView
+                    android:layout_width="@dimen/width_50dp"
+                    android:layout_height="@dimen/width_50dp"
+                    android:src="@mipmap/circle_pic"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_left_16dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="asdasdasda"
+                        android:textSize="15sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="@dimen/padding_bottom_3dp"
+                        android:paddingTop="@dimen/padding_top_3dp"
+                        android:text="asdasdasasdasdasdasdasdasdasdasdasdasdasdasddasd"
+                        android:singleLine="true"
+                        android:textColor="@color/app_text_color_secondary"
+                        android:textSize="12sp"
+                        android:textStyle="normal"
+                        android:typeface="monospace"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:drawableLeft="@mipmap/sq_rs"
+                            android:drawablePadding="@dimen/padding_3dp"
+                            android:text="3442人"
+                            android:textColor="@color/colorOrange"
+                            android:textSize="10sp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:layout_marginLeft="@dimen/margin_left_16dp"
+                            android:drawableLeft="@mipmap/sq_tz"
+                            android:drawablePadding="@dimen/padding_3dp"
+                            android:text="3424条"
+                            android:textColor="@color/colorOrange"
+                            android:textSize="10sp"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/btn_join2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:gravity="center"
+                android:background="@drawable/selector_btn_outline_orange"
+                android:paddingBottom="@dimen/view_margin_4dp"
+                android:paddingLeft="@dimen/view_margin_12dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingRight="@dimen/view_margin_12dp"
+                android:paddingTop="@dimen/view_margin_4dp"
+                android:text="管理"
+                android:textColor="@color/colorOrange"/>
+        </RelativeLayout>
+    </FrameLayout>

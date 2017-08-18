@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/swype.card"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        card_view:cardCornerRadius="4dp"
+        card_view:contentPadding="8dp"
+        android:layout_margin="16dp"
+        app:layout_anchorGravity="bottom">
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="top|left"
+        android:textSize="@dimen/text_size_14"
+        android:maxLength="30"
+        android:textColor="@color/colorTextGray"
+        android:layout_gravity="left|top"
+        android:background="@null" />
+     <TextView
+         android:id="@+id/hintNum"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="30"
+         android:layout_gravity="bottom|right"
+         android:textSize="@dimen/text_size_12"
+         android:textColor="@color/colorTextGray"/>
+</android.support.v7.widget.CardView>

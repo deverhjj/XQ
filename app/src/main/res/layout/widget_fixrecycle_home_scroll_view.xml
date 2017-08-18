@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+
+        android:paddingTop="@dimen/view_margin_16dp">
+
+        <TextView
+            android:id="@+id/fixview_tv_text_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingBottom="6dp"
+            android:textStyle="bold"
+            android:drawableBottom="@drawable/icon_dash_line"
+            android:text="推荐活动"
+            android:textSize="@dimen/text_size_16" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/fixview_recyclerview"
+            android:visibility="visible"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_8dp"
+            android:layout_marginTop="@dimen/padding_bottom_12dp"
+            android:background="@color/app_color_background" />
+
+    </LinearLayout>
+
+</merge>

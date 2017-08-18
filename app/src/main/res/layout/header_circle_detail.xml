@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/app_color_foreground"
+              android:orientation="vertical"
+    android:paddingTop="@dimen/view_margin_8dp"
+              >
+
+    <ImageView
+        android:id="@+id/header_pic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:src="@mipmap/test_circle_header"
+        android:visibility="gone"/>
+    <LinearLayout
+        android:layout_below="@+id/header_pic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/layout_circle_intro"
+        style="@style/Ripple.Item.Foreground"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_marginTop="-16dp"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/padding_left_16dp"
+            android:paddingRight="@dimen/padding_right_16dp"
+            android:paddingTop="@dimen/padding_top_8dp">
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/btn_join"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/padding_top_16dp"
+                android:paddingTop="@dimen/padding_top_16dp">
+
+                <com.biu.modulebase.binfenjiari.widget.RoundCornerImageView
+                    android:id="@+id/iv_head_portrait"
+                    android:layout_width="@dimen/width_80dp"
+                    android:layout_height="@dimen/width_80dp"
+                    android:src="@mipmap/common_pic"/>
+
+                <LinearLayout
+                    android:id="@+id/intro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_left_16dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="天文爱好者学会"
+                        android:textSize="@dimen/text_size_16"/>
+
+
+                    <TextView
+                        android:id="@+id/tv_subject"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="@dimen/padding_bottom_8dp"
+                        android:paddingTop="@dimen/padding_bottom_8dp"
+                        android:text="天文界的新闻报道发到这里"
+                        android:textColor="@color/app_text_color_secondary"
+                        android:textSize="@dimen/text_size_12"
+                        android:textStyle="normal"
+                        android:typeface="monospace"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@null"
+                            android:src="@mipmap/sq_rs0"/>
+
+                        <TextView
+                            android:id="@+id/tv_circle_number"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/margin_left_5dp"
+                            android:text="256人"
+                            android:textColor="@color/app_text_color_secondary"
+                            android:textSize="@dimen/text_size_10"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/margin_left_16dp"
+                            android:background="@null"
+                            android:src="@mipmap/sq_tz0"/>
+
+                        <TextView
+                            android:id="@+id/tv_card_number"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/margin_left_5dp"
+                            android:text="1428条"
+                            android:textColor="@color/app_text_color_secondary"
+                            android:textSize="@dimen/text_size_10"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/btn_join"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/selector_btn_outline_orange"
+                android:paddingBottom="@dimen/view_margin_4dp"
+                android:paddingLeft="@dimen/view_margin_18dp"
+                android:paddingRight="@dimen/view_margin_18dp"
+                android:paddingTop="@dimen/view_margin_4dp"
+                android:text="加入"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/text_size_14"/>
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:id="@+id/layout_notice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include
+            layout="@layout/part_circle_detail_header_notice"/>
+
+        <include layout="@layout/item_divider_gray"/>
+
+        <include
+            layout="@layout/part_circle_detail_header_notice"/>
+
+        <include layout="@layout/item_divider_gray"/>
+
+        <include
+            layout="@layout/part_circle_detail_header_notice"/>
+
+    </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

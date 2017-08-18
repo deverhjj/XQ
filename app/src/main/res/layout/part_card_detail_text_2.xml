@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:paddingLeft="@dimen/activity_horizontal_margin"
+              android:paddingRight="@dimen/activity_horizontal_margin"
+              android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <com.biu.modulebase.binfenjiari.widget.CircleImageView
+                android:id="@+id/iv_head_portrait"
+                android:layout_width="@dimen/width_48dp"
+                android:layout_height="@dimen/width_48dp"
+                android:src="@mipmap/header_pic"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_left_8dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_nickname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="常州市政府"
+                    android:textColor="@color/app_text_color_primary"
+                    android:textSize="@dimen/text_size_16"/>
+
+                <TextView
+                    android:id="@+id/tv_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/view_margin_4dp"
+                    android:text="0小时前"
+                    android:textColor="@color/app_text_color_secondary"
+                    android:textSize="12sp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/ib_more"
+            android:layout_width="wrap_content"
+            android:minHeight="48dp"
+            android:minWidth="48dp"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:layout_gravity="right"
+            android:scaleType="matrix"
+            android:background="@null"
+            android:src="@mipmap/more2"/>
+    </FrameLayout>
+
+<!--    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lineSpacingMultiplier="1.2"
+        android:paddingTop="@dimen/padding_top_8dp"
+        android:text="天文帖子是不方便说的科技单身的"
+        android:textColor="@color/app_text_color_primary"
+        android:textSize="@dimen/text_size_18"/>-->
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lineSpacingMultiplier="1.1"
+        android:paddingBottom="@dimen/padding_bottom_8dp"
+        android:paddingTop="@dimen/view_margin_4dp"
+        android:text=""
+        android:textColor="@color/app_text_color_primary"
+        android:textSize="@dimen/text_size_16"/>
+
+</LinearLayout>

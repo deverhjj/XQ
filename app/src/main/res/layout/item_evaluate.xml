@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/view_margin_10dp"
+    android:paddingBottom="@dimen/view_margin_10dp"
+    android:gravity="center_vertical">
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:text="有趣程度"/>
+
+    <FrameLayout
+        android:layout_weight="4"
+        android:layout_height="wrap_content"
+        android:layout_width="0dp">
+        <RatingBar
+            android:id="@+id/ratingbar"
+            style="@style/RatingBar.Indicator.Middle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/margin_right_8dp"
+            android:layout_marginLeft="@dimen/margin_left_8dp"
+            android:rating="0"
+            android:stepSize="1"/>
+
+    </FrameLayout>
+
+</LinearLayout>

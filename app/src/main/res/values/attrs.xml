@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CircleImageView">
+        <attr name="civ_border_width" format="dimension" />
+        <attr name="civ_border_color" format="color" />
+        <attr name="civ_border_overlay" format="boolean" />
+        <attr name="civ_fill_color" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="CenterRadioButton">
+        <attr name="buttonPadding" format="dimension" />
+        <attr name="uncheckedColor" format="color" />
+        <attr name="checkedColor" format="color" />
+        <attr name="compoundButtonMode" format="enum">
+            <enum name="radioButton" value="0x80"/>
+            <enum name="toggleButton" value="0x90"/>
+        </attr>
+        <!-- 文本显示模式 -->
+        <attr name="textMode">
+            <!--文字显示在 View 里面 -->
+            <enum name="inside" value="0x10" />
+            <!--文字显示在 View 外面，在 ButtonDrawable 的左或右或上或下 -->
+            <enum name="outside" value="0x20" />
+        </attr>
+        <attr name="buttonsGravity">
+            <!-- Push object to the top of its container, not changing its size. -->
+            <enum name="top" value="0x30" />
+            <!-- Push object to the bottom of its container, not changing its size. -->
+            <enum name="bottom" value="0x50" />
+            <!-- Push object to the left of its container, not changing its size. -->
+            <enum name="left" value="0x03" />
+            <!-- Push object to the right of its container, not changing its size. -->
+            <enum name="right" value="0x05" />
+            <!-- Place object in the vertical center of its container, not changing its size. -->
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="searchedit">
+        <attr name="imagewidth" format="dimension" />
+        <attr name="hintTextColor" format="color" />
+        <attr name="textHint" format="string" />
+    </declare-styleable>
+
+    <!-- Declare custom theme attributes that allow changing which styles are
+         used for button bars depending on the API level.
+         ?android:attr/buttonBarStyle is new as of API 11 so this is
+         necessary to support previous API levels. -->
+    <declare-styleable name="ButtonBarContainerTheme">
+        <attr name="metaButtonBarStyle" format="reference" />
+        <attr name="metaButtonBarButtonStyle" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="RoundCornerImageView">
+        <attr name="corner" format="dimension" />
+    </declare-styleable>
+
+    <!--arc-->
+    <attr name="arc_origin">
+        <!-- Value same as the android:gravity -->
+        <flag name="top" value="0x30"/>
+        <flag name="bottom" value="0x50"/>
+        <flag name="left" value="0x03"/>
+        <flag name="right" value="0x05"/>
+        <flag name="center_vertical" value="0x10"/>
+        <flag name="center_horizontal" value="0x01"/>
+        <flag name="center" value="0x11"/>
+        <flag name="start" value="0x00800003"/>
+        <flag name="end" value="0x00800005"/>
+    </attr>
+
+    <declare-styleable name="arc_ArcLayout">
+        <attr name="arc_origin"/>
+        <attr name="arc_color" format="color"/>
+        <attr name="arc_radius" format="dimension"/>
+        <attr name="arc_axisRadius" format="dimension"/>
+        <attr name="arc_freeAngle" format="boolean"/>
+        <attr name="arc_reverseAngle" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="arc_ArcLayout_Layout">
+        <attr name="arc_origin"/>
+        <attr name="arc_angle" format="float"/>
+    </declare-styleable>
+
+    <!--  JazzyViewPager  -->
+    <declare-styleable name="JazzyViewPager">
+        <attr name="style">
+            <enum name="standard" value="0" />
+            <enum name="tablet" value="1" />
+            <enum name="cubein" value="2" />
+            <enum name="cubeout" value="3" />
+            <enum name="flipvertical" value="4" />
+            <enum name="fliphorizontal" value="5" />
+            <enum name="stack" value="6" />
+            <enum name="zoomin" value="7" />
+            <enum name="zoomout" value="8" />
+            <enum name="rotateup" value="9" />
+            <enum name="rotatedown" value="10" />
+            <enum name="accordion" value="11" />
+        </attr>
+        <attr name="fadeEnabled" format="boolean" />
+        <attr name="outlineEnabled" format="boolean" />
+        <attr name="outlineColor" format="color|reference" />
+    </declare-styleable>
+    <declare-styleable name="ViewPagerIndicator">
+
+        <!-- Style of the circle indicator. -->
+        <attr name="vpiCirclePageIndicatorStyle" format="reference" />
+    </declare-styleable>
+
+    <attr name="centered" format="boolean" />
+    <attr name="selectedColor" format="color" />
+    <attr name="strokeWidth" format="dimension" />
+    <attr name="unselectedColor" format="color" />
+    <declare-styleable name="CirclePageIndicator">
+
+        <!-- Whether or not the indicators should be centered. -->
+        <attr name="centered" />
+        <!-- Color of the filled circle that represents the current page. -->
+        <attr name="fillColor" format="color" />
+        <!-- Color of the filled circles that represents pages. -->
+        <attr name="pageColor" format="color" />
+        <!-- Orientation of the indicator. -->
+        <attr name="android:orientation" />
+        <!-- Radius of the circles. This is also the spacing between circles. -->
+        <attr name="radius" format="dimension" />
+        <!-- Whether or not the selected indicator snaps to the circles. -->
+        <attr name="snap" format="boolean" />
+        <!-- Color of the open circles. -->
+        <attr name="strokeColor" format="color" />
+        <!-- Width of the stroke used to draw the circles. -->
+        <attr name="strokeWidth" />
+        <!-- View background -->
+        <attr name="android:background" />
+    </declare-styleable>
+
+
+    <declare-styleable name="FlowLayout">
+        <attr name="android:gravity" />
+    </declare-styleable>
+    <declare-styleable name="FlowLayout_Layout">
+        <attr name="android:layout_gravity" />
+        <attr name="android:verticalSpacing"/>
+    </declare-styleable>
+</resources>

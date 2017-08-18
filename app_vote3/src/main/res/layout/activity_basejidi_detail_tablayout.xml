@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+             android:fitsSystemWindows="true">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        style="@style/Style.ToolBar">
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            style="@style/Style.Toolbar.Title" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/height_48dp"
+        android:paddingTop="@dimen/height_48dp">
+        ​
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/layout_app_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:elevation="0dp">
+
+            <LinearLayout
+                android:id="@+id/ll_head_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/app_color_background"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_scrollFlags="scroll">
+
+                <!--<com.binfenjiari.widget.HeadViewMovementDetail-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content" />-->
+            </LinearLayout>
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/tab_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/height_48dp"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                app:tabIndicatorColor="@color/colorPrimary_dark"
+                app:tabIndicatorHeight="@dimen/height_3dp"
+                app:tabMode="fixed"
+                app:tabPadding="@dimen/padding_8dp"
+                app:tabSelectedTextColor="@color/colorPrimary_dark"
+                app:tabTextAppearance="@style/TextAppearance.Circle" />
+
+            <include layout="@layout/item_divider_general" />
+        </android.support.design.widget.AppBarLayout>
+        ​
+        <!-- The top margin value equals half height of the blue box -->
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+        ​
+    </android.support.design.widget.CoordinatorLayout>
+
+    <include layout="@layout/part_basejidi_detail_footer" />
+</FrameLayout>

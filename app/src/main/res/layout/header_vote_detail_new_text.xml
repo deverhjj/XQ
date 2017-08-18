@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.biu.modulebase.binfenjiari.widget.swiperefreshlayout.LSwipeRefreshLayout
+            android:id="@+id/swipe"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <android.support.v4.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_bottom_8dp"
+                    android:background="@color/app_color_foreground"
+                    android:elevation="@dimen/elevation_list_item"
+                    android:orientation="vertical"
+                    android:visibility="visible"
+                    tools:targetApi="lollipop">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginRight="0dp"
+                        android:layout_marginTop="1dp"
+                        android:background="@color/app_color_foreground">
+
+                        <include layout="@layout/part_card_detail_text_4" />
+
+                        <ImageView
+                            android:id="@+id/banner"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitXY"
+                            android:src="@mipmap/banner_pic" />
+
+                    </FrameLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/margin_bottom_8dp"
+                        android:layout_marginLeft="@dimen/margin_left_16dp"
+                        android:layout_marginRight="@dimen/margin_right_16dp"
+                        android:layout_marginTop="@dimen/margin_top_8dp"
+                        android:text="投票规则："
+                        android:textColor="@color/app_text_color_primary"
+                        android:textSize="@dimen/text_size_18" />
+
+                    <TextView
+                        android:id="@+id/rule"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_left_16dp"
+                        android:layout_marginRight="@dimen/margin_right_16dp"
+                        android:layout_marginTop="@dimen/margin_top_8dp"
+                        android:text="每人一次性可投N票，未投满视为放弃"
+                        android:textColor="@color/app_text_color_secondary"
+                        android:textSize="@dimen/text_size_16" />
+
+                    <TextView
+                        android:id="@+id/extra_day"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/margin_bottom_8dp"
+                        android:layout_marginLeft="@dimen/margin_left_16dp"
+                        android:layout_marginRight="@dimen/margin_right_16dp"
+                        android:layout_marginTop="@dimen/margin_right_16dp"
+                        android:text="距离投票还有7天"
+                        android:textColor="@color/app_text_color_primary"
+                        android:textSize="@dimen/text_size_18" />
+
+                    <LinearLayout
+                        android:id="@+id/layout_vote"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="vertical">
+                        <!--  <include
+                                layout="@layout/part_vote_select_item_detail_text"/>
+
+                            <include
+                                layout="@layout/item_divider_gray"/>
+
+                            <include
+                                layout="@layout/part_vote_select_item_detail_text"/>&ndash;&gt;-->
+
+                    </LinearLayout>
+
+                    <!--<include-->
+                    <!--layout="@layout/part_vote_detail_vote"/>-->
+
+                </LinearLayout>
+
+            </android.support.v4.widget.NestedScrollView>
+
+        </com.biu.modulebase.binfenjiari.widget.swiperefreshlayout.LSwipeRefreshLayout>
+
+
+        <TextView
+            android:id="@+id/fab_vote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginBottom="@dimen/margin_16dp"
+            android:layout_marginLeft="@dimen/padding_10dp"
+            android:layout_marginTop="@dimen/padding_10dp"
+            android:layout_marginRight="@dimen/padding_10dp"
+            android:background="@drawable/bg_tv_rectangle_vote"
+            android:clickable="true"
+            android:gravity="center"
+            android:minHeight="?attr/actionBarSize"
+            android:stateListAnimator="@animator/animated_drawable_btn_vote"
+            android:text="提交"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_16"
+            tools:targetApi="lollipop" />
+    </LinearLayout>
+
+</FrameLayout>

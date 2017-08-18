@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:elevation="@dimen/elevation_list_item"
+              android:orientation="vertical"
+              tools:targetApi="lollipop">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/view_margin_8dp"
+        android:paddingBottom="@dimen/view_margin_8dp"
+        android:background="@color/app_color_foreground">
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_16dp"
+            layout="@layout/part_card_detail_text"/>
+
+    </FrameLayout>
+
+    <com.biu.modulebase.binfenjiari.widget.NoScrollGridView
+        android:id="@+id/gridView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/view_margin_8dp"
+        android:numColumns="3"
+        android:background="@color/app_color_foreground"/>
+
+    <include layout="@layout/part_comment_all"/>
+
+</LinearLayout>

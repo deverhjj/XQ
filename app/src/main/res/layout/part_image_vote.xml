@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_weight="1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/view_margin_4dp"
+        android:paddingRight="@dimen/view_margin_4dp">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/padding_8dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@mipmap/vote_test_head" />
+
+            <ImageView
+                android:id="@+id/rank_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/img11"
+                android:visibility="visible" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:visibility="gone">
+
+                <ProgressBar
+                    android:id="@+id/progress"
+                    style="@style/Widget.ProgressBar.Vote.Image"
+                    android:layout_width="match_parent"
+                    android:layout_height="22dp"
+                    android:layout_gravity="center_vertical|bottom"
+                    android:progress="70" />
+
+            </FrameLayout>
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="-4dp"
+            android:drawableRight="@mipmap/icon_sex_man"
+            android:paddingRight="15dp"
+            android:singleLine="true"
+            android:ellipsize="middle"
+            android:paddingLeft="@dimen/width_1dp"
+            android:paddingTop="@dimen/height_5dp"
+            android:text="王思琪王思琪王思琪王思琪王思琪王思琪王思琪"
+            android:textColor="@color/app_text_color_primary"
+            android:textSize="@dimen/text_size_16" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/height_3dp">
+
+            <TextView
+                android:id="@+id/num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/width_1dp"
+                android:paddingRight="@dimen/padding_right_5dp"
+                android:text="1234"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/text_size_16" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/padding_3dp"
+                android:paddingRight="@dimen/padding_right_5dp"
+                android:text="票"
+                android:textColor="@color/app_text_color_secondary"
+                android:textSize="@dimen/text_size_16" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</FrameLayout>

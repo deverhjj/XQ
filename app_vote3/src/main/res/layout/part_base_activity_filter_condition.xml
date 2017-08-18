@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_pop"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:id="@+id/rl_region"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@null"
+        android:gravity="center"
+        android:paddingBottom="@dimen/padding_bottom_10dp"
+        android:paddingLeft="@dimen/view_margin_8dp"
+        android:paddingRight="@dimen/view_margin_8dp"
+        android:paddingTop="@dimen/padding_top_10dp">
+
+        <TextView
+            android:id="@+id/tv_region"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:drawablePadding="6dp"
+            android:drawableRight="@drawable/icon_gray_triangle"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="全市"
+            android:textColor="@color/app_text_color_secondary"
+            android:textSize="@dimen/text_size_16" />
+    </RelativeLayout>
+    <!--style="@style/Ripple.Item.Background"-->
+
+    <!--<include-->
+    <!--layout="@layout/item_divider_vertical"/>-->
+
+    <RelativeLayout
+        android:id="@+id/rl_date"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@null"
+        android:gravity="center"
+        android:paddingBottom="@dimen/padding_bottom_10dp"
+        android:paddingLeft="@dimen/view_margin_8dp"
+        android:paddingRight="@dimen/view_margin_8dp"
+        android:paddingTop="@dimen/padding_top_10dp">
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:drawablePadding="6dp"
+            android:drawableRight="@drawable/icon_gray_triangle"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="基地类型"
+            android:textColor="@color/app_text_color_secondary"
+            android:textSize="@dimen/text_size_16" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_sort"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@null"
+        android:gravity="center"
+        android:paddingBottom="@dimen/padding_bottom_10dp"
+        android:paddingLeft="@dimen/view_margin_8dp"
+        android:paddingRight="@dimen/view_margin_8dp"
+        android:paddingTop="@dimen/padding_top_10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:drawablePadding="6dp"
+            android:drawableRight="@drawable/icon_gray_triangle"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="综合排序"
+            android:textColor="@color/app_text_color_secondary"
+            android:textSize="@dimen/text_size_16" />
+    </RelativeLayout>
+
+</LinearLayout>
+

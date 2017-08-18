@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@android:id/text1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:textSize="@dimen/text_size_16"
+    android:textColor="@color/text_tab_orange2"
+    android:drawableRight="@drawable/selector_jidi_tab_icon"
+    android:drawablePadding="@dimen/padding_8dp"
+    android:text="区域"
+    tools:showIn="@layout/part_filter"/>

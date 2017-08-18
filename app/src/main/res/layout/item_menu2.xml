@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheckedTextView
+    android:id="@+id/tv"
+    style="@style/Ripple.Item.Background"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:checkMark="@drawable/selector_check_mark"
+    android:checked="false"
+    android:gravity="center_vertical"
+    android:padding="@dimen/padding_16dp"
+    android:text="asasdasda"
+    android:textColor="@color/text_tab_orange"
+    android:textSize="@dimen/text_size_14"/>
+

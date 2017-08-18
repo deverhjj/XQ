@@ -1,0 +1,209 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/view_margin_10dp"
+            android:text="信息一经修改，三天内进行审核"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/text_size_14"
+            android:id="@+id/hint" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:stateListAnimator="@animator/animated_drawable_btn_vote"
+            tools:targetApi="lollipop">
+
+            <com.biu.modulebase.binfenjiari.widget.CircleImageView
+                android:id="@+id/iv_head_portrait"
+                style="@style/Ripple.Item.Foreground2"
+                android:layout_width="@dimen/width_80dp"
+                android:layout_height="@dimen/height_80dp"
+                android:layout_gravity="center"
+                android:src="@mipmap/circle_pic" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/iv_head_portrait"
+                android:layout_alignRight="@+id/iv_head_portrait"
+                android:src="@mipmap/camera"/>
+        </RelativeLayout>
+
+        <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:gravity="center"-->
+        <!--android:padding="@dimen/view_margin_10dp"-->
+        <!--android:text="请上传论坛头像"-->
+        <!--android:textColor="@color/blue1"-->
+        <!--android:textSize="@dimen/text_size_14" />-->
+
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/actionbar_height"
+            android:layout_marginLeft="@dimen/view_margin_10dp"
+            android:layout_marginRight="@dimen/view_margin_10dp"
+            android:layout_marginTop="@dimen/view_margin_10dp"
+            android:gravity="center_vertical"
+            android:background="@color/white"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:singleLine="true"
+            android:hint="圈子名称（2-14个字符）"
+            android:text=""
+            android:textColor="@color/app_text_color_primary"
+            android:textColorHint="@color/app_text_color_secondary"
+            android:textSize="@dimen/text_size_16"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/view_margin_10dp"
+            android:background="@drawable/selector_rr_foreground_5_rest">
+
+            <EditText
+                android:id="@+id/et_subject"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_160dp"
+                android:background="@drawable/selector_rr_foreground_5_rest"
+                android:gravity="top"
+                android:hint="简介（140个字符以内）"
+                android:lineSpacingMultiplier="1.2"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_horizontal_margin"
+                android:textColor="@color/app_text_color_primary"
+                android:textColorHint="@color/app_text_color_secondary"
+                android:textSize="@dimen/text_size_14"/>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_notice_manage"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/actionbar_height"
+            style="@style/Ripple.Item.Background"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="公告管理"
+                android:textColor="@color/app_text_color_primary"
+                android:textSize="@dimen/text_size_14"/>
+
+            <ImageView
+                android:id="@+id/type_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/arrow_right"/>
+        </RelativeLayout>
+        <include layout="@layout/divider_h"/>
+
+        <LinearLayout
+            android:id="@+id/layout_people_manage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Ripple.Item.Background"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/actionbar_height">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="圈子成员"
+                    android:textColor="@color/app_text_color_primary"
+                    android:textSize="@dimen/text_size_14"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/arrow_right"/>
+            </RelativeLayout>
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:id="@+id/memeber_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/view_margin_8dp"
+                    android:orientation="horizontal">
+
+                    <com.biu.modulebase.binfenjiari.widget.CircleImageView
+                        style="@style/Ripple_Borderless"
+                        android:layout_width="@dimen/height_48dp"
+                        android:layout_height="@dimen/height_48dp"
+                        android:layout_marginRight="@dimen/view_margin_8dp"
+                        android:layout_gravity="center"
+                        android:src="@mipmap/circle_pic" />
+                    <com.biu.modulebase.binfenjiari.widget.CircleImageView
+                        style="@style/Ripple_Borderless"
+                        android:layout_width="@dimen/height_48dp"
+                        android:layout_height="@dimen/height_48dp"
+                        android:layout_marginRight="@dimen/view_margin_8dp"
+                        android:layout_gravity="center"
+                        android:src="@mipmap/circle_pic" />
+                    <com.biu.modulebase.binfenjiari.widget.CircleImageView
+                        style="@style/Ripple_Borderless"
+                        android:layout_width="@dimen/height_48dp"
+                        android:layout_height="@dimen/height_48dp"
+                        android:layout_marginRight="@dimen/view_margin_8dp"
+                        android:layout_gravity="center"
+                        android:src="@mipmap/circle_pic" />
+                    <com.biu.modulebase.binfenjiari.widget.CircleImageView
+                        style="@style/Ripple_Borderless"
+                        android:layout_width="@dimen/height_48dp"
+                        android:layout_height="@dimen/height_48dp"
+                        android:layout_marginRight="@dimen/view_margin_8dp"
+                        android:layout_gravity="center"
+                        android:src="@mipmap/circle_pic" />
+                    <com.biu.modulebase.binfenjiari.widget.CircleImageView
+                    style="@style/Ripple_Borderless"
+                    android:layout_width="@dimen/height_48dp"
+                    android:layout_height="@dimen/height_48dp"
+                    android:layout_marginRight="@dimen/view_margin_8dp"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/circle_pic" />
+                    <com.biu.modulebase.binfenjiari.widget.CircleImageView
+                        style="@style/Ripple_Borderless"
+                        android:layout_width="@dimen/height_48dp"
+                        android:layout_height="@dimen/height_48dp"
+                        android:layout_marginRight="@dimen/view_margin_8dp"
+                        android:layout_gravity="center"
+                        android:src="@mipmap/circle_pic" />
+
+
+                </LinearLayout>
+            </HorizontalScrollView>
+        </LinearLayout>
+
+
+    </LinearLayout>
+</FrameLayout>

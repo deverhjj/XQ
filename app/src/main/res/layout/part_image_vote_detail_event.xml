@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@color/app_color_foreground"
+    android:foreground="@drawable/selector_event_detail_vote">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:adjustViewBounds="true"
+                android:src="@mipmap/common_pic"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom">
+
+                <ProgressBar
+                    style="@style/Widget.ProgressBar.Vote.Image"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_20dp"
+                    android:layout_gravity="center_vertical"
+                    android:progress="80"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:paddingLeft="@dimen/padding_left_8dp"
+                    android:paddingRight="@dimen/padding_right_8dp"
+                    android:text="123 票 "
+                    android:textColor="@color/app_color_foreground"
+                    android:textSize="@dimen/text_size_14"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:paddingLeft="@dimen/padding_left_8dp"
+                    android:paddingRight="@dimen/padding_right_8dp"
+                    android:text="20%"
+                    android:textColor="@color/app_color_foreground"
+                    android:textSize="@dimen/text_size_12"/>
+
+            </FrameLayout>
+
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:padding="@dimen/padding_8dp"
+            android:text="手机电脑"
+            android:textColor="@color/app_text_color_primary"
+            android:textSize="@dimen/text_size_16"/>
+
+    </LinearLayout>
+
+</FrameLayout>

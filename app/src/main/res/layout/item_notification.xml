@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout style="@style/Ripple.Item.Foreground"
+             xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/padding_left_16dp"
+        android:paddingRight="@dimen/padding_right_16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/padding_top_16dp"
+            android:paddingBottom="@dimen/padding_bottom_16dp">
+
+            <com.biu.modulebase.binfenjiari.widget.CircleImageView
+                android:id="@+id/iv_head_portrait"
+                android:layout_width="@dimen/width_45dp"
+                android:layout_height="@dimen/height_45dp"
+                android:src="@mipmap/header_pic"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_left_8dp"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/tv_nickname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="中奖晒单广场"
+                        android:textColor="@color/app_text_color_primary"
+                        android:textSize="14sp"/>
+
+                    <TextView
+                        android:id="@+id/tv_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center_vertical"
+                        android:text="12 小时钱"
+                        android:textColor="@color/app_text_color_secondary"
+                        android:textSize="@dimen/text_size_10"/>
+
+                </FrameLayout>
+
+
+                <TextView
+                    android:id="@+id/tv_reply"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_top_3dp"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="什么秘密吗"
+                    android:textColor="@color/app_text_color_primary"
+                    android:textSize="@dimen/text_size_16"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <include layout="@layout/item_divider_gray"/>
+
+    </LinearLayout>
+
+</FrameLayout>

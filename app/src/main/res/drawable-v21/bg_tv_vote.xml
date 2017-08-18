@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+        android:color="?attr/colorControlHighlight">
+    <item>
+        <shape
+            android:shape="rectangle">
+            <corners android:radius="30dp"/>
+
+            <size android:width="60dp" android:height="60dp"/>
+
+            <solid android:color="@color/color_vote_orange"/>
+        </shape>
+    </item>
+</ripple>

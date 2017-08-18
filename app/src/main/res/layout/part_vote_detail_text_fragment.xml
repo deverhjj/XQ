@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:paddingLeft="@dimen/margin_left_16dp"
+    android:paddingTop="@dimen/padding_5dp"
+    android:paddingBottom="@dimen/padding_5dp"
+    android:background="@color/white"
+    android:layout_height="wrap_content">
+
+    <include layout="@layout/part_pop_image_text_vote_select"/>
+
+</FrameLayout>

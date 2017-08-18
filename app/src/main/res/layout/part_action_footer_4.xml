@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:background="@color/app_color_foreground"
+    android:elevation="@dimen/elevation_10dp"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    app:layout_behavior="com.biu.modulebase.binfenjiari.widget.QuickReturnFooterBehavior"
+    tools:targetApi="lollipop"
+    android:clickable="true">
+
+    <include
+        layout="@layout/divider_toolbar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="@dimen/padding_5dp"
+            android:clickable="true">
+
+            <com.biu.modulebase.binfenjiari.widget.MyCheckBox
+                android:id="@+id/like"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:button="@drawable/selector_like2"
+                android:padding="@dimen/padding_5dp"
+                android:clickable="false"
+                android:text="0"/>
+
+        </FrameLayout>
+
+        <include
+            layout="@layout/item_divider_vertical"/>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_comment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawableLeft="@drawable/selector_comment"
+                android:drawablePadding="@dimen/padding_5dp"
+                android:gravity="center"
+                android:text="评论"/>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

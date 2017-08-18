@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/nav_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:visibility="invisible">
+
+    <LinearLayout
+        android:layout_width="180dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="-90dp"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/info"
+            style="@style/Ripple.Item.Nav"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="45dp"
+                android:src="@mipmap/nav_info" />
+        </FrameLayout>
+
+        <FrameLayout
+
+            android:id="@+id/huodong"
+            style="@style/Ripple.Item.Nav"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="45dp"
+                android:src="@mipmap/nav_exercise" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/shangcheng"
+            style="@style/Ripple.Item.Nav"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="45dp"
+                android:src="@mipmap/nav_shangcheng" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/shoucang"
+            style="@style/Ripple.Item.Nav"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="45dp"
+                android:src="@mipmap/nav_collect" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/circle"
+            style="@style/Ripple.Item.Nav"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="45dp"
+                android:src="@mipmap/nav_circle" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/erweima"
+            style="@style/Ripple.Item.Nav"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="45dp"
+                android:src="@mipmap/nav_qrcode" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/share"
+            style="@style/Ripple.Item.Nav"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="45dp"
+                android:src="@mipmap/nav_share" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/shezhi"
+            style="@style/Ripple.Item.Nav"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="45dp"
+                android:src="@mipmap/nav_setting" />
+        </FrameLayout>
+
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Ripple.Item.Foreground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:elevation="@dimen/elevation_list_item"
+    tools:targetApi="lollipop">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="姓名:"
+                android:minWidth="80dp"
+                android:textColor="@color/colorTextGray"
+                android:textSize="@dimen/text_size_16" />
+
+            <EditText
+                android:id="@+id/actv_name"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/height_45dp"
+                android:layout_weight="2"
+                android:background="@drawable/bg_verif_ed"
+                android:gravity="center_vertical"
+                android:hint="请输入姓名"
+                android:inputType="text"
+                android:padding="@dimen/padding_8dp"
+                android:textColor="@color/color_vote_brown"
+                android:textColorHint="@color/black_overlay"
+                android:textSize="@dimen/text_size_16" />
+
+        </LinearLayout>
+
+        <include layout="@layout/item_divider_black" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="电话号码:"
+                android:minWidth="80dp"
+                android:textColor="@color/colorTextGray"
+                android:textSize="@dimen/text_size_16" />
+
+            <EditText
+                android:id="@+id/actv_phone"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/height_45dp"
+                android:layout_weight="2"
+                android:background="@drawable/bg_verif_ed"
+                android:gravity="center_vertical"
+                android:textColorHint="@color/black_overlay"
+                android:hint="请输入电话号码"
+                android:inputType="number"
+                android:padding="@dimen/padding_8dp"
+                android:textColor="@color/color_vote_brown"
+                android:textSize="@dimen/text_size_16" />
+
+        </LinearLayout>
+
+        <include layout="@layout/item_divider_black" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="验证码:"
+                android:minWidth="80dp"
+                android:textColor="@color/colorTextGray"
+                android:textSize="@dimen/text_size_16" />
+
+            <EditText
+                android:id="@+id/verification"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/height_45dp"
+                android:layout_weight="2"
+                android:background="@drawable/bg_verif_ed"
+                android:gravity="center_vertical"
+                android:textColorHint="@color/black_overlay"
+                android:hint="请输入验证码"
+                android:inputType="number"
+                android:padding="@dimen/padding_8dp"
+                android:textColor="@color/color_vote_brown"
+                android:textSize="@dimen/text_size_16" />
+
+            <Button
+                android:id="@+id/send_verification"
+                style="@style/Ripple.Button_Brown"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/height_45dp"
+                android:layout_gravity="right|center_vertical"
+                android:layout_weight="1"
+                android:text="发送验证码"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_14" />
+
+        </LinearLayout>
+
+        <include layout="@layout/item_divider_black" />
+
+        <LinearLayout
+            android:id="@+id/ll_cardnumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="身份证号:"
+                    android:minWidth="80dp"
+                    android:textColor="@color/colorTextGray"
+                    android:textSize="@dimen/text_size_16" />
+
+                <EditText
+                    android:id="@+id/actv_cardnumber"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/height_45dp"
+                    android:layout_weight="2"
+                    android:background="@drawable/bg_verif_ed"
+                    android:gravity="center_vertical"
+                    android:digits="0123456789xX"
+                    android:hint="请输入身份证号"
+                    android:inputType="text"
+                    android:textColorHint="@color/black_overlay"
+                    android:padding="@dimen/padding_8dp"
+                    android:textColor="@color/color_vote_brown"
+                    android:textSize="@dimen/text_size_16" />
+
+            </LinearLayout>
+
+            <include layout="@layout/item_divider_black" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/height_18dp"
+            android:gravity="left"
+            android:text="*必须填写真实姓名，涉及个人信息，绝不外泄"
+            android:textColor="@color/colorTextGray"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/height_8dp"
+            android:gravity="left"
+            android:text="*凡利用漏洞和违规操作所得的票数，一律不算入最终统计结果"
+            android:textColor="@color/colorTextGray"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/vote"
+            style="@style/Ripple.Button_Brown"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_50dp"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:text="确认"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</FrameLayout>

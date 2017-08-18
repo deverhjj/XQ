@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/app_color_foreground"
+                android:paddingBottom="@dimen/view_margin_4dp"
+                android:paddingTop="@dimen/view_margin_4dp">
+
+    <com.biu.modulebase.binfenjiari.widget.AutoClearEditText
+        android:id="@+id/reply_content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/view_margin_8dp"
+        android:layout_marginRight="@dimen/view_margin_8dp"
+        android:layout_toLeftOf="@+id/send"
+        android:cursorVisible="true"
+        android:gravity="center_vertical"
+        android:hint="请输入评论内容"
+        android:background="@drawable/bg_write_comment"
+        android:imeOptions="actionSend"
+        android:maxEms="11"
+        android:maxHeight="80dp"
+        android:maxLength="150"
+        android:minHeight="50dp"
+        android:paddingBottom="@dimen/padding_bottom_5dp"
+        android:paddingLeft="@dimen/view_margin_8dp"
+        android:paddingRight="9dp"
+        android:paddingTop="@dimen/padding_top_5dp"
+        android:singleLine="false"
+        android:textColor="#000000"
+        android:textColorHint="@color/app_text_color_secondary"
+        android:textSize="@dimen/text_size_16"/>
+
+    <Button
+        android:id="@+id/send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/reply_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/view_margin_8dp"
+        android:background="@drawable/selector_rr_orange_5_rest"
+        android:enabled="false"
+        android:gravity="center"
+        android:minHeight="30dp"
+        android:minWidth="60dp"
+        android:paddingBottom="@dimen/view_margin_8dp"
+        android:paddingLeft="@dimen/view_margin_10dp"
+        android:paddingRight="@dimen/view_margin_10dp"
+        android:paddingTop="@dimen/view_margin_8dp"
+        android:text="发送"
+        android:textColor="@color/white_dark"
+        android:textSize="@dimen/text_size_16"/>
+
+</RelativeLayout>

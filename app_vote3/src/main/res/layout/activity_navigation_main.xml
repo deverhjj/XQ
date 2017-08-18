@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:fitsSystemWindows="true">
+
+    <com.biu.modulebase.binfenjiari.widget.MyViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp"/>
+
+    <RadioGroup
+        android:id="@+id/group"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_height_50"
+        android:layout_gravity="bottom"
+        android:background="@drawable/bg_bottom_white_topline"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/rb_home"
+            style="@style/main_tab_bottom"
+            android:drawableTop="@drawable/selector_event"
+            android:text="首页"/>
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/rb_community"
+            style="@style/main_tab_bottom"
+            android:drawableTop="@drawable/selector_comm"
+            android:text="逛逛社区"/>
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/rb_mine"
+            style="@style/main_tab_bottom"
+            android:layout_gravity="center_vertical"
+            android:drawableTop="@drawable/selector_mine"
+            android:text="我的"/>
+
+    </RadioGroup>
+
+</FrameLayout>

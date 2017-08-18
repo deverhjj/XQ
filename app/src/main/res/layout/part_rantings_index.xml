@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:layout_marginTop="@dimen/view_margin_4dp"
+    tools:showIn="@layout/part_ratings">
+
+    <TextView
+        android:id="@+id/tv_evaluate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="服务态度"
+        android:textColor="@color/app_text_color_primary"
+        android:textSize="@dimen/text_size_12"/>
+
+    <RatingBar
+        android:id="@+id/rantingBar"
+        style="@style/RatingBar.Indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/margin_right_8dp"
+        android:layout_marginLeft="@dimen/margin_left_8dp"
+        android:rating="3"
+        android:stepSize="1"/>
+
+    <TextView
+        android:id="@+id/tv_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3.5"
+        android:textColor="@color/color_orange2"
+        android:textSize="@dimen/text_size_12"/>
+
+</LinearLayout>

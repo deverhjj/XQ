@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--<com.aspsine.swipetoloadlayout.SwipeToLoadLayout-->
+        <!--android:id="@+id/swipeToLoadLayout"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:background="@color/colorAppBackground"-->
+        <!--app:default_to_loading_more_scrolling_duration="500"-->
+        <!--app:load_more_complete_delay_duration="0"-->
+        <!--app:load_more_final_drag_offset="@dimen/load_more_final_offset_google"-->
+        <!--app:load_more_trigger_offset="@dimen/load_more_trigger_offset_google"-->
+        <!--app:refresh_final_drag_offset="@dimen/refresh_final_offset_google"-->
+        <!--app:refresh_trigger_offset="@dimen/refresh_trigger_offset_google"-->
+        <!--app:swipe_style="above">-->
+
+        <!--<include-->
+            <!--android:id="@id/swipe_refresh_header"-->
+            <!--layout="@layout/layout_google_hook_header" />-->
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/swiperefreshlayout" >
+        <android.support.v7.widget.RecyclerView
+            android:id="@id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_load_more"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="40dp"
+        android:layout_gravity="bottom"
+        android:background="@color/app_color_foreground_translucent"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ProgressBar
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/secondary_text_light_nodisable"
+            android:paddingLeft="8dp"
+            android:text="正在努力加载..."/>
+
+    </LinearLayout>
+
+        <!--<include-->
+            <!--android:id="@id/swipe_load_more_footer"-->
+            <!--layout="@layout/layout_google_hook_footer" />-->
+
+    <!--</com.aspsine.swipetoloadlayout.SwipeToLoadLayout>-->
+
+</FrameLayout>

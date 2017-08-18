@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_title"
+        style="@style/Ripple.Item.Background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lineSpacingMultiplier="1.1"
+        android:paddingBottom="@dimen/view_margin_4dp"
+        android:paddingLeft="@dimen/padding_left_16dp"
+        android:paddingRight="@dimen/padding_right_16dp"
+        android:paddingTop="@dimen/view_margin_4dp"
+        android:text="@string/test_str_long"
+        android:textColor="@color/app_text_color_primary"
+        android:textSize="@dimen/text_size_16"/>
+
+    <TextView
+        android:id="@+id/tv_content1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lineSpacingMultiplier="1.1"
+        style="@style/Ripple.Item.Background"
+        android:paddingBottom="@dimen/padding_bottom_3dp"
+        android:paddingLeft="@dimen/padding_left_16dp"
+        android:paddingRight="@dimen/padding_right_16dp"
+        android:paddingTop="@dimen/padding_top_3dp"
+        android:textColor="@color/app_text_color_secondary"
+        android:textSize="@dimen/text_size_14" />
+
+    <LinearLayout
+        android:id="@+id/layout_it"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include
+            layout="@layout/part_image_text_detail"/>
+
+    </LinearLayout>
+
+    <include
+        layout="@layout/part_comment_all"/>
+
+
+</LinearLayout>

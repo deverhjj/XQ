@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/view_margin_10dp"
+            android:paddingBottom="@dimen/view_margin_10dp"
+            android:id="@+id/newFriends">
+
+
+            <com.biu.modulebase.binfenjiari.widget.CircleImageView
+                android:id="@+id/header"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@mipmap/nf"/>
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:text="新的好友" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <ExpandableListView
+                android:id="@+id/winners_listview"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:divider="@color/colorDividerLight"
+                android:childDivider="@color/colorDividerLight"
+                android:dividerHeight="1dp"
+                android:groupIndicator="@null"
+                android:listSelector="#00000000"
+                android:scrollbars="none" />
+
+            <com.biu.modulebase.binfenjiari.widget.expandablelistview.AssortView
+                android:id="@+id/assort"
+                android:layout_width="25dip"
+                android:layout_height="fill_parent"
+                android:background="#00000000" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <include layout="@layout/include_developing"/>
+
+</FrameLayout>

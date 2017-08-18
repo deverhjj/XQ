@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/view_margin_8dp">
+
+    <RelativeLayout
+        android:id="@+id/take_photo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_more_pop_top">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:paddingBottom="@dimen/view_margin_16dp"
+            android:paddingTop="@dimen/view_margin_16dp"
+            android:text="拍照"
+            android:textColor="@color/app_text_color_primary"
+            android:textSize="@dimen/text_size_14" />
+
+    </RelativeLayout>
+
+    <include layout="@layout/item_divider_gray" />
+
+    <RelativeLayout
+        android:id="@+id/choice_photo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_more_pop_middle">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:paddingBottom="@dimen/view_margin_16dp"
+            android:paddingTop="@dimen/view_margin_16dp"
+            android:text="从相册选择"
+            android:textColor="@color/app_text_color_primary"
+            android:textSize="@dimen/text_size_14" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/cancle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/view_margin_8dp"
+        android:background="@drawable/selector_more_pop_bottom">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:paddingBottom="@dimen/view_margin_16dp"
+            android:paddingTop="@dimen/view_margin_16dp"
+            android:text="取消"
+            android:textColor="@color/app_text_color_primary"
+            android:textSize="@dimen/text_size_14" />
+    </RelativeLayout>
+
+</LinearLayout>

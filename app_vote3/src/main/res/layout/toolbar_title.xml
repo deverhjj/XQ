@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+    style="@style/AppToolbarTitle"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:maxLines="1"
+    android:singleLine="true"
+    tools:text="@string/app_name"/>

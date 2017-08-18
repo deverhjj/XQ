@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Ripple.Item.Foreground"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:targetApi="lollipop">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:paddingBottom="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="@dimen/margin_16dp">
+
+        <com.biu.modulebase.binfenjiari.widget.RoundCornerImageView
+            android:id="@+id/image"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:src="@mipmap/banner_pic" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="left"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/padding_bottom_12dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingTop="4dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/margin_right_8dp"
+                        android:background="@drawable/bg_green_empty_rectangle_corner_tv"
+                        android:paddingBottom="@dimen/view_margin_2dp"
+                        android:paddingLeft="@dimen/padding_left_8dp"
+                        android:paddingRight="@dimen/padding_right_8dp"
+                        android:paddingTop="@dimen/view_margin_2dp"
+                        android:text="优"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/text_size_12" />
+
+                    <TextView
+                        android:id="@+id/tv_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left|center_vertical"
+                        android:text="欢乐动物园"
+                        android:textColor="@color/app_text_color_primary"
+                        android:textSize="@dimen/text_size_16"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_right_8dp"
+                        android:background="@drawable/bg_green_empty_rectangle_corner_tv"
+                        android:paddingBottom="@dimen/view_margin_2dp"
+                        android:paddingLeft="@dimen/padding_left_8dp"
+                        android:paddingRight="@dimen/padding_right_8dp"
+                        android:paddingTop="@dimen/view_margin_2dp"
+                        android:text="四星"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/text_size_12" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="left|center"
+                        android:orientation="horizontal">
+
+                        <RatingBar
+                            style="@style/RatingBar.Indicator"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/margin_right_8dp"
+                            android:rating="4"
+                            android:stepSize="1" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="4.5分"
+                            android:textColor="@color/app_text_color_secondary"
+                            android:textSize="@dimen/text_size_12" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tv_activity_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:paddingBottom="@dimen/view_margin_4dp"
+                        android:paddingTop="@dimen/view_margin_4dp"
+                        android:text="社会实践"
+                        android:textColor="@color/app_text_color_secondary"
+                        android:textSize="@dimen/text_size_14" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <com.biu.modulebase.binfenjiari.widget.MyCheckBox
+                android:id="@+id/like"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:button="@drawable/selector_like"
+                android:clickable="false"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:text="0 / 1.3km"
+                android:textColor="@color/colorTextGray" />
+
+            <!--<include layout="@layout/part_action_list_item" />-->
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</FrameLayout>

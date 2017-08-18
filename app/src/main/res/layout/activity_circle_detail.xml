@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        style="@style/Style.ToolBar">
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            style="@style/Style.Toolbar.Title" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/height_48dp">
+        ​
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/layout_app_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_head_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/app_color_background"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/margin_bottom_8dp"
+                app:layout_scrollFlags="scroll">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginTop="4dp"
+                    android:text="Here I am with a subtitle"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle"
+                    android:textColor="@android:color/black" />
+                ​
+            </LinearLayout>
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/tab_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/height_48dp"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                app:tabIndicatorColor="@color/colorPrimary_dark"
+                app:tabIndicatorHeight="@dimen/height_3dp"
+                app:tabMode="fixed"
+                app:tabPadding="@dimen/padding_8dp"
+                app:tabSelectedTextColor="@color/colorPrimary_dark"
+                app:tabTextAppearance="@style/TextAppearance.Circle" />
+        </android.support.design.widget.AppBarLayout>
+        ​
+        <!-- The top margin value equals half height of the blue box -->
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+        ​
+    </android.support.design.widget.CoordinatorLayout>
+</FrameLayout>

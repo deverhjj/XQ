@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout style="@style/Ripple.Item.Foreground"
+             xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingBottom="@dimen/view_margin_8dp"
+        android:paddingTop="@dimen/view_margin_8dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_16"
+            android:minWidth="30dp"
+            android:gravity="center"
+            android:textColor="@color/app_text_color_primary" />
+
+        <com.biu.modulebase.binfenjiari.widget.CircleImageView
+            android:id="@+id/iv_circle_head_portrait"
+            android:layout_width="@dimen/width_50dp"
+            android:layout_height="@dimen/width_50dp"
+            android:layout_marginLeft="@dimen/view_margin_8dp"
+            android:src="@mipmap/header_pic"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_left_16dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_16"
+                android:textColor="@color/app_text_color_primary"
+                android:text="李明"/>
+
+            <TextView
+                android:id="@+id/school"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_14"
+                android:textColor="@color/app_text_color_primary"
+                android:layout_marginTop="@dimen/view_margin_4dp"
+                android:text="常州市中心小學"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/rank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|center_vertical"
+        android:layout_marginRight="@dimen/margin_right_16dp"
+        android:background="@drawable/bg_tv_ranking3"
+        android:paddingBottom="@dimen/view_margin_4dp"
+        android:paddingLeft="@dimen/padding_10dp"
+        android:paddingRight="@dimen/padding_10dp"
+        android:paddingTop="@dimen/view_margin_4dp"
+        android:text="2345分"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_12"/>
+
+</FrameLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle" >
+            <solid android:color="@color/ColorLayoutPressed" />
+            <stroke android:width="0.5dp" android:color="@color/colorDividerDark"/>
+            <padding android:bottom="@dimen/view_margin_6dp" android:left="@dimen/view_margin_16dp" android:right="@dimen/view_margin_16dp" android:top="@dimen/view_margin_6dp"/>
+            <corners
+                android:bottomLeftRadius="5dip"
+                android:bottomRightRadius="5dip"
+                android:topLeftRadius="5dip"
+                android:topRightRadius="5dip" />
+        </shape>
+    </item>
+    <item android:state_focused="true">
+        <shape android:shape="rectangle" >
+            <solid android:color="@color/ColorLayoutPressed" />
+            <stroke android:width="0.5dp" android:color="@color/colorDividerDark"/>
+            <padding android:bottom="@dimen/view_margin_6dp" android:left="@dimen/view_margin_16dp" android:right="@dimen/view_margin_16dp" android:top="@dimen/view_margin_6dp"/>
+            <corners
+                android:bottomLeftRadius="5dip"
+                android:bottomRightRadius="5dip"
+                android:topLeftRadius="5dip"
+                android:topRightRadius="5dip" />
+        </shape>
+    </item>
+
+    <item android:state_enabled="true" >
+        <shape android:shape="rectangle"  >
+            <solid android:color="@color/ColorLayoutPressed" />
+            <stroke android:width="0.5dp" android:color="@color/colorDividerDark"/>
+            <corners
+                android:bottomLeftRadius="5dip"
+                android:bottomRightRadius="5dip"
+                android:topLeftRadius="5dip"
+                android:topRightRadius="5dip" />
+            <padding android:bottom="@dimen/view_margin_6dp" android:left="@dimen/view_margin_16dp" android:right="@dimen/view_margin_16dp" android:top="@dimen/view_margin_6dp"/>
+        </shape>
+    </item>
+
+    <item >
+        <shape android:shape="rectangle" >
+            <solid android:color="@color/white" />
+            <stroke android:width="0.5dp" android:color="@color/colorDividerDark"/>
+            <padding android:bottom="@dimen/view_margin_6dp" android:left="@dimen/view_margin_16dp" android:right="@dimen/view_margin_16dp" android:top="@dimen/view_margin_6dp"/>
+            <corners
+                android:bottomLeftRadius="5dip"
+                android:bottomRightRadius="5dip"
+                android:topLeftRadius="5dip"
+                android:topRightRadius="5dip" />
+        </shape>
+    </item>
+
+</selector>

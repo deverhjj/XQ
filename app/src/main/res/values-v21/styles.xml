@@ -1,0 +1,124 @@
+<resources>
+
+    <style name="AppTheme" parent="AppBaseTheme">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@color/colorPrimaryDark</item>
+        <item name="android:navigationBarColor">@color/colorPrimaryDark</item>
+        <item name="android:colorControlHighlight">@color/colorPrimaryDark</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+    </style>
+
+    <style name="AppCompatAlertDialogStyle" parent="Base.Dialog">
+        <item name="android:windowBackground">@color/white</item>
+    </style>
+
+    <style name="Style.Toolbar.Divider" parent="">
+        <item name="android:layout_height">0dp</item>
+        <item name="android:background">@color/transparent</item>
+    </style>
+
+    <style name="Base.Tab.Bottom" parent="Style.TextView">
+        <item name="android:textSize">@dimen/text_size_12</item>
+        <item name="android:textColor">@color/text_tab_orange</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:button">@null</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:background">?android:attr/selectableItemBackgroundBorderless</item>
+    </style>
+
+
+    <!--Material Design v21+-->
+    <!--响应式交互：涟漪效果  -->
+    <style name="Ripple" >
+        <item name ="android:background">?android:attr/selectableItemBackground</item>
+    </style>
+
+    <style name="Ripple_Borderless" >
+        <item name ="android:background">?android:attr/selectableItemBackgroundBorderless</item>
+    </style>
+
+    <style name="Ripple_Borderless_White" >
+        <item name ="android:background">@drawable/item_background_ripple_white</item>
+    </style>
+
+    <!--<style name="Ripple.Borderless.Foreground" >-->
+    <!--<item name ="android:foreground">?android:attr/selectableItemBackgroundBorderless</item>-->
+    <!--</style>-->
+
+    <!-- 背景水波纹效果-->
+    <style name="Ripple.Item.Background">
+        <item name="android:background">@drawable/item_background_ripple</item>
+    </style>
+
+    <!-- 前景水波纹效果
+    注意:1.需设置该View的背景颜色，不然按下或点击时会有瞬时 APP 背景显示
+         2.该 Item的布局对象 必须为 FrameLayout 并且该 FrameLayout 设置了点击事件监听 否则没有效果-->
+    <style name="Ripple.Item.Foreground">
+        <item name="android:foreground">?android:attr/selectableItemBackground</item>
+        <item name="android:background">@color/app_color_foreground</item>
+    </style>
+
+    <style name="Ripple.Item.Foreground2">
+        <item name="android:foreground">?android:attr/selectableItemBackground</item>
+        <item name="android:background">@color/app_color_background</item>
+    </style>
+
+    <style name="Ripple.Item.Background.Orange" parent="Ripple.Item.Background">
+        <item name="android:background">@drawable/ripple_orange_gray</item>
+    </style>
+
+    <style name="Ripple.Button_Brown" parent="ColorfulButton">
+        <item name ="android:background">@drawable/background_ripple_button_brown</item>
+        <item name="android:stateListAnimator">@animator/animated_drawable_btn</item>
+    </style>
+    <style name="Ripple.Button_Orange" parent="ColorfulButton">
+        <item name ="android:background">@drawable/background_ripple_button_orange</item>
+        <item name="android:stateListAnimator">@animator/animated_drawable_btn</item>
+    </style>
+    <style name="Ripple.Button_Orange2" parent="ColorfulButton">
+        <item name ="android:background">@drawable/background_ripple_button_orange2</item>
+        <item name="android:stateListAnimator">@animator/animated_drawable_btn</item>
+    </style>
+
+    <style name="Ripple.Reply_White" parent="ColorfulButton">
+        <item name ="android:background">@drawable/background_ripple_button_white</item>
+        <item name="android:stateListAnimator">@animator/animated_drawable_btn</item>
+    </style>
+
+    <style name="Ripple.Button_Violet" parent="ColorfulButton">
+        <item name ="android:background">@drawable/background_ripple_button_violet</item>
+        <item name="android:stateListAnimator">@animator/animated_drawable_btn</item>
+    </style>
+
+
+    <style name="main_tab_bottom" parent="Base.Tab.Bottom">
+        <item name="android:background">?android:attr/selectableItemBackgroundBorderless</item>
+    </style>
+
+    <style name="SeekBar" parent="Widget.AppCompat.ProgressBar.Horizontal">
+        <item name="android:indeterminateOnly">false</item>
+        <!--<item name="android:progressDrawable">@drawable/progress_video</item>-->
+        <!--<item name="android:indeterminateDrawable">@drawable/progress_video</item>-->
+        <item name="android:splitTrack">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:paddingStart">16dip</item>
+        <item name="android:paddingEnd">16dip</item>
+        <item name="android:mirrorForRtl">true</item>
+        <item name="android:background">@drawable/bg_seekbar_video</item>
+    </style>
+
+    <style name="ProgressBar" parent="Widget.AppCompat.ProgressBar">
+
+    </style>
+
+    <style name="Ripple.Item.Background.Reply">
+        <item name="android:background">@drawable/bg_item_reply</item>
+    </style>
+
+</resources>

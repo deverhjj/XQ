@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.biu.modulebase.binfenjiari.widget.RefreshRecyclerView
+    android:id="@+id/rrv_refresh_recycleview"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"/>
+

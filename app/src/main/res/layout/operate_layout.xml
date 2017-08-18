@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+              android:id="@+id/operate_layout"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="@dimen/height_48dp"
+              android:layout_alignParentBottom="true"
+              android:background="@color/app_color_foreground"
+              android:orientation="horizontal"
+              android:elevation="@dimen/elevation_10dp"
+              tools:targetApi="lollipop">
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/share"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:drawableLeft="@drawable/ic_menu_send"
+            android:drawablePadding="@dimen/view_margin_4dp"
+            android:gravity="center"
+            android:minWidth="40dp"
+            android:text="0"
+            android:textColor="@color/app_text_color_primary"
+            android:textSize="10sp"/>
+    </FrameLayout>
+
+    <View
+        android:layout_width="@dimen/width_0.5dp"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:background="@color/grey_light"/>
+
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/comment"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:drawableLeft="@drawable/ic_menu_send"
+            android:drawablePadding="@dimen/view_margin_4dp"
+            android:gravity="center"
+            android:minWidth="40dp"
+            android:text="0"
+            android:textColor="@color/app_text_color_primary"
+            android:textSize="10sp"/>
+    </FrameLayout>
+
+    <View
+        android:layout_width="@dimen/width_0.5dp"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:background="@color/grey_light"/>
+
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <CheckBox
+            android:id="@+id/good"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:button="@drawable/ic_menu_send"
+            android:drawablePadding="@dimen/view_margin_4dp"
+            android:gravity="center"
+            android:minWidth="40dp"
+            android:text="0"
+            android:textColor="@color/app_text_color_primary"
+            android:textSize="10sp"/>
+
+    </FrameLayout>
+
+</LinearLayout>

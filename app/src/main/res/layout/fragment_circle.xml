@@ -1,0 +1,527 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.biu.modulebase.binfenjiari.widget.swiperefreshlayout.LSwipeRefreshLayout
+        android:id="@+id/swipe"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--<FrameLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent">-->
+
+            <android.support.v4.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:id="@+id/main"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <FrameLayout
+                        android:id="@+id/layout_my_circle"
+                        style="@style/Ripple.Item.Foreground2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="@dimen/view_margin_10dp"
+                        android:paddingLeft="@dimen/view_margin_10dp"
+                        android:paddingRight="@dimen/view_margin_16dp"
+                        android:paddingTop="@dimen/view_margin_10dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <!--<ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_menu_camera"/>-->
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/margin_left_8dp"
+                                android:text="我的圈子"/>
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/more"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right|center_vertical"
+                            android:background="@null"
+                            android:src="@mipmap/arrow_right"/>
+
+                    </FrameLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layout_circle_my"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/app_color_foreground"
+                        android:elevation="@dimen/elevation_list_item"
+                        android:orientation="vertical"
+                        tools:targetApi="lollipop">
+                    </LinearLayout>
+
+                    <FrameLayout
+                        android:id="@+id/layout_circle_none"
+                        style="@style/Ripple.Item.Foreground"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_100dp"
+                        tools:targetApi="lollipop">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:drawableLeft="@mipmap/sq_zw"
+                            android:drawablePadding="@dimen/padding_8dp"
+                            android:gravity="center"
+                            android:text="点击快速添加圈子"
+                            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"/>
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="@dimen/view_margin_10dp"
+                        android:paddingLeft="@dimen/view_margin_10dp"
+                        android:paddingRight="@dimen/view_margin_16dp"
+                        android:paddingTop="@dimen/view_margin_10dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                         <!--   <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_menu_manage"/>-->
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/margin_left_8dp"
+                                android:text="推荐"/>
+                        </LinearLayout>
+
+                        <!--<ImageView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_gravity="right|center_vertical"-->
+                        <!--android:background="@null"-->
+                        <!--android:src="@drawable/arrow_right"/>-->
+
+                    </FrameLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layout_circle_recommend"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/app_color_foreground"
+                        android:elevation="@dimen/elevation_list_item"
+                        android:orientation="vertical"
+                        tools:targetApi="lollipop">
+
+                        <FrameLayout
+                            android:id="@+id/layout_circle_recommend_1"
+                            style="@style/Ripple.Item.Foreground"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="@dimen/padding_16dp"
+                            android:paddingRight="@dimen/padding_16dp"
+                            android:paddingBottom="@dimen/view_margin_8dp"
+                            android:paddingTop="@dimen/view_margin_8dp">
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:layout_marginRight="@dimen/view_margin_4dp"
+                                android:layout_toLeftOf="@+id/btn_join1"
+                                android:orientation="horizontal">
+
+                                <com.biu.modulebase.binfenjiari.widget.CircleImageView
+                                    android:layout_width="@dimen/width_50dp"
+                                    android:layout_height="@dimen/width_50dp"
+                                    android:src="@mipmap/circle_pic"/>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/margin_left_16dp"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="sssss"
+                                        android:textSize="15sp"/>
+
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:paddingBottom="@dimen/padding_bottom_3dp"
+                                        android:paddingTop="@dimen/padding_top_3dp"
+                                        android:text="dfdfgdfgd"
+                                        android:singleLine="true"
+                                        android:textColor="@color/app_text_color_secondary"
+                                        android:textSize="12sp"
+                                        android:textStyle="normal"
+                                        android:typeface="monospace"/>
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+
+                                        android:gravity="center_vertical"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:gravity="center"
+                                            android:drawableLeft="@mipmap/sq_rs"
+                                            android:drawablePadding="@dimen/padding_3dp"
+                                            android:text="3442人"
+                                            android:textColor="@color/colorOrange"
+                                            android:textSize="10sp"/>
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:gravity="center"
+                                            android:layout_marginLeft="@dimen/margin_left_16dp"
+                                            android:drawableLeft="@mipmap/sq_tz"
+                                            android:drawablePadding="@dimen/padding_3dp"
+                                            android:text="3424条"
+                                            android:textColor="@color/colorOrange"
+                                            android:textSize="10sp"/>
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <!--@drawable/selector_btn_outline_orange !-->
+                            <CheckBox
+                                android:id="@+id/btn_join1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right|center_vertical"
+                                android:background="@drawable/selector_btn_outline_orange"
+                                android:button="@null"
+                                android:checked="true"
+                                android:gravity="center"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:paddingBottom="@dimen/view_margin_4dp"
+                                android:paddingLeft="@dimen/view_margin_12dp"
+                                android:paddingRight="@dimen/view_margin_12dp"
+                                android:paddingTop="@dimen/view_margin_4dp"
+                                android:text="加入"
+                                android:textColor="@color/colorAccent" />
+                        </RelativeLayout>
+                        </FrameLayout>
+
+                        <include
+                            layout="@layout/item_divider_gray"/>
+
+                        <FrameLayout
+                            android:id="@+id/layout_circle_recommend_2"
+                            style="@style/Ripple.Item.Foreground"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="@dimen/padding_16dp"
+                            android:paddingRight="@dimen/padding_16dp"
+                            android:paddingBottom="@dimen/view_margin_8dp"
+                            android:paddingTop="@dimen/view_margin_8dp">
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+
+                                android:layout_toLeftOf="@+id/btn_join2"
+                                android:orientation="horizontal">
+
+                                <com.biu.modulebase.binfenjiari.widget.CircleImageView
+                                    android:layout_width="@dimen/width_50dp"
+                                    android:layout_height="@dimen/width_50dp"
+                                    android:src="@mipmap/circle_pic"/>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/margin_left_16dp"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="asdasdasda"
+                                        android:textSize="15sp"/>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:paddingBottom="@dimen/padding_bottom_3dp"
+                                        android:paddingTop="@dimen/padding_top_3dp"
+                                        android:text="asdasdasasdasdasdasdasdasdasdasdasdasdasdasddasd"
+                                        android:singleLine="true"
+                                        android:textColor="@color/app_text_color_secondary"
+                                        android:textSize="12sp"
+                                        android:textStyle="normal"
+                                        android:typeface="monospace"/>
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center_vertical"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:gravity="center"
+                                            android:drawableLeft="@mipmap/sq_rs"
+                                            android:drawablePadding="@dimen/padding_3dp"
+                                            android:text="3442人"
+                                            android:textColor="@color/colorOrange"
+                                            android:textSize="10sp"/>
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:gravity="center"
+                                            android:layout_marginLeft="@dimen/margin_left_16dp"
+                                            android:drawableLeft="@mipmap/sq_tz"
+                                            android:drawablePadding="@dimen/padding_3dp"
+                                            android:text="3424条"
+                                            android:textColor="@color/colorOrange"
+                                            android:textSize="10sp"/>
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/btn_join2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right|center_vertical"
+                                android:gravity="center"
+                                android:background="@drawable/selector_btn_outline_orange"
+                                android:paddingBottom="@dimen/view_margin_4dp"
+                                android:paddingLeft="@dimen/view_margin_12dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:paddingRight="@dimen/view_margin_12dp"
+                                android:paddingTop="@dimen/view_margin_4dp"
+                                android:text="加入"
+                                android:textColor="@color/colorOrange"/>
+                            </RelativeLayout>
+                        </FrameLayout>
+
+                    </LinearLayout>
+
+                    <include
+                        layout="@layout/item_divider_gray"/>
+
+                    <FrameLayout
+                        android:id="@+id/btn_all_group"
+                        style="@style/Ripple.Item.Foreground"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="@dimen/padding_bottom_8dp"
+                        android:paddingLeft="@dimen/padding_left_16dp"
+                        android:paddingRight="@dimen/padding_right_16dp"
+                        android:paddingTop="@dimen/padding_top_8dp"
+                        tools:targetApi="lollipop">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="@dimen/width_48dp"
+                                android:layout_height="@dimen/width_48dp"
+                                android:src="@mipmap/sq_qunzi" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/margin_left_8dp"
+                                android:text="更多圈子"
+                                android:textSize="@dimen/text_size_16" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right|center_vertical"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@mipmap/arrow_right" />
+
+
+                        </LinearLayout>
+
+                    </FrameLayout>
+
+                    <include
+                        layout="@layout/item_divider_gray"/>
+
+                    <FrameLayout
+                        android:id="@+id/layout_circle_comm"
+                        style="@style/Ripple.Item.Foreground"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="@dimen/padding_bottom_8dp"
+                        android:paddingLeft="@dimen/padding_left_16dp"
+                        android:paddingRight="@dimen/padding_right_16dp"
+                        android:paddingTop="@dimen/padding_top_8dp"
+                        tools:targetApi="lollipop">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <com.biu.modulebase.binfenjiari.widget.CircleImageView
+                                android:layout_width="@dimen/width_48dp"
+                                android:layout_height="@dimen/width_48dp"
+                                android:src="@mipmap/sq_jl" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/margin_left_8dp"
+                                android:text="交流"
+                                android:textSize="@dimen/text_size_16" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right|center_vertical"
+                            android:gravity="center">
+
+                            <FrameLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="@dimen/view_margin_8dp"
+                                android:visibility="gone">
+
+                                <com.biu.modulebase.binfenjiari.widget.CircleImageView
+                                    android:id="@+id/new_img"
+                                    android:layout_width="@dimen/width_48dp"
+                                    android:layout_height="@dimen/width_48dp"
+                                    android:src="@mipmap/header_pic" />
+
+                                <View
+                                    android:id="@+id/new_hint"
+                                    android:layout_width="6dip"
+                                    android:layout_height="6dip"
+                                    android:layout_gravity="right"
+                                    android:background="@drawable/red_circle_hint" />
+                            </FrameLayout>
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@mipmap/arrow_right" />
+
+
+                        </LinearLayout>
+
+                    </FrameLayout>
+
+
+
+
+                    <!--<Button-->
+                        <!--android:id="@+id/btn_all_group"-->
+                        <!--style="@style/Ripple.Button_Orange"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_margin="@dimen/padding_left_16dp"-->
+                        <!--android:text="发现更多话题"/>-->
+
+                    <!--<Button-->
+
+                        <!--style="@style/Ripple.Button_Orange"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_marginBottom="@dimen/margin_bottom_15dp"-->
+                        <!--android:layout_marginLeft="@dimen/padding_left_16dp"-->
+                        <!--android:layout_marginRight="@dimen/padding_right_16dp"-->
+                        <!--android:layout_marginTop="@dimen/margin_top_15dp"-->
+                        <!--android:text="发现更多话题"/>-->
+                    <!--<Button-->
+                        <!--style="@style/Ripple.Button_Orange"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_marginBottom="@dimen/margin_bottom_15dp"-->
+                        <!--android:layout_marginLeft="@dimen/padding_left_16dp"-->
+                        <!--android:layout_marginRight="@dimen/padding_right_16dp"-->
+                        <!--android:layout_marginTop="@dimen/margin_top_15dp"-->
+                        <!--android:text="发现更多话题"/>-->
+
+                    <!--<Button-->
+                        <!--style="@style/Ripple.Button_Orange"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_marginBottom="@dimen/margin_bottom_15dp"-->
+                        <!--android:layout_marginLeft="@dimen/padding_left_16dp"-->
+                        <!--android:layout_marginRight="@dimen/padding_right_16dp"-->
+                        <!--android:layout_marginTop="@dimen/margin_top_15dp"-->
+                        <!--android:text="发现更多话题"/>-->
+
+                </LinearLayout>
+
+                <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textAppearance="?android:attr/textAppearanceMedium"-->
+                <!--android:text="Group"-->
+                <!--android:id="@+id/textView2"-->
+                <!--android:layout_gravity="center_horizontal"/>-->
+
+            </android.support.v4.widget.NestedScrollView>
+
+        <!--</FrameLayout>-->
+
+    </com.biu.modulebase.binfenjiari.widget.swiperefreshlayout.LSwipeRefreshLayout>
+
+</FrameLayout>

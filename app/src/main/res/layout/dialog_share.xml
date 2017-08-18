@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/app_color_background"
+              android:orientation="vertical">
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/line1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/qq"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="手机QQ"
+                android:paddingTop="@dimen/padding_16dp"
+                android:paddingBottom="@dimen/padding_16dp"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:drawablePadding="@dimen/view_margin_8dp"
+                android:gravity="center"
+                android:textColor="@color/colorTextGray"
+                android:textSize="@dimen/text_size_12"
+                android:drawableTop="@mipmap/qq"/>
+
+            <TextView
+                android:id="@+id/weibo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:text="新浪微博"
+                android:drawablePadding="@dimen/view_margin_8dp"
+                android:gravity="center"
+                android:textColor="@color/colorTextGray"
+                android:textSize="@dimen/text_size_12"
+                android:drawableTop="@mipmap/weibo"/>
+
+            <TextView
+                android:id="@+id/weixin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="微信好友"
+                android:gravity="center"
+                android:drawablePadding="@dimen/view_margin_8dp"
+                android:textColor="@color/colorTextGray"
+                android:textSize="@dimen/text_size_12"
+                android:drawableTop="@mipmap/weixinhaoyou"/>
+
+            <TextView
+                android:id="@+id/weixinq"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:text="微信朋友圈"
+                android:gravity="center"
+                android:drawablePadding="@dimen/view_margin_8dp"
+                android:textColor="@color/colorTextGray"
+                android:textSize="@dimen/text_size_12"
+                android:drawableTop="@mipmap/weixinpengyouquan"/>
+
+            <TextView
+                android:id="@+id/qzone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="QQ空间"
+                android:drawablePadding="@dimen/view_margin_8dp"
+                android:gravity="center"
+                android:textSize="@dimen/text_size_12"
+                android:textColor="@color/colorTextGray"
+                android:drawableTop="@mipmap/qqkongjian"/>
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/view_margin_4dp"
+        android:background="@color/white"
+        android:scrollbars="none">
+
+            <LinearLayout
+                android:id="@+id/line2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/report"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="举报"
+                    android:paddingTop="@dimen/padding_16dp"
+                    android:paddingBottom="@dimen/padding_16dp"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:drawablePadding="@dimen/view_margin_8dp"
+                    android:gravity="center"
+                    android:textSize="@dimen/text_size_12"
+                    android:textColor="@color/colorTextGray"
+                    android:drawableTop="@mipmap/jubao"/>
+
+                <TextView
+                    android:id="@+id/delete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="删除"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:drawablePadding="@dimen/view_margin_8dp"
+                    android:gravity="center"
+                    android:textSize="@dimen/text_size_12"
+                    android:textColor="@color/colorTextGray"
+                    android:drawableTop="@mipmap/shanchu"
+                    android:visibility="gone"/>
+            </LinearLayout>
+        </HorizontalScrollView>
+
+    <Button
+        android:id="@+id/btn_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/view_margin_4dp"
+        android:textSize="@dimen/text_size_14"
+        android:background="@drawable/selector_more_pop_bottom"
+        android:text="取消"/>
+
+</LinearLayout>

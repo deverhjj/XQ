@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/view_margin_80dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingBottom="25dp">
+
+            <com.biu.modulebase.binfenjiari.widget.RoundCornerImageView
+                android:id="@+id/img_icon"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/logo_xiangqu_green"
+                app:corner="15dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img_icon"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/version"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/img_icon"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/view_margin_8dp"
+                    android:text="v1.0.0" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/view_margin_8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="热线：" />
+
+                    <TextView
+                        android:id="@+id/phone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:autoLink="phone"
+                        android:text="0519-81099719" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/copy_right"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="2dp"
+            android:layout_centerHorizontal="true"
+            android:padding="@dimen/margin_16dp"
+            android:text="享去是常州广大未成年人运用新媒体丰富假期生活,寓教于乐的载体,是拓宽未成年人视野的文化产品,整合全市场综合类,专业类,民营类未成年人社会实践基地,制作电子地图,实施分类指导,开展推广应用,把学生参与的活动情况,纳入中小学生社会实践课,形成有力导向,同时,现实社会实践的整体联动,为未成年人拓展校外德育天地"
+            android:textSize="@dimen/text_size_16" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,51 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion '25.0.3'
+    defaultConfig {
+        minSdkVersion 14
+        targetSdkVersion 22
+        versionCode 33
+        versionName "2.3.1"
+    }
+
+    buildTypes {
+        debug {
+            buildConfigField "boolean", "LOG_DEBUG", "true"
+            buildConfigField "String", "BASE_URL", "\"http://xq.cz001.com.cn:8080/\""
+//            buildConfigField "String","BASE_URL","\"http://self.biubiulife.com/\""
+//            buildConfigField "String","BASE_URL","\"http://192.168.1.42:8080/\""
+        }
+        release {
+            //显示log
+            buildConfigField "boolean", "LOG_DEBUG", "false"
+            buildConfigField "String", "BASE_URL", "\"http://xq.cz001.com.cn:8080/\""
+//                buildConfigField "String","BASE_URL","\"http://112.74.219.38:8080/\""
+//            buildConfigField "String","BASE_URL","\"http://a1182830044.vicp.cc/\""
+        }
+    }
+}
+
+def retrofitVersion = '2.2.0'
+dependencies {
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    compile 'com.android.support:multidex:1.0.1'
+    compile 'com.android.support:design:25.3.1'
+    compile 'com.android.support:cardview-v7:25.3.1'
+    compile 'org.greenrobot:eventbus:3.0.0'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile project(':map')
+    compile project(':PushSDK')
+    compile project(':social_sdk_library_project')
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile "com.squareup.retrofit2:retrofit:$retrofitVersion"
+    compile "com.squareup.retrofit2:converter-gson:$retrofitVersion"
+    compile "com.squareup.retrofit2:adapter-rxjava2:$retrofitVersion"
+//    compile "com.squareup.retrofit2:adapter-rxjava:$retrofitVersion"
+    compile 'io.reactivex.rxjava2:rxjava:2.0.8'
+//    compile 'io.reactivex:rxjava:1.3.0'
+    compile 'io.reactivex.rxjava2:rxandroid:2.0.1'
+//    compile 'io.reactivex:rxandroid:1.2.1'
+    testCompile 'junit:junit:4.12'
+}

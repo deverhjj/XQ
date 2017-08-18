@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.github.huajianjiang.alphaslidebar.SimpleSearchView
+    android:id="@+id/searchView"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_weight="1"
+    android:background="@drawable/rr_white_corner"
+    android:drawableLeft="@mipmap/icon_toolbar_search"
+    android:drawablePadding="4dp"
+    android:drawableRight="@drawable/ic_clear"
+    android:imeOptions="actionSearch"
+    android:maxLines="1"
+    android:minWidth="256dp"
+    android:paddingBottom="4dp"
+    android:paddingLeft="4dp"
+    android:paddingRight="4dp"
+    android:paddingTop="4dp"
+    android:singleLine="true"
+    android:textSize="@dimen/txt_secondary"
+    tools:hint="search something"
+    tools:text="AAAAAAAAAAAAAAAAAA"/>
+

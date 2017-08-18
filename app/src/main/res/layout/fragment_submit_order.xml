@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="80dp"
+                android:text="学校："/>
+
+            <EditText
+                android:id="@+id/schoolEdit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:singleLine="true"
+                android:textSize="@dimen/text_size_14"
+                android:gravity="center_vertical"
+                android:textColor="@color/colorTextGray"/>
+        </LinearLayout>
+
+        <include layout="@layout/divider_h"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="80dp"
+                android:text="班级："/>
+
+            <EditText
+                android:id="@+id/gradeEdit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/text_size_14"
+                android:singleLine="true"
+                android:background="@null"
+                android:textColor="@color/colorTextGray"/>
+        </LinearLayout>
+
+        <include layout="@layout/divider_h"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="80dp"
+                android:text="姓名："/>
+
+            <EditText
+                android:id="@+id/nameEdit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:textSize="@dimen/text_size_14"
+                android:textColor="@color/colorTextGray"/>
+        </LinearLayout>
+
+
+        <include layout="@layout/divider_h"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="80dp"
+                android:text="手机号码："/>
+
+            <EditText
+                android:id="@+id/phoneEdit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:textColorHint="@color/colorTextHintGray"
+                android:hint="(选填)"
+                android:inputType="number"
+                android:textSize="@dimen/text_size_14"
+                android:singleLine="true"
+                android:textColor="@color/colorTextGray"/>
+        </LinearLayout>
+
+        <include layout="@layout/divider_h"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:minWidth="60dp"
+                android:gravity="center_vertical"
+                android:text="备注："/>
+
+            <EditText
+                android:id="@+id/remarkEdit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:layout_marginTop="@dimen/view_margin_8dp"
+                android:layout_marginBottom="@dimen/view_margin_8dp"
+                android:inputType="text"
+                android:gravity="top|left"
+                android:textSize="@dimen/text_size_14"
+                android:padding="@dimen/view_margin_10dp"
+                android:textColorHint="@color/colorTextHintGray"
+                android:hint="(选填)"
+                android:textColor="@color/colorTextGray"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/money_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/view_margin_10dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/chengren"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:minHeight="48dp"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="60dp"
+                    android:gravity="center_vertical"
+                    android:text="成人"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true">
+
+                    <ImageButton
+                        android:id="@+id/chengren_minus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/minus_btn" />
+
+                    <EditText
+                        android:id="@+id/chengren_num"
+                        android:layout_width="48dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="@mipmap/people_edit_bg"
+                        android:gravity="center"
+                        android:inputType="numberDecimal"
+                        android:maxEms="7"
+                        android:text="0"
+                        android:textColor="@color/colorTextGray"
+                        android:textSize="@dimen/text_size_16" />
+
+                    <ImageButton
+                        android:id="@+id/chengren_plus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/plus_btn" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/chengren_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/colorRed2"
+                    android:text="¥0.00"
+                    android:textSize="@dimen/text_size_16"/>
+
+            </RelativeLayout>
+            <include layout="@layout/divider_h"/>
+
+            <RelativeLayout
+                android:id="@+id/ertong"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:minHeight="48dp"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="60dp"
+                    android:gravity="center_vertical"
+                    android:text="儿童"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true">
+
+                    <ImageButton
+                        android:id="@+id/ertong_minus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:background="@drawable/minus_btn" />
+
+                    <EditText
+                        android:id="@+id/ertong_num"
+                        android:layout_width="48dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="@mipmap/people_edit_bg"
+                        android:gravity="center"
+                        android:inputType="numberDecimal"
+                        android:maxEms="7"
+                        android:text="0"
+                        android:textColor="@color/colorTextGray"
+                        android:textSize="@dimen/text_size_16" />
+
+                    <ImageButton
+                        android:id="@+id/ertong_plus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/plus_btn" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/ertong_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/colorRed2"
+                    android:text="¥0.00"
+                    android:textSize="@dimen/text_size_16"/>
+
+            </RelativeLayout>
+
+            <include layout="@layout/divider_h"/>
+            <RelativeLayout
+                android:id="@+id/tuanti"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:minHeight="48dp"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="48dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="团体"/>
+
+                    <ImageView
+                        android:id="@+id/hint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/view_margin_8dp"
+                        android:src="@mipmap/hint"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true">
+
+                    <ImageButton
+                        android:id="@+id/tuanti_minus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/minus_btn" />
+
+                    <EditText
+                        android:id="@+id/tuanti_num"
+                        android:layout_width="48dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="@mipmap/people_edit_bg"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:maxEms="7"
+                        android:text="0"
+                        android:textColor="@color/colorTextGray"
+                        android:textSize="@dimen/text_size_16" />
+
+                    <ImageButton
+                        android:id="@+id/tuanti_plus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/plus_btn" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tuanti_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/colorRed2"
+                    android:text="¥0.00"
+                    android:textSize="@dimen/text_size_16"/>
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:background="@color/white"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="right"
+            android:layout_weight="5">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingRight="@dimen/view_margin_8dp"
+                android:text="待支付："/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textColor="@color/colorRed1"
+                android:paddingRight="@dimen/view_margin_8dp"
+                android:textSize="@dimen/text_size_16"
+                android:text="¥0.00"
+                android:id="@+id/totlaMoney" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/submit"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:textSize="@dimen/text_size_16"
+            android:background="@color/colorAccent"
+            android:textColor="@color/white"
+            android:text="提交订单"/>
+
+    </LinearLayout>
+</RelativeLayout>

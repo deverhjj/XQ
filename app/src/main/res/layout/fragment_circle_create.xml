@@ -1,0 +1,125 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/padding_top_10dp">
+
+    <RelativeLayout
+        android:id="@+id/layout_select_head_portrait"
+        style="@style/Ripple.Item.Foreground2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        tools:targetApi="lollipop">
+
+        <com.biu.modulebase.binfenjiari.widget.CircleImageView
+            android:id="@+id/iv_head_portrait"
+            android:layout_width="@dimen/width_80dp"
+            android:layout_height="@dimen/width_80dp"
+            android:src="@mipmap/circle_pic" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/iv_head_portrait"
+            android:layout_alignRight="@+id/iv_head_portrait"
+            android:src="@mipmap/qz_tp" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/view_margin_10dp"
+        android:text="请上传论坛头像"
+        android:textColor="@color/app_text_color_primary"
+        android:textSize="@dimen/text_size_12" />
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionbar_height"
+        android:layout_marginLeft="@dimen/view_margin_10dp"
+        android:layout_marginRight="@dimen/view_margin_10dp"
+        android:background="@drawable/selector_rr_foreground_5_rest"
+        android:gravity="center_vertical"
+        android:hint="圈子名称(2~14个字符)"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:textColor="@color/app_text_color_primary"
+        android:textColorHint="@color/app_text_color_secondary"
+        android:textSize="@dimen/text_size_16" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/view_margin_10dp"
+        android:background="@drawable/selector_rr_foreground_5_rest">
+
+        <EditText
+            android:id="@+id/et_subject"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_160dp"
+            android:background="@drawable/selector_rr_foreground_5_rest"
+            android:gravity="top"
+            android:hint="简介(140个字符以内)"
+            android:lineSpacingMultiplier="1.2"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_horizontal_margin"
+            android:textColor="@color/app_text_color_primary"
+            android:textColorHint="@color/app_text_color_secondary"
+            android:textSize="@dimen/text_size_14" />
+
+        <TextView
+            android:id="@+id/extra_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/et_subject"
+            android:layout_alignRight="@+id/et_subject"
+            android:layout_marginBottom="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:text="140"
+            android:textColor="@color/app_text_color_secondary"
+            android:textSize="@dimen/text_size_12" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_type_choice"
+        style="@style/Ripple.Item.Background"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionbar_height"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="选择栏目"
+            android:textColor="@color/app_text_color_primary"
+            android:textSize="@dimen/text_size_14" />
+
+        <TextView
+            android:id="@+id/type_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:drawablePadding="@dimen/padding_8dp"
+            android:drawableRight="@mipmap/arrow_right"
+            android:text="天文器材"
+            android:textColor="@color/app_text_color_primary"
+            android:textSize="@dimen/text_size_14" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/view_margin_10dp"
+        android:text="我们将在3个工作日之内通过审核"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/text_size_14" />
+
+
+</LinearLayout>

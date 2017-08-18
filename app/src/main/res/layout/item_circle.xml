@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Ripple.Item.Foreground"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/padding_left_16dp"
+        android:paddingRight="@dimen/padding_right_16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/view_margin_8dp"
+            android:paddingTop="@dimen/view_margin_8dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <com.biu.modulebase.binfenjiari.widget.RoundCornerImageView
+                    android:id="@+id/iv_circle_head_portrait"
+                    android:layout_width="@dimen/width_80dp"
+                    android:layout_height="@dimen/width_80dp"
+                    android:src="@mipmap/common_pic" />
+
+                <!--    <TextView
+                        android:id="@+id/tv_circle_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_top_3dp"
+                        android:text="3442人"
+                        android:textColor="@color/colorOrange"
+                        android:textSize="10sp"/>-->
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/width_80dp"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/padding_left_8dp">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="3dp">
+
+                    <TextView
+                        android:id="@+id/tv_circle_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        android:paddingRight="85dp"
+                        android:text="三井小学吧三井小学吧三井小学吧三井小学吧"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/btn_circle_join"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center_vertical"
+                        android:background="@drawable/selector_btn_outline_orange"
+                        android:paddingBottom="@dimen/view_margin_4dp"
+                        android:paddingLeft="@dimen/view_margin_16dp"
+                        android:paddingRight="@dimen/view_margin_16dp"
+                        android:paddingTop="@dimen/view_margin_4dp"
+                        android:text="加入"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/text_size_12" />
+
+                </FrameLayout>
+
+
+                <TextView
+                    android:id="@+id/tv_circle_subject"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:lineSpacingMultiplier="1.4"
+                    android:maxLines="2"
+                    android:paddingBottom="@dimen/padding_bottom_8dp"
+                    android:paddingTop="@dimen/padding_top_8dp"
+                    android:text="各式各样的活动都在这里呦各式各样的活动都在这里呦各式各样的活动都各式各样的活动都在这里呦各式各样的活动都在这里呦各式各样的活动都在这里呦在这里呦各式各样的活动都在这里呦各式各样的活动都在这里呦"
+                    android:textColor="@color/app_text_color_secondary"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--   <include
+               layout="@layout/item_divider_gray"/>-->
+
+    </LinearLayout>
+
+</FrameLayout>

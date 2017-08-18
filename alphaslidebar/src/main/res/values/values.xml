@@ -1,0 +1,5 @@
+<resources>
+    <declare-styleable name="ExpandableTextView">
+        <attr name="animEnable" format="boolean"/>
+    </declare-styleable>
+</resources>

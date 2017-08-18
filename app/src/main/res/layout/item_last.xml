@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/padding_top_10dp">
+
+    <TextView
+        android:id="@+id/vote"
+        style="@style/Ripple.Button_Brown"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_50dp"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:gravity="center"
+        android:text="我要投票"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/watch"
+        style="@style/Ripple.Reply_White"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_50dp"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/height_8dp"
+        android:gravity="center"
+        android:text="查看排行榜"
+        android:textColor="@color/colorTextBlack"
+        android:textSize="18sp" />
+
+    <View
+        android:layout_width="@dimen/height_1dp"
+        android:layout_height="@dimen/height_10dp" />
+</LinearLayout>

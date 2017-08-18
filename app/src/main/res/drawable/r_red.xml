@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval"
+    android:useLevel="false"
+    android:innerRadius="@dimen/view_margin_4dp"
+    android:innerRadiusRatio="@integer/default_circle_indicator_orientation">
+
+    <corners android:radius="10dp"/>
+
+    <solid android:color="#f74c31" />
+
+</shape>

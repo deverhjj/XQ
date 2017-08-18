@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="186dp"
+        android:background="@color/app_color_foreground"
+        android:gravity="start"
+        android:hint="请勿发布违规的内容，否则会被删除或禁言的喔~（500个字符以内)"
+        android:padding="8dp"/>
+
+    <TextView
+        android:id="@+id/count"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/app_color_foreground"
+        android:gravity="end"
+        android:paddingRight="16dp"
+        android:text="9/500"
+        android:textColor="@color/textColorSecondary"
+        android:textSize="@dimen/txt_third"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@color/app_color_foreground"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="8dp"
+            android:text="上传文件"/>
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <com.github.huajianjiang.expandablerecyclerview.widget.PatchedRecyclerView
+                    android:id="@+id/fileList"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layoutManager="@string/linearLayoutManager"
+                    app:nestedScrollingEnabled="false"
+                    app:orientation="horizontal"/>
+
+                <ImageView
+                    android:id="@+id/add"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:src="@mipmap/ic_add_image"/>
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="8dp"
+            android:text="可上传文件，大小不超过 500M"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/txt_third"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/typeChoice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bg_ripple"
+        android:clickable="true"
+        android:drawableRight="@drawable/com_facebook_close"
+        android:gravity="center_vertical"
+        android:paddingBottom="8dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="8dp"
+        android:text="选择发布类型"/>
+
+</LinearLayout>

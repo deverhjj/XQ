@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheckBox
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/radioBtn"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:background="@color/app_color_background"
+    android:paddingTop="@dimen/view_margin_8dp"
+    android:paddingBottom="@dimen/view_margin_8dp"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:button="@null"
+    android:textSize="@dimen/text_size_16"
+    android:text="我是最帅的"
+    android:drawableRight="@drawable/selector_check_vote2"/>

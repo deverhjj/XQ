@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_reply"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:background="@drawable/bg_comment"
+    android:elevation="@dimen/elevation_10dp"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    app:layout_behavior="com.biu.modulebase.binfenjiari.widget.QuickReturnFooterBehavior"
+    tools:targetApi="lollipop"
+    android:clickable="true">
+
+    <include
+        layout="@layout/divider_toolbar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/padding_left_5dp"
+        android:paddingRight="@dimen/padding_right_5dp"
+        android:paddingTop="@dimen/padding_top_3dp"
+        android:paddingBottom="@dimen/padding_bottom_3dp"
+        android:orientation="horizontal">
+
+        <com.biu.modulebase.binfenjiari.widget.AutoClearEditText
+            android:id="@+id/et_comment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/view_margin_8dp"
+            android:layout_marginRight="@dimen/view_margin_8dp"
+            android:cursorVisible="true"
+            android:gravity="center_vertical"
+            android:hint="@string/hint_comment"
+            android:background="@drawable/bg_write_comment"
+            android:imeOptions="actionSend"
+            android:maxEms="11"
+            android:maxHeight="80dp"
+            android:maxLength="150"
+            android:minHeight="50dp"
+            android:lineSpacingMultiplier="1.1"
+            android:paddingBottom="@dimen/padding_bottom_5dp"
+            android:paddingLeft="@dimen/view_margin_8dp"
+            android:paddingRight="9dp"
+            android:paddingTop="@dimen/padding_top_5dp"
+            android:singleLine="false"
+            android:textColor="@color/app_text_color_primary"
+            android:textColorHint="@color/app_text_color_secondary"
+            android:textSize="@dimen/text_size_16"/>
+
+        <Button
+            android:id="@+id/btn_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/view_margin_8dp"
+            android:background="@drawable/selector_rr_orange_5_rest"
+            android:enabled="false"
+            android:gravity="center"
+            android:minHeight="30dp"
+            android:minWidth="60dp"
+            android:paddingBottom="@dimen/view_margin_8dp"
+            android:paddingLeft="@dimen/view_margin_10dp"
+            android:paddingRight="@dimen/view_margin_10dp"
+            android:paddingTop="@dimen/view_margin_8dp"
+            android:text="发送"
+            android:textColor="@color/white_dark"
+            android:textSize="@dimen/text_size_16"/>
+
+    </LinearLayout>
+
+</LinearLayout>

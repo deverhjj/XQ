@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/layout_comment_child"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/app_color_foreground"
+              android:clickable="true"
+              android:orientation="vertical"
+              android:paddingLeft="69dp"
+              android:paddingRight="@dimen/padding_right_16dp">
+
+    <View
+        android:id="@+id/indicator"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@drawable/bg_reply"/>
+
+    <TextView
+        style="@style/Ripple.Item.Background.Reply"
+        android:id="@+id/tv_comment_child"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lineSpacingMultiplier="1.1"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"
+        android:paddingBottom="@dimen/padding_bottom_3dp"
+        android:text="江某某 回复 秋某某:什么钱夺得事社会分工"
+        android:textColor="@color/app_text_color_secondary"
+        android:textSize="12sp"/>
+
+
+</LinearLayout>

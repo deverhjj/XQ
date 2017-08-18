@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/view_margin_8dp">
+
+    <RelativeLayout
+    android:id="@+id/transfer_circle"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selector_more_pop_top">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:paddingBottom="@dimen/view_margin_16dp"
+        android:paddingTop="@dimen/view_margin_16dp"
+        android:text="转让圈子"
+        android:textColor="@color/app_text_color_primary"
+        android:textSize="@dimen/text_size_14" />
+
+</RelativeLayout>
+
+    <include layout="@layout/item_divider_gray" />
+
+    <RelativeLayout
+        android:id="@+id/set_manage"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_more_pop_middle2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:paddingBottom="@dimen/view_margin_16dp"
+            android:paddingTop="@dimen/view_margin_16dp"
+            android:text="设置管理员"
+            android:textColor="@color/app_text_color_primary"
+            android:textSize="@dimen/text_size_14" />
+
+    </RelativeLayout>
+
+    <include layout="@layout/item_divider_gray" />
+
+    <RelativeLayout
+        android:id="@+id/cancle_manage"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_more_pop_middle2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:paddingBottom="@dimen/view_margin_16dp"
+            android:paddingTop="@dimen/view_margin_16dp"
+            android:text="取消管理员"
+            android:textColor="@color/app_text_color_primary"
+            android:textSize="@dimen/text_size_14" />
+
+    </RelativeLayout>
+
+    <include layout="@layout/item_divider_gray" />
+
+    <RelativeLayout
+        android:id="@+id/delete_memeber"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_more_pop_middle2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:paddingBottom="@dimen/view_margin_16dp"
+            android:paddingTop="@dimen/view_margin_16dp"
+            android:text="删除圈子成员"
+            android:textColor="@color/app_text_color_primary"
+            android:textSize="@dimen/text_size_14" />
+
+    </RelativeLayout>
+
+    <include layout="@layout/item_divider_gray" />
+
+    <RelativeLayout
+        android:id="@+id/not_allow_join"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_more_pop_middle">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:paddingBottom="@dimen/view_margin_16dp"
+            android:paddingTop="@dimen/view_margin_16dp"
+            android:text="不允许再次加入"
+            android:textColor="@color/app_text_color_primary"
+            android:textSize="@dimen/text_size_14" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/cancle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/view_margin_8dp"
+        android:background="@drawable/selector_more_pop_bottom">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:paddingBottom="@dimen/view_margin_16dp"
+            android:paddingTop="@dimen/view_margin_16dp"
+            android:text="取消"
+            android:textColor="@color/app_text_color_primary"
+            android:textSize="@dimen/text_size_14" />
+    </RelativeLayout>
+
+</LinearLayout>

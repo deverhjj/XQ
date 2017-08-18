@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@+id/loading_layout"
+             xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="@color/app_color_background"
+             android:focusable="true"
+             android:clickable="true"
+             android:visibility="gone">
+
+    <!--<ProgressBar
+            android:id="@+id/loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_centerVertical="true"
+            android:indeterminateBehavior="repeat"
+            android:indeterminateDrawable="@anim/custom_progress_draw"
+            android:indeterminateDuration="200"
+            android:indeterminateOnly="true" />-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="30dp"
+        android:orientation="vertical"
+        android:gravity="center">
+    <ImageView
+        android:id="@+id/loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/custom_progress_draw"/>
+        <!--        android:elevation="@dimen/elevation_card_rest"
+        android:background="@drawable/loading_bg"-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorTextGray"
+            android:text="稍安勿躁，看小绿荡会秋千..."/>
+
+    </LinearLayout>
+
+</FrameLayout>

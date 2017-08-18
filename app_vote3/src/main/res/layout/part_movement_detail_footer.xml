@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_footer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:background="@color/app_color_foreground"
+    android:elevation="@dimen/elevation_10dp"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <include layout="@layout/divider_toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_call"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawableLeft="@mipmap/hdxq_zx"
+                android:drawablePadding="@dimen/view_margin_4dp"
+                android:gravity="center"
+                android:text="咨询"
+                android:textSize="@dimen/text_size_12" />
+
+        </FrameLayout>
+
+        <include layout="@layout/item_divider_vertical" />
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_comment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawableLeft="@drawable/selector_comment"
+                android:drawablePadding="@dimen/view_margin_4dp"
+                android:gravity="center"
+                android:text="评论"
+                android:textSize="@dimen/text_size_12" />
+
+        </FrameLayout>
+
+        <include layout="@layout/item_divider_vertical" />
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:padding="@dimen/view_margin_4dp">
+
+            <com.biu.modulebase.binfenjiari.widget.MyCheckBox
+                android:id="@+id/collect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:button="@drawable/selector_good"
+                android:clickable="false"
+                android:padding="@dimen/view_margin_4dp"
+                android:text="收藏"
+                android:textSize="@dimen/text_size_12" />
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/sign_up"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorAccent"
+            android:gravity="center"
+            android:text="报名"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_14" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/media_controller"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:background="@color/dim_background_dark"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="@dimen/padding_3dp">
+
+
+    <TextView
+        android:id="@+id/tv_time_curr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:padding="@dimen/padding_3dp"
+        android:text="00:00"
+        android:textColor="@color/dim_foreground_dark"/>
+
+    <SeekBar
+        android:id="@+id/sb"
+        style="@style/SeekBar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:max="100"
+        android:progress="0"
+        android:secondaryProgress="0"/>
+
+    <TextView
+        android:id="@+id/tv_time_end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:padding="@dimen/padding_3dp"
+        android:text="00:00"
+        android:textColor="@color/dim_foreground_dark"/>
+
+    <ImageButton
+        android:id="@+id/fullScreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:src="@mipmap/ic_full_screen"
+        android:padding="@dimen/padding_8dp"/>
+
+</LinearLayout>

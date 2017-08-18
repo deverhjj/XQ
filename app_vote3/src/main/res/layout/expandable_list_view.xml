@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.biu.modulebase.binfenjiari.widget.swiperefreshlayout.LSwipeRefreshLayout
+    android:id="@+id/swipe"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.github.huajianjiang.expandablerecyclerview.widget.ExpandableRecyclerView
+        android:id="@+id/eRv"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layoutManager="@string/linearLayoutManager"
+        tools:listitem="@layout/item_general_comment_parent">
+
+    </com.github.huajianjiang.expandablerecyclerview.widget.ExpandableRecyclerView>
+
+</com.biu.modulebase.binfenjiari.widget.swiperefreshlayout.LSwipeRefreshLayout>

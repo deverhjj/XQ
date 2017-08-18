@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_top_8dp"
+        android:background="@drawable/selector_rr_foreground_5_rest"
+        android:gravity="start"
+        android:hint="标题（2~10个字符）"
+        android:maxLength="14"
+        android:padding="@dimen/padding_16dp"
+        android:paddingLeft="@dimen/margin_left_16dp"
+        android:paddingRight="@dimen/margin_right_16dp"
+        android:textColorHint="@color/app_text_color_primary"
+        android:textSize="@dimen/text_size_16" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:background="@color/app_color_foreground"
+        android:orientation="vertical"
+        android:padding="@dimen/margin_16dp">
+
+        <EditText
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:background="@null"
+            android:gravity="top|left"
+            android:hint="请勿发布违规的内容，否则会被删除或禁言的喔~（140个字符以内）"
+            android:lineSpacingMultiplier="1.1"
+            android:textSize="@dimen/text_size_14" />
+
+        <include
+            layout="@layout/fragment_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/rule"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/margin_16dp"
+        android:text="《发帖必读》"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/text_size_12" />
+
+</LinearLayout>

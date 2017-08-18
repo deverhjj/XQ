@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:orientation="vertical"
+             android:paddingLeft="@dimen/activity_horizontal_margin"
+             android:paddingRight="@dimen/activity_horizontal_margin"
+             android:paddingTop="@dimen/padding_top_16dp">
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="vertical">-->
+
+        <!--<ImageView-->
+            <!--android:layout_width="@dimen/width_100dp"-->
+            <!--android:layout_height="@dimen/height_100dp"-->
+            <!--android:layout_gravity="center_horizontal"-->
+            <!--android:layout_marginBottom="@dimen/margin_bottom_30dp"-->
+            <!--android:src="@drawable/login_logo"/>-->
+
+        <!--<include-->
+            <!--layout="@layout/edittext_account"/>-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:orientation="horizontal">-->
+
+            <!--<include-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="50dp"-->
+                <!--android:layout_weight="2"-->
+                <!--layout="@layout/edittext_verify_code"/>-->
+
+            <!--<Button-->
+                <!--android:id="@+id/btn_getVerifiCode"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="8dp"-->
+                <!--android:layout_weight="1"-->
+                <!--android:padding="@dimen/padding_8dp"-->
+                <!--android:background="@drawable/selector_rr_yellow_5_rest"-->
+                <!--android:text="@string/get_verifyCode"/>-->
+        <!--</LinearLayout>-->
+
+        <!--<include-->
+            <!--layout="@layout/edittext_pwd"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:layout_marginTop="10dp"/>-->
+
+        <!--<Button-->
+            <!--android:id="@+id/btn_register"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="20dp"-->
+            <!--style="@style/Ripple.Button_Red"-->
+            <!--android:text="@string/register"/>-->
+    <!--</LinearLayout>-->
+
+</FrameLayout>

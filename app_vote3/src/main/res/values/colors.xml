@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="app_foreground">#FFFFFF</color>
+    <color name="app_background">#f8f8f8</color>
+    <color name="colorControlHighlight">#3332B62F</color>
+
+    <!--字体颜色-->
+    <color name="textColorDark">#333333</color>
+    <color name="textColorNormal">#666666</color>
+    <color name="textColorHint">#999999</color>
+    <color name="EditTextColorHint">#bfbfbf</color>
+    <color name="textWhiteColorPrimary">#ffffff</color>
+    <color name="textColorPrimary">@color/md_grey_850</color>
+    <color name="textColorSecondary">@color/md_grey_600</color>
+
+    <!--分割线-->
+    <color name="dividerColor">#d7d7d7</color>
+    <color name="divider_gray">@color/md_grey_300</color>
+    <color name="dialog_bg_color">#efefef</color>
+    <color name="blue">#06c1bf</color>
+    <color name="white_dark">#EAEBE9</color>
+    <color name="tablebar_color">#06cebf</color>
+    <color name="text_orange">#ff7802</color>
+
+    <!-- Material Color 参考  -->
+    <color name="md_grey_900">#ff212121</color>
+    <color name="md_grey_850">#ff303030</color>
+    <color name="md_grey_800">#ff424242</color>
+    <color name="md_grey_600">#ff757575</color>
+    <color name="md_grey_300">#ffe0e0e0</color>
+    <color name="md_grey_100">#fff5f5f5</color>
+
+    <color name="md_deep_teal_100">#ffb2dfdb</color>
+    <color name="md_deep_teal_200">#ff80cbc4</color>
+    <color name="md_deep_teal_300">#ff4db6ac</color>
+    <color name="md_deep_teal_500">#ff009688</color>
+
+    <color name="md_blue_grey_800">#ff37474f</color>
+    <color name="md_blue_grey_900">#ff263238</color>
+    <color name="md_blue_grey_950">#ff21272b</color>
+
+</resources>

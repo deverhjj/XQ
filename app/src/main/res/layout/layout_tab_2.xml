@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.TabLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="horizontal"
+    app:tabPadding="@dimen/padding_8dp"
+    app:tabGravity="center"
+    app:tabTextAppearance="@style/TextAppearance.Tab"
+    app:tabSelectedTextColor="@color/colorPrimary_dark"
+    app:tabIndicatorColor="@color/colorPrimary_dark"
+    app:tabTextColor="@color/white"
+    app:tabIndicatorHeight="@dimen/height_3dp"
+    app:tabMode="scrollable">
+
+
+</android.support.design.widget.TabLayout>

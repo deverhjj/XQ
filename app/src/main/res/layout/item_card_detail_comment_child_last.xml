@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/layout_comment_child"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/app_color_foreground"
+              android:orientation="vertical"
+              android:paddingLeft="@dimen/padding_left_16dp"
+              android:paddingRight="@dimen/padding_right_16dp"
+              android:clickable="true">
+
+    <View
+        android:id="@+id/indicator"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_marginLeft="53dp"
+        android:background="@drawable/bg_reply"/>
+
+    <TextView
+        style="@style/Ripple.Item.Background.Reply"
+        android:id="@+id/tv_comment_child"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/padding_bottom_8dp"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"
+        android:layout_marginLeft="53dp"
+        android:lineSpacingMultiplier="1.1"
+        android:text="江某某 回复 秋某某:萨达萨达数据库的卡死卡卡卡的卡仕达"
+        android:textColor="@color/app_text_color_secondary"
+        android:textSize="12sp"/>
+
+    <TextView
+        android:id="@+id/tv_load_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginBottom="@dimen/margin_bottom_8dp"
+        android:text="更多评论"
+        android:textColor="@color/colorAccent"
+        style="@style/Ripple.Item.Background"
+        android:textSize="@dimen/text_size_14"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="53dp">
+
+        <include
+            layout="@layout/item_divider_gray"/>
+
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,336 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+
+        <item name="colorPrimary">@color/colorPrimaryDark</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="actionMenuTextColor">@color/white</item>
+        <item name="android:actionBarSize">@dimen/height_48dp</item>
+        <item name="android:windowBackground">@color/colorAppBackground</item>
+        <item name="android:editTextStyle">@style/Style.EditText</item>
+        <item name="android:textViewStyle">@style/Style.TextView</item>
+        <item name="android:autoCompleteTextViewStyle">
+            @style/Style.SearchView.AutoCompleteTextView
+        </item>
+        <item name="searchViewStyle">@style/Style.SearchView</item>
+        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+        <item name="alertDialogTheme">@style/AppCompatAlertDialogStyle</item>
+
+    </style>
+
+    <style name="AppTheme" parent="AppBaseTheme">
+
+    </style>
+
+
+    <style name="PopupWin" parent="@style/Widget.AppCompat.Light.ListPopupWindow">
+        <item name="android:popupAnimationStyle">@style/MyPopupAnim</item>
+    </style>
+
+    <style name="MyPopupAnim">
+        <item name="android:windowEnterAnimation">@anim/grow_fade_in</item>
+        <item name="android:windowExitAnimation">@anim/shrink_fade_out</item>
+    </style>
+
+    <style name="FullscreenTheme" parent="AppTheme">
+        <item name="android:actionBarStyle">@style/FullscreenActionBarStyle</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:windowBackground">@null</item>
+    </style>
+
+    <style name="FullscreenActionBarStyle" parent="Widget.AppCompat.ActionBar">
+        <item name="android:background">@color/colorPrimary</item>
+    </style>
+
+    <style name="DrawerArrowStyle" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="color">@color/colorTextBlack</item>
+    </style>
+
+    <style name="Style.SearchView" parent="Widget.AppCompat.SearchView">
+        <item name="queryBackground">@null</item>
+        <item name="submitBackground">@null</item>
+        <item name="searchIcon">@mipmap/search</item>
+        <item name="searchHintIcon">@mipmap/search</item>
+        <item name="goIcon">@mipmap/search</item>
+        <item name="commitIcon">@mipmap/search</item>
+        <item name="closeIcon">@mipmap/close1</item>
+        <item name="suggestionRowLayout">@null</item>
+    </style>
+
+    <style name="Style.SearchView.AutoCompleteTextView">
+        <item name="android:textColor">@color/colorTextGray</item>
+        <item name="android:textSize">@dimen/text_size_6</item>
+    </style>
+
+    <style name="CollapsingTextAppearance">
+        <item name="android:textSize">20sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="TextAppearance.Tab" parent="Base.TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/text_size_18</item>
+        <item name="android:textColor">@color/text_tab_orange2</item>
+    </style>
+    <style name="TextAppearance.Circle" parent="Base.TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/text_size_16</item>
+        <item name="android:textColor">@color/text_tab_circle</item>
+    </style>
+
+    <style name="Style.ToolBar" parent="Base.Widget.AppCompat.Toolbar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/height_48dp</item>
+        <item name="android:background">?attr/colorPrimary</item>
+        <item name="android:minHeight">@dimen/height_48dp</item>
+        <!--<item name="android:elevation" tools:targetApi="lollipop">@dimen/elevation_app_bar</item>-->
+        <item name="title">" "</item>
+        <item name="subtitle">" "</item>
+    </style>
+
+    <style name="Style.Toolbar.Title" parent="@android:style/Widget.TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textSize">@dimen/text_size_18</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textAppearance">@style/TextAppearance.Widget.AppCompat.Toolbar.Title
+        </item>
+    </style>
+
+    <style name="Style.Toolbar.Divider" parent="">
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:background">@color/colorDividerLight</item>
+    </style>
+
+    <style name="Style.TextView" parent="@android:style/Widget.TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/colorTextBlack</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textSize">@dimen/text_size_14</item>
+        <item name="android:textColorHint">@color/colorTextHintGray</item>
+        <item name="android:drawablePadding">@dimen/view_margin_4dp</item>
+
+    </style>
+
+    <style name="Style.EditText" parent="Base.Widget.AppCompat.EditText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@null</item>
+        <item name="android:textAppearance">@style/EditTextAppearance</item><!--没效果 ，在xml里具体实现-->
+        <item name="android:paddingLeft">@dimen/view_margin_8dp</item>
+        <item name="android:paddingRight">@dimen/view_margin_8dp</item>
+        <item name="android:gravity">top|left</item>
+        <item name="android:lineSpacingMultiplier">1.2</item>
+    </style>
+
+    <style name="EditTextAppearance" parent="Base.TextAppearance.AppCompat.Small">
+        <item name="android:textSize">@dimen/text_size_14</item>
+        <item name="android:textColor">@color/colorTextHintGray</item>
+    </style>
+
+    <style name="Base.Dialog" parent="Base.Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">@color/colorOrange</item>
+        <item name="android:textColorPrimary">@color/colorTextBlack</item>
+        <item name="android:textColor">@color/colorTextBlack</item>
+        <!-- the minWith that is the screen is portrait -->
+        <item name="android:windowMinWidthMinor">90%</item>
+        <!-- the minWith that is the screen is landscape -->
+        <item name="android:windowMinWidthMajor">65%</item>
+    </style>
+
+    <style name="AppCompatAlertDialogStyle" parent="Base.Dialog">
+        <item name="android:windowBackground">@color/transparent</item>
+    </style>
+
+    <style name="Base.Tab.Bottom" parent="Style.TextView">
+        <item name="android:textSize">@dimen/text_size_12</item>
+        <item name="android:textColor">@color/text_tab_orange</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:button">@null</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:drawablePadding">0dp</item>
+    </style>
+
+    <style name="main_tab_bottom" parent="Base.Tab.Bottom">
+
+    </style>
+
+    <!-- 自定义Dialog -->
+    <style name="CustomDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <!-- 边框 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">false</item>
+        <!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowBackground">@color/transparent</item>
+        <!-- 自己想要的背景 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- bg color -->
+        <item name="android:background">@color/white</item>
+    </style>
+    <!-- custom Wheeldialog -->
+    <style name="WheelDialog" parent="CustomDialog">
+        <item name="android:padding">0dp</item>
+        <item name="android:gravity">bottom</item>
+        <item name="android:background">@color/transparent</item>
+    </style>
+    <!-- 拍照Pop动画style -->
+    <style name="popwin_anim_style">
+        <item name="android:windowEnterAnimation">@anim/menushow</item>
+        <item name="android:windowExitAnimation">@anim/menuhide</item>
+    </style>
+
+    <style name="Theme.Dialog.Reply" parent="CustomDialog">
+        <item name="android:gravity">bottom</item>
+    </style>
+
+    <style name="popwin_anim">
+        <item name="android:windowEnterAnimation">@anim/dialog_enter</item>
+        <item name="android:windowExitAnimation">@anim/dialog_exit</item>
+    </style>
+    <!-- 屏幕中间弹出的dialog动画 -->
+    <style name="dialog_middle_anim_style">
+        <item name="android:windowEnterAnimation">@anim/dialog_show</item>
+        <item name="android:windowExitAnimation">@anim/dialog_hide</item>
+    </style>
+
+    <style name="Widget.ProgressBar.Vote" parent="@android:style/Widget.ProgressBar.Horizontal">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:progressDrawable">@drawable/progress_my</item>
+    </style>
+
+    <style name="Widget.ProgressBar.Vote.Image" parent="@android:style/Widget.ProgressBar.Horizontal">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:progressDrawable">@drawable/progress_vote_image</item>
+    </style>
+
+    <style name="Widget.ProgressBar.Vote.new" parent="@android:style/Widget.ProgressBar.Horizontal">
+        <item name="android:progressDrawable">@drawable/progress_vote_new</item>
+    </style>
+    <style name="Widget.ProgressBar.Vote.new.corner" parent="@android:style/Widget.ProgressBar.Horizontal">
+        <item name="android:progressDrawable">@drawable/progress_vote_new_corner</item>
+    </style>
+
+    <style name="RatingBar.Indicator" parent="Widget.AppCompat.RatingBar.Small">
+        <item name="android:numStars">5</item>
+        <item name="android:isIndicator">true</item>
+        <item name="android:stepSize">0.5</item>
+        <item name="android:max">100</item>
+    </style>
+
+    <style name="RatingBar.Indicator.Middle" parent="Widget.AppCompat.RatingBar.Indicator">
+        <item name="android:isIndicator">false</item>
+    </style>
+
+    <style name="Ripples"></style>
+
+    <style name="Ripple_Borderless">
+        <item name="android:background">@drawable/bg_item</item>
+    </style>
+
+    <style name="Ripple.Item">
+        <item name="android:background">@drawable/bg_item</item>
+    </style>
+
+    <!-- 背景水波纹效果-->
+    <style name="Ripple.Item.Background">
+        <item name="android:background">@drawable/bg_item</item>
+    </style>
+
+    <style name="Ripple.Item.Foreground">
+        <item name="android:foreground">@drawable/fg_item</item>
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <style name="Ripple.Item.Foreground2" parent="Ripple.Item.Foreground">
+        <item name="android:background">@color/app_color_background</item>
+    </style>
+
+    <style name="Ripple.Item.Background.Orange" parent="Ripple.Item.Background">
+        <item name="android:background">@drawable/clickable_item_bg_orange</item>
+    </style>
+
+    <style name="Ripple.Item.Nav" parent="Ripple.Item.Background.Orange">
+        <item name="android:background">@drawable/clickable_item_nav</item>
+    </style>
+
+    <style name="ColorfulButton">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_size_16</item>
+    </style>
+
+    <!-- 直角 -->
+    <style name="Ripple.Button_Brown_Right_Angle" parent="ColorfulButton">
+        <item name="android:background">@drawable/selector_rr_brown_5_rest_rightangle</item>
+    </style>
+
+    <style name="Ripple.Button_Brown" parent="ColorfulButton">
+        <item name="android:background">@drawable/selector_rr_brown_5_rest</item>
+    </style>
+    <style name="Ripple.Button_Brown2" parent="ColorfulButton">
+        <item name="android:background">@drawable/selector_rr_brown_5_rest2</item>
+    </style>
+    <style name="Ripple.Button_Orange" parent="ColorfulButton">
+        <item name="android:background">@drawable/selector_rr_orange_5_rest</item>
+    </style>
+    <style name="Ripple.Button_Orange2" parent="ColorfulButton">
+        <item name="android:background">@drawable/selector_rr_orange_5_rest2</item>
+    </style>
+
+    <style name="Ripple.Reply_White" parent="ColorfulButton">
+        <item name="android:background">@drawable/selector_rr_white_5_rest</item>
+    </style>
+    <style name="Ripple.Button_Violet" parent="ColorfulButton">
+        <item name ="android:background">@drawable/selector_rr_grey_5_rest</item>
+    </style>
+    <style name="Ripple_Borderless_White">
+        <item name="android:background">@drawable/item_background_ripple_white</item>
+    </style>
+    <!--<style name="Ripple.Button_Violet">-->
+    <!--<item name ="android:background">@drawable/selector_bg_btn_violet</item>-->
+    <!--</style>-->
+
+    <style name="SeekBar" parent="Widget.AppCompat.ProgressBar.Horizontal">
+        <item name="android:indeterminateOnly">false</item>
+        <!--<item name="android:progressDrawable">@drawable/abc_seekbar_track_material</item>-->
+        <!--<item name="android:indeterminateDrawable">@drawable/abc_seekbar_track_material</item>-->
+        <!--<item name="android:thumb">@drawable/abc_seekbar_thumb_material</item>-->
+        <item name="android:focusable">true</item>
+        <item name="android:paddingLeft">16dip</item>
+        <item name="android:paddingRight">16dip</item>
+        <item name="android:minHeight">16dip</item>
+        <item name="android:maxHeight">16dip</item>
+    </style>
+
+    <style name="ProgressBar" parent="Widget.AppCompat.ProgressBar">
+
+        <item name="android:indeterminateOnly">true</item>
+        <item name="android:indeterminate">true</item>
+        <!--<item name="android:progressDrawable">@drawable/progress_video_indetermate</item>-->
+        <!--<item name="android:indeterminateDrawable">@drawable/progress_video_indetermate</item>-->
+        <item name="android:minHeight">40dp</item>
+        <item name="android:maxHeight">40dp</item>
+
+    </style>
+
+    <style name="Ripple.Item.Background.Reply">
+        <item name="android:background">@drawable/bg_item_reply</item>
+    </style>
+
+    <style name="TabLayoutTextStyle_cur">
+        <item name="android:textSize">@dimen/text_size_16</item>
+    </style>
+
+</resources>

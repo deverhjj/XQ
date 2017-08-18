@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:tools="http://schemas.android.com/tools"
+             style="@style/Ripple.Item.Foreground"
+             xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             tools:targetApi="lollipop">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="16dp"
+        android:gravity="center_horizontal">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+            <com.biu.modulebase.binfenjiari.widget.RoundCornerImageView
+                android:id="@+id/banner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:adjustViewBounds="true"
+                android:src="@mipmap/banner_pic"/>
+
+            <ImageView
+                android:id="@+id/over"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/activity_over"
+                android:layout_gravity="center"
+                android:visibility="gone"/>
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_16"
+                android:textColor="@color/app_text_color_primary"
+                android:layout_gravity="left"
+                android:text="五号运河邀你玩泥巴"
+                android:id="@+id/title" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/view_margin_8dp"
+                android:paddingBottom="@dimen/view_margin_4dp"
+                android:gravity="left"
+                android:textSize="@dimen/text_size_14"
+                android:textColor="@color/app_text_color_secondary"
+                android:text="2015/3/6~2016/2/8"
+                android:id="@+id/time" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/view_margin_8dp"
+                android:gravity="left"
+                android:drawableLeft="@mipmap/hd_dz"
+                android:drawablePadding="@dimen/padding_8dp"
+                android:textSize="@dimen/text_size_14"
+                android:maxLength="18"
+                android:visibility="gone"
+                android:textColor="@color/app_text_color_secondary"
+                android:text="常州运河五号创意街区"
+                android:id="@+id/address" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:textSize="@dimen/text_size_14"
+                android:textColor="@color/app_text_color_secondary"
+                android:layout_marginBottom="@dimen/view_margin_4dp"
+                android:maxLength="20"
+                android:text="常州运河五号创意街区常州运河五号创意街区"
+                android:id="@+id/base" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/view_margin_8dp"
+                android:gravity="right"
+                android:textSize="@dimen/text_size_14"
+                android:textColor="@color/colorAccent"
+                android:text="报名人数：0/100"
+                android:id="@+id/join_num" />
+
+        </LinearLayout>
+
+
+        <include layout="@layout/part_action_list_item"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+</FrameLayout>

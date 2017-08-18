@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <include layout="@layout/item_av_video_detail"/>
+
+    <FrameLayout
+        android:id="@+id/layout_comment"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/layout_coordinator"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            layout="@layout/fragment_recyclerview_swiperefresh"/>
+
+        <include layout="@layout/part_action_footer_2"/>
+
+    </android.support.design.widget.CoordinatorLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

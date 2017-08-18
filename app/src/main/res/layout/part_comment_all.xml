@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_comment"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/margin_top_8dp"
+    android:paddingLeft="@dimen/padding_left_16dp"
+    android:paddingRight="@dimen/padding_right_16dp"
+    android:background="@color/app_color_foreground">
+
+    <TextView
+        android:id="@+id/tv_comment_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/padding_top_8dp"
+        android:paddingBottom="@dimen/padding_bottom_8dp"
+        android:text="评论 (0)"
+        android:textColor="@color/app_text_color_primary"
+        android:textSize="@dimen/text_size_14"/>
+
+    <include
+        layout="@layout/item_divider_gray"/>
+
+    <!--<ImageView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="right|center_vertical"-->
+        <!--android:src="@mipmap/arrow_right"/>-->
+
+</LinearLayout>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="none"
+    tools:showIn="@layout/fragment_event_detail">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/padding_left_16dp"
+        android:paddingRight="@dimen/padding_right_16dp"
+        android:paddingTop="@dimen/padding_top_8dp"
+        android:paddingBottom="@dimen/padding_bottom_8dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginRight="@dimen/margin_right_16dp"
+            android:orientation="vertical"
+            style="@style/Ripple_Borderless"
+            android:onClick="setV">
+
+            <com.biu.modulebase.binfenjiari.widget.MyView
+                android:layout_width="@dimen/width_80dp"
+                android:layout_height="@dimen/height_80dp"
+                android:src="@mipmap/ic_launcher"
+                android:text="650\n有趣"
+                android:gravity="center"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/expression_blind"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginRight="@dimen/margin_right_16dp"
+            android:orientation="vertical">
+
+            <com.biu.modulebase.binfenjiari.widget.MyView
+                android:layout_width="@dimen/width_80dp"
+                android:layout_height="@dimen/height_80dp"
+                android:src="@mipmap/ic_launcher"
+                android:text="550\n有趣"
+                android:gravity="center"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/expression_borring"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginRight="@dimen/margin_right_16dp"
+            android:orientation="vertical">
+
+            <com.biu.modulebase.binfenjiari.widget.MyView
+                android:layout_width="@dimen/width_80dp"
+                android:layout_height="@dimen/height_80dp"
+                android:src="@mipmap/ic_launcher"
+                android:text="750\n有趣"
+                android:gravity="center"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/expression_funny"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginRight="@dimen/margin_right_16dp"
+            android:orientation="vertical">
+
+            <com.biu.modulebase.binfenjiari.widget.MyView
+                android:layout_width="@dimen/width_80dp"
+                android:layout_height="@dimen/height_80dp"
+                android:src="@mipmap/ic_launcher"
+                android:text="950\n有趣"
+                android:gravity="center"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/expression_happy"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <com.biu.modulebase.binfenjiari.widget.MyView
+                android:layout_width="@dimen/width_80dp"
+                android:layout_height="@dimen/height_80dp"
+                android:src="@mipmap/ic_launcher"
+                android:text="950\n有趣"
+                android:gravity="center"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/expression_happy"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</HorizontalScrollView>

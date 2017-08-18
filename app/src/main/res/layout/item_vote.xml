@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    style="@style/Ripple.Item.Foreground"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="@dimen/elevation_list_item"
+    tools:targetApi="lollipop">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/view_margin_8dp"
+        android:paddingTop="@dimen/view_margin_8dp">
+
+        <include
+            layout="@layout/part_card_detail_text_4"/>
+
+        <LinearLayout
+            android:id="@+id/vote_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!--
+                    <include
+                        layout="@layout/part_vote_select_item"/>
+
+                    <include
+                        layout="@layout/part_vote_select_item"/>
+
+                    <include
+                        layout="@layout/part_vote_select_item"/>-->
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_vote_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/view_margin_4dp"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:text="共3个投票选项（投票进行中）"
+            android:textColor="@color/app_text_color_secondary"
+            android:textSize="@dimen/text_size_12"/>
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/view_margin_4dp"
+            android:text="截止时间：2016/05/26 13:00"
+            android:drawableLeft="@mipmap/hd_sj"
+            android:textColor="@color/app_text_color_secondary"
+            android:textSize="@dimen/text_size_14"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/over"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/activity_over"
+        android:layout_gravity="center"
+        android:visibility="gone"/>
+
+</FrameLayout>

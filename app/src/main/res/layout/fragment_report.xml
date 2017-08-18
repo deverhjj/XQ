@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin"
+        android:background="@drawable/selector_rr_white_5_rest"
+        android:hint="请输入您的举报理由"
+        android:textSize="@dimen/text_size_14"
+        android:gravity="top|left"
+        android:padding="@dimen/activity_horizontal_margin"/>
+
+
+    <FrameLayout
+        android:id="@+id/report_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Ripple.Item"
+        android:padding="@dimen/activity_horizontal_margin">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="选择举报理由"
+            android:layout_gravity="center_vertical"/>
+
+        <TextView
+            android:id="@+id/reportName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorTextGray"
+            android:drawableRight="@mipmap/more_arrow_small"
+            android:layout_gravity="right|center_vertical"/>
+
+    </FrameLayout>
+
+
+
+</LinearLayout>

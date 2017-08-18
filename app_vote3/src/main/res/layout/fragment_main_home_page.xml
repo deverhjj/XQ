@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.biu.modulebase.binfenjiari.widget.RefreshRecyclerView
+        android:id="@+id/rrv_refresh_recycleview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:layout_marginTop="48dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/colorPrimaryCenter">
+
+        <TextView
+            android:id="@+id/tv_home_search"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/bg_white_rectangle_corner"
+            android:drawableLeft="@mipmap/search"
+            android:drawablePadding="10dp"
+            android:paddingLeft="15dp"
+            android:text="搜索活动，如：汇本"
+            android:textColor="@android:color/secondary_text_dark_nodisable" />
+
+        <ImageView
+            android:id="@+id/iv_home_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:src="@mipmap/message" />
+
+    </RelativeLayout>
+
+</FrameLayout>

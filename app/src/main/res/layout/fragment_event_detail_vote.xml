@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="always">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/app_color_foreground"
+                android:orientation="vertical"
+                android:padding="@dimen/padding_16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_bottom_8dp"
+                    android:text="计算机数控速度"
+                    android:textColor="@color/app_text_color_primary"
+                    android:textSize="@dimen/text_size_18"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@mipmap/hd_dz"
+                    android:drawablePadding="@dimen/padding_8dp"
+                    android:gravity="center"
+                    android:text="地址 23 KM"
+                    android:textColor="@color/app_text_color_primary"
+                    android:textSize="@dimen/text_size_16"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@mipmap/hd_sj"
+                    android:drawablePadding="@dimen/padding_8dp"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/padding_bottom_8dp"
+                    android:paddingTop="@dimen/padding_top_8dp"
+                    android:text="2015/3/6-2016/2/8"
+                    android:textColor="@color/app_text_color_primary"
+                    android:textSize="@dimen/text_size_16"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_bottom_8dp"
+                    android:drawableLeft="@mipmap/renshu"
+                    android:drawablePadding="@dimen/padding_8dp"
+                    android:gravity="center"
+                    android:text="限制人数: 地对地导弹"
+                    android:textColor="@color/app_text_color_primary"
+                    android:textSize="@dimen/text_size_16"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@mipmap/money"
+                    android:drawablePadding="@dimen/padding_8dp"
+                    android:gravity="center"
+                    android:text="限制人数: 地对地导弹"
+                    android:textColor="@color/app_text_color_primary"
+                    android:textSize="@dimen/text_size_16"/>
+
+            </LinearLayout>
+
+            <com.biu.modulebase.binfenjiari.widget.MyRecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/app_color_foreground"/>
+
+            <!--<GridLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:alignmentMode="alignMargins"-->
+            <!--android:columnCount="1"-->
+            <!--android:orientation="vertical"-->
+            <!--android:useDefaultMargins="false">-->
+
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal">-->
+
+            <!--<include-->
+            <!--layout="@layout/part_image_vote_detail_event"/>-->
+
+            <!--<include-->
+            <!--layout="@layout/part_image_vote_detail_event"/>-->
+
+            <!--</LinearLayout>-->
+
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal">-->
+
+            <!--<include-->
+            <!--layout="@layout/part_image_vote_detail_event"/>-->
+
+            <!--<include-->
+            <!--layout="@layout/part_image_vote_detail_event"/>-->
+
+            <!--</LinearLayout>-->
+
+            <!--</GridLayout>-->
+
+            <include
+                layout="@layout/part_vote_detail_vote"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_top_8dp"
+                android:background="@color/app_color_foreground"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:id="@+id/layout_comment"
+                    style="@style/Ripple.Item.Background"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/padding_16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="评论"
+                        android:textColor="@color/app_text_color_primary"
+                        android:textSize="@dimen/text_size_16"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center_vertical"
+                        android:src="@mipmap/arrow_right"/>
+                </FrameLayout>
+
+                <include
+                    layout="@layout/item_divider_gray"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <include
+                        layout="@layout/item_card_detail_comment_parent"/>
+
+                    <include
+                        layout="@layout/item_card_detail_comment_parent"/>
+
+                    <include
+                        layout="@layout/item_card_detail_comment_parent"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <include layout="@layout/part_action_footer_2"/>
+
+</android.support.design.widget.CoordinatorLayout>

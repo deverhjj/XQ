@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/coordinatorLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.biu.modulebase.binfenjiari.widget.MyViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/layout_app_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_behavior="@null">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                style="@style/Style.ToolBar"
+                android:layout_gravity="top"
+                app:layout_scrollFlags="scroll|enterAlways">
+
+                <TextView
+                    android:id="@+id/toolbar_title"
+                    style="@style/Style.Toolbar.Title" />
+
+            </android.support.v7.widget.Toolbar>
+
+            <!--<include-->
+            <!--layout="@layout/part_filter"/>-->
+
+            <include layout="@layout/header_av" />
+
+            <!--<include layout="@layout/divider_toolbar" />-->
+
+        </android.support.design.widget.AppBarLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_tab_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@color/app_color_foreground"
+            android:clickable="true"
+            android:elevation="@dimen/elevation_fab_press"
+            android:orientation="vertical"
+            app:layout_behavior="com.biu.modulebase.binfenjiari.widget.QuickReturnFooterBehavior"
+            tools:targetApi="lollipop">
+
+            <include layout="@layout/divider_toolbar" />
+
+            <RadioGroup
+                android:id="@+id/group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:minHeight="@dimen/view_height_50"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.AppCompatRadioButton
+                    android:id="@+id/huodongBtn"
+                    style="@style/main_tab_bottom"
+                    android:drawableTop="@drawable/selector_event"
+                    android:text="首页" />
+
+                <android.support.v7.widget.AppCompatRadioButton
+                    android:id="@+id/jidiBtn"
+                    style="@style/main_tab_bottom"
+                    android:drawableTop="@drawable/selector_jidi"
+                    android:text="基地" />
+
+                <RadioButton
+                    android:id="@+id/shequBtn"
+                    style="@style/main_tab_bottom"
+                    android:drawableTop="@drawable/selector_comm"
+                    android:text="逛逛社区" />
+
+                <android.support.v7.widget.AppCompatRadioButton
+                    android:id="@+id/listenBtn"
+                    style="@style/main_tab_bottom"
+                    android:layout_gravity="center_vertical"
+                    android:drawableTop="@drawable/selector_av"
+                    android:text="视听" />
+
+                <RadioButton
+                    android:id="@+id/mineBtn"
+                    style="@style/main_tab_bottom"
+                    android:drawableTop="@drawable/selector_mine"
+                    android:text="我的" />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+    </android.support.design.widget.CoordinatorLayout>
+
+    <com.biu.modulebase.binfenjiari.widget.MyNavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+</android.support.v4.widget.DrawerLayout>

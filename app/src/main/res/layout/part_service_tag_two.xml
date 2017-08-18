@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_green_empty_rectangle_corner_tv"
+    android:paddingLeft="@dimen/padding_left_8dp"
+    android:paddingRight="@dimen/padding_right_8dp"
+    android:paddingTop="@dimen/view_margin_4dp"
+    android:paddingBottom="@dimen/view_margin_4dp"
+    android:text="亲自采摘"
+    android:layout_marginRight="@dimen/margin_right_8dp"
+    android:layout_marginTop="@dimen/margin_top_8dp"
+    android:textColor="@color/colorAccent"
+    android:textSize="@dimen/text_size_12"
+    tools:showIn="@layout/header_jidi_detail"
+    android:maxLines="1"
+    android:ellipsize="end"/>

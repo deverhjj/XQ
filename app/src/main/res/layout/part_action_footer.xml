@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/layout_footer"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:background="@color/app_color_foreground"
+    android:elevation="@dimen/elevation_10dp"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    app:layout_behavior="com.biu.modulebase.binfenjiari.widget.QuickReturnFooterBehavior"
+    tools:showIn="@layout/fragment_event_detail"
+    tools:targetApi="lollipop"
+    android:clickable="true">
+
+    <include
+        layout="@layout/divider_toolbar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <!--<FrameLayout-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1"-->
+            <!--android:paddingTop="@dimen/view_margin_8dp"-->
+            <!--android:paddingBottom="@dimen/view_margin_8dp"-->
+            <!--android:paddingLeft="@dimen/view_margin_4dp"-->
+            <!--android:paddingRight="@dimen/view_margin_4dp"-->
+            <!--android:clickable="true">-->
+
+            <!--<com.biu.modulebase.binfenjiari.widget.MyCheckBox-->
+                <!--android:id="@+id/like"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:button="@drawable/selector_like2"-->
+                <!--android:padding="@dimen/view_margin_4dp"-->
+                <!--android:textSize="@dimen/text_size_12"-->
+                <!--android:clickable="false"-->
+                <!--android:text="0"/>-->
+
+        <!--</FrameLayout>-->
+
+        <!--<include-->
+            <!--layout="@layout/item_divider_vertical"/>-->
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_call"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawableLeft="@mipmap/hdxq_zx"
+                android:drawablePadding="@dimen/view_margin_4dp"
+                android:gravity="center"
+                android:textSize="@dimen/text_size_12"
+                android:text="咨询"/>
+
+        </FrameLayout>
+
+        <include
+            layout="@layout/item_divider_vertical"/>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_comment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawableLeft="@drawable/selector_comment"
+                android:drawablePadding="@dimen/view_margin_4dp"
+                android:gravity="center"
+                android:textSize="@dimen/text_size_12"
+                android:text="评论"/>
+
+        </FrameLayout>
+
+        <include
+            layout="@layout/item_divider_vertical"/>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="@dimen/view_margin_4dp"
+            android:clickable="true">
+
+            <com.biu.modulebase.binfenjiari.widget.MyCheckBox
+                android:id="@+id/collect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:button="@drawable/selector_good"
+                android:padding="@dimen/view_margin_4dp"
+                android:textSize="@dimen/text_size_12"
+                android:clickable="false"
+                android:text="收藏"/>
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/sign_up"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorAccent"
+            android:gravity="center"
+            android:text="报名"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_14"/>
+
+    </LinearLayout>
+
+</LinearLayout>

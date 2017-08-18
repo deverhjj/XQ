@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:id="@+id/main"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:background="@drawable/selector_rr_white_5_rest"
+    android:layout_height="wrap_content"
+    android:visibility="invisible">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="@dimen/text_size_16"
+        android:text="分享" />
+
+    <com.biu.modulebase.binfenjiari.widget.arclayout.ArcLayout
+        android:id="@+id/arcLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:arc_axisRadius="60dp"
+        app:arc_origin="center"
+        app:arc_radius="100dp">
+
+        <ImageView
+            android:id="@+id/qq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/qq"/>
+        <ImageView
+            android:id="@+id/qzone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/qqkongjian"/>
+        <ImageView
+            android:id="@+id/sina"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/weibo"/>
+
+        <ImageView
+            android:id="@+id/wxq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/weixinpengyouquan"/>
+
+        <ImageView
+            android:id="@+id/wx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/weixinhaoyou"/>
+
+    </com.biu.modulebase.binfenjiari.widget.arclayout.ArcLayout>
+
+</FrameLayout>

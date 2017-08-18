@@ -1,0 +1,57 @@
+<resources>
+
+    <style name="TabLayoutTextStyle">
+        <item name="android:textSize">@dimen/text_size_16</item>
+    </style>
+
+    <style name="AppToolbarTitle" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:id">@id/title</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textColor">@color/textWhiteColorPrimary</item>
+        <!--<item name="android:textStyle">bold</item>-->
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+
+    <style name="Toolbar" parent="Widget.AppCompat.Toolbar">
+        <item name="android:id">@id/toolbar</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">?attr/actionBarSize</item>
+        <item name="android:background">?attr/colorPrimary</item>
+        <item name="popupTheme">@style/AppTheme.PopupOverlay</item>
+    </style>
+
+    <style name="LoadingProgressBar" parent="Widget.AppCompat.ProgressBar">
+
+    </style>
+
+    <style name="Loading_Post_Dialog" parent="@style/ThemeOverlay.AppCompat.Dialog.Alert">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="windowMinWidthMinor">100%</item>
+        <item name="windowMinWidthMajor">100%</item>
+        <item name="android:windowCloseOnTouchOutside">false</item>
+    </style>
+
+    <style name="BaseDialog" parent="ThemeOverlay.AppCompat.Dialog.Alert">
+        <item name="android:windowMinWidthMajor">60%</item>
+        <item name="android:windowMinWidthMinor">85%</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="Animation_Dialog_BTT">
+        <item name="android:windowEnterAnimation">@anim/dialog_b_t_t_enter</item>
+        <item name="android:windowExitAnimation">@anim/dialog_b_t_t_exit</item>
+    </style>
+
+    <style name="BTTDialog" parent="BaseDialog">
+        <item name="android:windowMinWidthMinor">100%</item>
+        <item name="android:windowAnimationStyle">@style/Animation_Dialog_BTT</item>
+    </style>
+
+</resources>

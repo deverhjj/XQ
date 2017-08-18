@@ -1,0 +1,70 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/hint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingLeft="@dimen/view_margin_10dp"
+        android:paddingRight="@dimen/view_margin_10dp"
+        android:paddingTop="@dimen/view_margin_10dp"
+        android:text="最多添加3条置顶公告"
+        android:textColor="@color/colorTextBlack"
+        android:textSize="@dimen/text_size_14" />
+
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionbar_height"
+        android:layout_marginLeft="@dimen/view_margin_10dp"
+        android:layout_marginRight="@dimen/view_margin_10dp"
+        android:layout_marginTop="@dimen/view_margin_10dp"
+        android:background="@drawable/selector_rr_foreground_5_rest"
+        android:gravity="center_vertical"
+        android:hint="标题(2~10个字符)"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:textColor="@color/colorTextGray"
+        android:textColorHint="@color/colorTextGray"
+        android:textSize="@dimen/text_size_14" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/view_margin_10dp"
+        android:background="@drawable/selector_rr_foreground_5_rest">
+
+        <EditText
+            android:id="@+id/intro"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_160dp"
+            android:background="@drawable/selector_rr_foreground_5_rest"
+            android:gravity="top"
+            android:hint="简介(140个字符以内)"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_horizontal_margin"
+            android:textColor="@color/colorTextGray"
+            android:textColorHint="@color/colorTextGray"
+            android:textSize="@dimen/text_size_14" />
+
+        <TextView
+            android:id="@+id/extra_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/intro"
+            android:layout_alignRight="@+id/intro"
+            android:layout_marginBottom="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:text="140"
+            android:textColor="@color/colorTextGray"
+            android:textSize="@dimen/text_size_12" />
+    </RelativeLayout>
+
+
+</LinearLayout>

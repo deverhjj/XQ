@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <android.support.v7.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/toolbar"
+        style="@style/Style.ToolBar"
+        app:layout_collapseMode="pin">
+    <!--ayout_collapseMode (折叠模式)
+            pin -  设置为这个模式时，当CollapsingToolbarLayout完全收缩后，Toolbar还可以保留在屏幕上。
+            parallax - 设置为这个模式时，在内容滚动时，CollapsingToolbarLayout中的View（比如ImageView)也可以同时滚动，实现视差滚动效果，通常和layout_collapseParallaxMultiplier(设置视差因子)搭配使用。-->
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            style="@style/Style.Toolbar.Title" />
+
+
+    </android.support.v7.widget.Toolbar>

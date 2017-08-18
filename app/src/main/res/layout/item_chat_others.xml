@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding_16dp">
+
+    <com.biu.modulebase.binfenjiari.widget.CircleImageView
+        android:id="@+id/iv_head_portrait"
+        android:layout_width="@dimen/width_45dp"
+        android:layout_height="@dimen/height_45dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="false"
+        android:src="@mipmap/header_pic"/>
+
+    <TextView
+        android:id="@+id/tv_reply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/margin_right_8dp"
+        android:layout_marginRight="53dp"
+        android:layout_toRightOf="@id/iv_head_portrait"
+        android:layout_alignTop="@id/iv_head_portrait"
+        android:lineSpacingMultiplier="1.0"
+        android:text="天文帖子是不方便说的科技单身的撒啊大啊撒大撒大苏打实打实大大苏打啊实打实大苏打"
+        android:textColor="@color/app_text_color_primary"
+        android:textSize="@dimen/text_size_16"
+        android:padding="@dimen/padding_16dp"
+        style="@style/Ripple.Button_Orange"/>
+
+</RelativeLayout>

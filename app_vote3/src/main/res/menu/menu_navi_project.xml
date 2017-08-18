@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_search"
+        android:orderInCategory="80"
+        android:title="编辑"
+        android:icon="@mipmap/search"
+        app:showAsAction="always" />
+
+</menu>

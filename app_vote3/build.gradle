@@ -1,0 +1,74 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        config {
+            keyAlias 'xiangqu'
+            keyPassword 'xiangqu'
+            storeFile file('../xiangqu.jks')
+            storePassword 'xiangqu'
+        }
+    }
+
+    compileSdkVersion 25
+    buildToolsVersion '25.0.3'
+
+    defaultConfig {
+        applicationId "com.binfenjiari"
+        minSdkVersion 14
+        targetSdkVersion 22
+        versionCode 35
+        versionName "2.5.1"
+
+        multiDexEnabled true
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+
+    // 移除lint检查的error
+    lintOptions {
+        abortOnError false
+    }
+
+    buildTypes {
+        debug {
+            buildConfigField "boolean", "LOG_DEBUG", "true"
+            buildConfigField "String", "BASE_URL", "\"http://xq.cz001.com.cn:8080/\""
+//            buildConfigField "String","BASE_URL","\"http://self.biubiulife.com/\""
+//            buildConfigField "String","BASE_URL","\"http://192.168.1.42:8080/\""
+            versionNameSuffix "-debug"
+            minifyEnabled false
+            zipAlignEnabled false
+            shrinkResources false
+            signingConfig signingConfigs.config
+        }
+        release {
+            //显示log
+            buildConfigField "boolean", "LOG_DEBUG", "false"
+            buildConfigField "String", "BASE_URL", "\"http://xq.cz001.com.cn:8080/\""
+//                buildConfigField "String","BASE_URL","\"http://112.74.219.38:8080/\""
+//            buildConfigField "String","BASE_URL","\"http://a1182830044.vicp.cc/\""
+//            //混淆
+            minifyEnabled false
+//            //Zipalign优化
+//             zipAlignEnabled true
+            //移除无用的resource文件
+            shrinkResources false
+            //加载默认混淆配置文件
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.config
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    testCompile 'junit:junit:4.12'
+    compile project(':app')
+    compile project(':expandablerecyclerview')
+    compile project(':baserecyclerview')
+    compile project(':alphaslidebar')
+}

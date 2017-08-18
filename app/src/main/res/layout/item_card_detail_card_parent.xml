@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/app_color_foreground"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/padding_left_16dp"
+        android:paddingRight="@dimen/padding_right_16dp"
+        android:paddingTop="@dimen/padding_top_8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <com.biu.modulebase.binfenjiari.widget.CircleImageView
+                android:id="@+id/iv_head_portrait"
+                android:layout_width="@dimen/width_45dp"
+                android:layout_height="@dimen/height_45dp"
+                android:src="@mipmap/circle_pic"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_left_8dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_nickname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/app_text_color_primary"
+                    android:text="中奖晒单广场"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/tv_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_top_3dp"
+                    android:text="0小时前"
+                    android:textColor="@color/app_text_color_secondary"
+                    android:textSize="10sp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingMultiplier="1.2"
+            android:paddingBottom="@dimen/padding_bottom_8dp"
+            android:paddingTop="@dimen/padding_top_8dp"
+            android:gravity="center"
+            android:text="天文帖子是不方便说的科技单身的"
+            android:textColor="@color/app_text_color_primary"
+            android:textSize="@dimen/text_size_18"/>
+
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingMultiplier="1.2"
+            android:paddingBottom="@dimen/padding_bottom_8dp"
+            android:textColor="@color/app_text_color_primary"
+            android:textSize="@dimen/text_size_16"
+            android:text="天文帖子是不方便说的科技单身的"/>
+    </LinearLayout>
+
+</LinearLayout>

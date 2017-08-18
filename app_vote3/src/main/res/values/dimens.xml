@@ -1,0 +1,36 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="txt_big">20sp</dimen>
+    <dimen name="txt_primary">18sp</dimen>
+    <dimen name="txt_secondary">16sp</dimen>
+    <dimen name="txt_default">14sp</dimen>
+    <dimen name="txt_third">12sp</dimen>
+    <dimen name="txt_small">10sp</dimen>
+
+    <dimen name="drawable_spacing_lv_5">4dp</dimen>
+    <dimen name="drawable_spacing_lv_4">6dp</dimen>
+    <dimen name="drawable_spacing_lv_3">8dp</dimen>
+    <dimen name="drawable_spacing_lv_2">12dp</dimen>
+    <dimen name="drawable_spacing_lv_1">16dp</dimen>
+
+    <dimen name="horizontal_spacing_lv_1">32dp</dimen>
+    <dimen name="horizontal_spacing_lv_2">16dp</dimen>
+    <dimen name="horizontal_spacing_lv_3">8dp</dimen>
+    <dimen name="horizontal_spacing_lv_4">4dp</dimen>
+    <dimen name="horizontal_spacing_lv_5">2dp</dimen>
+
+    <dimen name="vertical_spacing_lv_1">32dp</dimen>
+    <dimen name="vertical_spacing_lv_2">16dp</dimen>
+    <dimen name="vertical_spacing_lv_3">8dp</dimen>
+    <dimen name="vertical_spacing_lv_4">4dp</dimen>
+    <dimen name="vertical_spacing_lv_5">2dp</dimen>
+
+
+    <dimen name="img_avatar_big">40dp</dimen>
+    <dimen name="img_avatar_normal">34dp</dimen>
+    <dimen name="img_avatar_small">30dp</dimen>
+
+</resources>

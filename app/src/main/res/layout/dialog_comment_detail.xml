@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btn_delete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size_16"
+        android:background="@drawable/selector_more_pop_bottom"
+        android:text="删除"/>
+
+    <include
+        layout="@layout/item_divider_gray"/>
+
+    <Button
+        android:id="@+id/btn_report"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size_16"
+        android:background="@drawable/selector_more_pop_bottom"
+        android:text="举报"/>
+
+    <include
+        layout="@layout/item_divider_gray"/>
+
+    <Button
+        android:id="@+id/btn_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size_16"
+        android:background="@drawable/selector_more_pop_bottom"
+        android:text="取消"/>
+
+</LinearLayout>

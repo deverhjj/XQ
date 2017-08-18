@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+    ​
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/layout_app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:elevation="0dp">
+
+        <LinearLayout
+            android:id="@+id/ll_head_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/app_color_background"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="16dp"
+            app:layout_scrollFlags="scroll">
+
+            <include
+                layout="@layout/item_navi_home_bannersliderview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_16dp"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/margin_8dp"
+                android:paddingRight="@dimen/margin_8dp">
+
+                <FrameLayout
+                    android:id="@+id/fl_base_current_hot"
+                    style="@style/Ripple.Item.Foreground"
+                    android:layout_width="0dp"
+                    android:layout_height="70dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_white_rectangle_corner">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:drawableLeft="@drawable/icon_base_current_hot"
+                        android:text="近期热点"
+                        android:textColor="@color/app_text_color_primary"
+                        android:textSize="@dimen/text_size_16"
+                        android:textStyle="bold" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/fl_base_general_project"
+                    style="@style/Ripple.Item.Foreground"
+                    android:layout_width="0dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="@dimen/margin_8dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_white_rectangle_corner">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:drawableLeft="@drawable/icon_base_general_project"
+                        android:text="常态项目"
+                        android:textColor="@color/app_text_color_primary"
+                        android:textSize="@dimen/text_size_16"
+                        android:textStyle="bold" />
+                </FrameLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <include
+            layout="@layout/part_base_activity_filter_condition"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <include layout="@layout/item_divider_general" />
+    </android.support.design.widget.AppBarLayout>
+    ​
+    <!-- The top margin value equals half height of the blue box -->
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    ​
+</android.support.design.widget.CoordinatorLayout>
+

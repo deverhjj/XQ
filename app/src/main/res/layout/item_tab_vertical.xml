@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioButton
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="@drawable/selector_tab_red"
+    android:gravity="center"
+    android:text="挂常设有"
+    android:paddingTop="@dimen/padding_8dp"
+    android:paddingBottom="@dimen/padding_8dp"
+    android:paddingLeft="@dimen/view_margin_12dp"
+    android:paddingRight="@dimen/view_margin_12dp"
+    android:maxWidth="@dimen/height_100dp"
+    android:textColor="@color/text_tab_orange"
+    android:maxLines="2"
+    android:singleLine="false"
+    android:button="@null"
+    android:checked="false">
+
+</RadioButton>

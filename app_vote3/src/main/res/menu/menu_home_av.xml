@@ -1,0 +1,19 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_rank"
+        android:orderInCategory="80"
+        android:title="排行"
+        android:icon="@mipmap/search"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_map"
+        android:orderInCategory="80"
+        android:title="地图"
+        android:icon="@drawable/icon_meun_add"
+        app:showAsAction="always" />
+
+
+</menu>

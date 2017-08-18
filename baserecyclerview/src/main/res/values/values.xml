@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="BaseRecyclerView">
+        <attr name="hasFixedSize" format="boolean|reference"/>
+        <attr name="header_footer_fullSpan" format="boolean|reference"/>
+        <attr name="nestedScrollingEnabled" format="boolean|reference"/>
+        <!--<attr name="orientation" format="enum">-->
+            <!--<enum name="horizontal" value="0x0"/>-->
+            <!--<enum name="vertical" value="0x1"/>-->
+        <!--</attr>-->
+    </declare-styleable>
+
+    <item name="header_count" type="id"/>
+</resources>
