@@ -2,8 +2,13 @@ package com.binfenjiari.activity;
 
 import android.content.Context;
 import android.content.Intent;
+import android.os.Bundle;
+import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 
+import com.binfenjiari.R;
+import com.binfenjiari.base.AppActivity;
+import com.binfenjiari.fragment.ReporterHomeFragment;
 import com.binfenjiari.fragment.YoungReportFragment;
 import com.binfenjiari.fragment.YoungReportRecommendFragment;
 import com.binfenjiari.fragment.YoungReportWorksFragment;
@@ -15,7 +20,7 @@ import com.biu.modulebase.common.base.BaseActivity;
  * @Description:{描述}
  * @date 2017/6/8
  */
-public class YoungReporterActivity extends BaseActivity {
+public class YoungReporterActivity extends AppActivity {
 
     public final static int TYPE_MAIN = 0;
 
@@ -29,23 +34,25 @@ public class YoungReporterActivity extends BaseActivity {
      */
     public final static int TYPE_TOPIC_WORKS = 2;
 
+    @Override
+    protected void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setTitle(getToolbarTitle());
+        setBackNaviAction(R.mipmap.ico_fanhui_back);
+    }
 
     @Override
-    protected Fragment getFragment() {
-        setBackNavigationIcon(null);
-
+    protected Fragment onCreateFragment() {
         int type = getIntent().getIntExtra("type", TYPE_MAIN);
         if (type == TYPE_EXCELLENT_WORKS) {
             return YoungReportRecommendFragment.newInstance();
         } else if (type == TYPE_TOPIC_WORKS) {
             return YoungReportWorksFragment.newInstance();
         } else {
-            return YoungReportFragment.newInstance();
+            return new ReporterHomeFragment();
         }
-
     }
 
-    @Override
     protected String getToolbarTitle() {
         int type = getIntent().getIntExtra("type", TYPE_MAIN);
         if (type == TYPE_EXCELLENT_WORKS) {
@@ -90,7 +97,12 @@ public class YoungReporterActivity extends BaseActivity {
         context.startActivity(intent);
     }
 
-//    @Override
+    @Override
+    protected void onRestoreFragment(Fragment fragment) {
+
+    }
+
+    //    @Override
 //    public boolean onCreateOptionsMenu(Menu menu) {
 //        getMenuInflater().inflate(R.menu.young_report, menu);
 //        return true;

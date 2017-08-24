@@ -1,30 +1,14 @@
 package com.binfenjiari.fragment;
 
-import android.app.Activity;
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.EditText;
 import android.widget.TextView;
 
 import com.binfenjiari.R;
-import com.binfenjiari.activity.LoginActivity;
-import com.binfenjiari.fragment.contract.LoginLoginContract;
-import com.binfenjiari.fragment.presenter.LoginLoginPresenter;
-import com.biu.modulebase.binfenjiari.datastructs.MyApplication;
-import com.biu.modulebase.binfenjiari.model.UserInfoBean;
-import com.biu.modulebase.binfenjiari.util.JSONUtil;
-import com.biu.modulebase.binfenjiari.util.LogUtil;
-import com.biu.modulebase.binfenjiari.util.PreferencesUtils;
-import com.biu.modulebase.binfenjiari.util.Utils;
 import com.biu.modulebase.common.base.BaseFragment;
-import com.biu.modulebase.common.base.MvpFragment;
-import com.biu.modulebase.retrofit.architecture.ApiException;
-import com.biu.modulebase.retrofit.architecture.ApiResponseBody;
-import com.biu.modulebase.rxjava.MCallBack;
 
 /**
  * @author tangjin

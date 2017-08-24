@@ -11,7 +11,9 @@
     <dimen name="tabLayout_indicator_height">2dp</dimen>
     <dimen name="seekbar_video_track_background_height">2dp</dimen>
 
+    <dimen name="item_offset_small">4dp</dimen>
     <dimen name="item_offset">8dp</dimen>
+    <dimen name="item_offset_big">16dp</dimen>
 
     <!-- View之间的间距 -->
     <dimen name="view_height_30">30dp</dimen>

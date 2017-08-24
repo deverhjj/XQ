@@ -83,7 +83,7 @@ public class CommonSearchFragment extends AppFragment
         mKeyboardHelper = new SoftKeyboardHelper(root);
         mKeyboardHelper.setListener(this);
 
-        mSearchView = ((BaseActivity) getActivity()).getCustomViewForToolbar();
+        mSearchView = (SimpleSearchView) ((BaseActivity) getActivity()).getCustomViewForToolbar();
         mSearchView.setText(mKeyword);
         mSearchView.setSelection(mKeyword.length());
         mSearchView.setOnEditorActionListener(new TextView.OnEditorActionListener() {

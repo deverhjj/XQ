@@ -72,7 +72,7 @@ public class ActiSearchResultFragment extends AppFragment
         mKeyboardHelper = new SoftKeyboardHelper(root);
         mKeyboardHelper.setListener(this);
 
-        mSearchView = ((BaseActivity) getActivity()).getCustomViewForToolbar();
+        mSearchView = (SimpleSearchView) ((BaseActivity) getActivity()).getCustomViewForToolbar();
         mSearchView.setText(mKeyword);
     }
 

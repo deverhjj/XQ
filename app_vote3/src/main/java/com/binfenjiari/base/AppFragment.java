@@ -9,8 +9,11 @@ import android.view.View;
 import android.widget.ImageView;
 
 import com.binfenjiari.R;
+import com.binfenjiari.utils.Msgs;
 import com.binfenjiari.utils.Views;
 
+import io.reactivex.disposables.CompositeDisposable;
+import io.reactivex.disposables.Disposable;
 
 /**
  * Title:
@@ -20,15 +23,17 @@ import com.binfenjiari.utils.Views;
  * <br>Email: developer.huajianjiang@gmail.com
  */
 public abstract class AppFragment<P extends BaseContract.BaseIPresenter> extends MvpFragment<P>
-        implements PreIView, PostIView, PostLoadingDialog.OnBackPressedListener,
-        View.OnClickListener
+        implements PreIView, PostIView, PostLoadingDialog.OnDialogBackPressedListener,
+        BaseActivity.OnPreFinishListener, View.OnClickListener
 {
+    private CompositeDisposable mDisposable = new CompositeDisposable();
     private static final String TAG = AppFragment.class.getSimpleName();
     private AnimationDrawable mLoadingAnim;
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getAssociateActivity().setOnPreFinishListener(this);
         setLoadingView(R.layout.include_loading);
         setEmptyView(R.layout.part_error);
         getEmptyView().setOnClickListener(this);
@@ -120,7 +125,7 @@ public abstract class AppFragment<P extends BaseContract.BaseIPresenter> extends
     }
 
     @Override
-    public void onBackPressed() {
+    public void onDialogBackPressed() {
         dismissPostLoading();
         stop();
     }
@@ -137,4 +142,23 @@ public abstract class AppFragment<P extends BaseContract.BaseIPresenter> extends
         }
     }
 
+    @Override
+    public boolean onPreFinish() {
+        return true;
+    }
+
+    @Override
+    public void onDestroyView() {
+        super.onDestroyView();
+        mDisposable.clear();
+    }
+
+    public void addUiTask(Disposable task) {
+        mDisposable.add(task);
+    }
+
+    public void stopUiTask(Disposable task) {
+        if (task == null) return;
+        mDisposable.remove(task);
+    }
 }

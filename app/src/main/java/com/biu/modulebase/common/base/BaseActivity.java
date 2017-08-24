@@ -11,6 +11,7 @@ import android.support.v4.app.FragmentManager;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.Gravity;
 import android.view.MotionEvent;
 import android.view.View;
@@ -29,11 +30,16 @@ import com.biu.modulebase.binfenjiari.communication.RequestCallBack;
 import com.biu.modulebase.binfenjiari.util.JSONUtil;
 import com.biu.modulebase.binfenjiari.util.LogUtil;
 import com.biu.modulebase.binfenjiari.util.Utils;
+
+
 import org.json.JSONObject;
+
+import java.util.logging.Logger;
 
 
 public abstract class BaseActivity extends AppCompatActivity implements View.OnClickListener {
 
+    private static final String TAG = BaseActivity.class.getSimpleName();
     protected Toolbar toolbar;
     protected TextView title;
     protected AppBarLayout layout_app_bar;
@@ -88,9 +94,12 @@ public abstract class BaseActivity extends AppCompatActivity implements View.OnC
         Fragment content = fm.findFragmentById(R.id.fragmentContainer);
         if (content == null) {
             content = getFragment();
-            if (content!=null) {
+            if (content != null) {
                 fm.beginTransaction().add(getFragmentContainerId(), content).commit();
             }
+            Log.e(TAG, "Create new Fragment");
+        } else {
+            Log.e(TAG, "restore Fragment");
         }
     }
 

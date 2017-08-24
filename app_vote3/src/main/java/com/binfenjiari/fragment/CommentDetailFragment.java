@@ -35,7 +35,7 @@ import com.biu.modulebase.common.base.BaseFragment;
  */
 public class CommentDetailFragment extends BaseFragment {
 
-    private LinearLayout action_part;
+    private View action_part;
     private TextView action_post;
 
     private RefreshRecyclerView mRefreshRecyclerView;
@@ -66,7 +66,7 @@ public class CommentDetailFragment extends BaseFragment {
     @Override
     protected void initView(View rootView) {
 
-        action_part = (LinearLayout) rootView.findViewById(R.id.action_part);
+        action_part =  rootView.findViewById(R.id.action_like);
         action_post = (TextView) rootView.findViewById(R.id.action_post);
         hideActionPartView();
         showPostView();

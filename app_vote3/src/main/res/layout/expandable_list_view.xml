@@ -13,6 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layoutManager="@string/linearLayoutManager"
+        android:clipToPadding="false"
         tools:listitem="@layout/item_general_comment_parent">
 
     </com.github.huajianjiang.expandablerecyclerview.widget.ExpandableRecyclerView>

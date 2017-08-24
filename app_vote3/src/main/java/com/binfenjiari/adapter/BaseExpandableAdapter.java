@@ -43,4 +43,18 @@ public abstract class BaseExpandableAdapter<PVH extends ParentViewHolder, CVH ex
     public LayoutInflater getLayoutInflater() {
         return mInflater;
     }
+
+    public P getParent(int pos) {
+        return mParents.get(pos);
+    }
+
+    public void insertParent(P parent) {
+        insertParent(mParents.size(), parent);
+    }
+
+    public void insertParent(int pos, P parent) {
+        mParents.add(pos, parent);
+        notifyParentItemInserted(pos);
+    }
+
 }

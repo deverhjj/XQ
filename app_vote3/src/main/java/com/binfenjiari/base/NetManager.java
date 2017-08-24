@@ -17,6 +17,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 import okhttp3.FormBody;
+import okhttp3.HttpUrl;
 import okhttp3.Interceptor;
 import okhttp3.OkHttpClient;
 import okhttp3.RequestBody;
@@ -99,12 +100,12 @@ public class NetManager {
             }
 
             String deviceId = Utils.getDeviceId(MyApplication.getInstance());
-            String version = "V" + BuildConfig.VERSION_NAME;
+            String version = BuildConfig.VERSION_NAME;
             params.put(Constants.PARM_KEY_DEVICE_ID, deviceId);
             params.put(Constants.PARM_KEY_VERSION, version);
             params.put(Constants.PARM_KEY_CHANNEL, "2");
             params.put(Constants.PARM_KEY_SIGNATURE,
-                       MsgDigests.md5(deviceId.substring(0, 5) + deviceId + 2 + version));
+                       MsgDigests.md5(deviceId.substring(0, 5) + deviceId + 2 + version) + 1);
 
             interceptor.setParams(params);
             return true;

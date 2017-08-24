@@ -11,10 +11,17 @@
     android:paddingRight="16dp"
     android:paddingTop="8dp">
 
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/com_facebook_close"/>
+
     <EditText
         android:id="@+id/et_input"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
         android:layout_weight="1"
         android:background="@drawable/bg_input"
         android:hint="马上评论..."
@@ -27,38 +34,28 @@
 
     <FrameLayout
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp">
+        android:layout_height="wrap_content">
 
-        <LinearLayout
-            android:id="@+id/action_part"
+        <TextView
+            android:id="@+id/action_like"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:visibility="visible">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerVertical="true"
-                android:drawableLeft="@mipmap/good_stroke"
-                android:drawablePadding="@dimen/view_margin_4dp"
-                android:layout_alignParentRight="true"
-                android:paddingBottom="@dimen/view_margin_4dp"
-                android:paddingLeft="@dimen/view_margin_6dp"
-                android:paddingRight="@dimen/view_margin_6dp"
-                android:paddingTop="@dimen/view_margin_4dp"
-                android:text="50"
-                android:textSize="@dimen/text_size_14"
-                android:textColor="@color/app_text_color_secondary" />
-
-        </LinearLayout>
+            android:drawableLeft="@mipmap/good_stroke"
+            android:drawablePadding="@dimen/view_margin_4dp"
+            android:gravity="center"
+            android:paddingBottom="@dimen/view_margin_4dp"
+            android:paddingLeft="@dimen/view_margin_6dp"
+            android:paddingRight="@dimen/view_margin_6dp"
+            android:paddingTop="@dimen/view_margin_4dp"
+            android:text="50"
+            android:textColor="@color/app_text_color_secondary"
+            android:textSize="@dimen/text_size_14"/>
 
         <TextView
             android:id="@+id/action_post"
+            style="@style/Ripple.Button_Orange"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            style="@style/Ripple.Button_Orange"
             android:clickable="true"
             android:paddingBottom="4dp"
             android:paddingLeft="12dp"

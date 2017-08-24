@@ -33,17 +33,17 @@ public class PostLoadingDialog extends DialogFragment implements DialogInterface
     public boolean onKey(DialogInterface dialog, int keyCode, KeyEvent event) {
         if (keyCode == KeyEvent.KEYCODE_BACK) {
             Fragment parent = getParentFragment();
-            if (parent instanceof OnBackPressedListener) {
-                OnBackPressedListener listener = (OnBackPressedListener) parent;
-                listener.onBackPressed();
+            if (parent instanceof OnDialogBackPressedListener) {
+                OnDialogBackPressedListener listener = (OnDialogBackPressedListener) parent;
+                listener.onDialogBackPressed();
                 return true;
             }
         }
         return false;
     }
 
-    public interface OnBackPressedListener {
-        void onBackPressed();
+    public interface OnDialogBackPressedListener {
+        void onDialogBackPressed();
     }
 
 }

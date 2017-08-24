@@ -171,7 +171,7 @@ public abstract class ExpandableAdapter<PVH extends ParentViewHolder, CVH extend
     }
 
     private void init(List<P> parents) {
-        mParents = parents == null ? Collections.<P>emptyList() : parents;
+        mParents = parents == null ? new ArrayList<P>() : parents;
         mItems = ExpandableAdapters.generateItems(parents);
     }
 
@@ -2029,6 +2029,22 @@ public abstract class ExpandableAdapter<PVH extends ParentViewHolder, CVH extend
     public ExpandableAdapter listenChildLongClick(OnChildLongClickListener listener) {
         mChildLongClickListener = listener;
         return this;
+    }
+
+    public OnParentClickListener getParentClickListener() {
+        return mParentClickListener;
+    }
+
+    public OnParentLongClickListener getParentLongClickListener() {
+        return mParentLongClickListener;
+    }
+
+    public OnChildClickListener getChildClickListener() {
+        return mChildClickListener;
+    }
+
+    public OnChildLongClickListener getChildLongClickListener() {
+        return mChildLongClickListener;
     }
 
     private ViewEventWatcher getViewEventWatcher() {

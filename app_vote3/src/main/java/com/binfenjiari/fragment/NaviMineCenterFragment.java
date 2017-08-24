@@ -15,12 +15,10 @@ import com.binfenjiari.activity.MineIntegralActivity;
 import com.binfenjiari.activity.MineMovementActivity;
 import com.binfenjiari.activity.MineProjectActivity;
 import com.binfenjiari.activity.MinePublishActivity;
-import com.binfenjiari.activity.PracticeTaskActivity;
-import com.binfenjiari.activity.LoginActivity;
+import com.binfenjiari.activity.UserActivity;
 import com.binfenjiari.activity.ReportWorksPhotoActivity;
 import com.binfenjiari.fragment.contract.NaviMineCenterContract;
 import com.binfenjiari.fragment.presenter.NaviMineCenterPresenter;
-import com.biu.modulebase.binfenjiari.activity.CollectionActivity;
 import com.biu.modulebase.binfenjiari.activity.FeedbackActivity;
 import com.biu.modulebase.binfenjiari.activity.NotificationActivity;
 import com.biu.modulebase.binfenjiari.activity.SettingActivity;
@@ -63,7 +61,7 @@ public class NaviMineCenterFragment extends MvpFragment<NaviMineCenterContract.P
         img_head.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                LoginActivity.beginLogin(getContext());
+                UserActivity.beginLogin(getContext());
             }
         });
 

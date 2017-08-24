@@ -23,7 +23,7 @@ final class ExpandableAdapters {
      */
     static <P extends Parent, C> List<ItemWrapper<P, C>> generateItems(List<P> parents)
     {
-        if (Preconditions.isNullOrEmpty(parents)) return Collections.emptyList();
+        if (Preconditions.isNullOrEmpty(parents)) return new ArrayList<>();
         List<ItemWrapper<P, C>> items = new ArrayList<>();
         int parentCount = parents.size();
         for (int i = 0; i < parentCount; i++) {

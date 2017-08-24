@@ -4,7 +4,9 @@
     style="@style/Ripple.Item.Foreground"
     android:layout_width="180dp"
     android:layout_height="wrap_content"
-    tools:targetApi="lollipop">
+    tools:targetApi="lollipop"
+    android:clickable="true"
+    android:id="@+id/worksItem">
 
     <LinearLayout
         android:layout_width="match_parent"

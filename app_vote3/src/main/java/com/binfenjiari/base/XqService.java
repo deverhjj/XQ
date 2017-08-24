@@ -1,7 +1,9 @@
 package com.binfenjiari.base;
 
+import com.binfenjiari.model.Comment;
 import com.binfenjiari.model.LoginResult;
 import com.binfenjiari.model.UserInfo;
+import com.binfenjiari.model.WorksDetail;
 
 import java.util.Map;
 
@@ -16,20 +18,31 @@ import retrofit2.http.POST;
  * <br>Email: developer.huajianjiang@gmail.com
  */
 public interface XqService {
-    @POST("app_login")
+    @POST("xiangqu/mobile")
     @FormUrlEncoded
     Observable<AppEcho<LoginResult>> login(@FieldMap Map<String, String> params);
 
-    @POST("user/app_logout")
+    @POST("xiangqu/mobile")
     @FormUrlEncoded
-    Observable<AppEcho> logout(@FieldMap Map<String, String> params);
+    Observable<AppEcho<Void>> logout(@FieldMap Map<String, String> params);
 
-    @POST("app_register")
+    @POST("xiangqu/mobile")
     @FormUrlEncoded
-    Observable<AppEcho> register(@FieldMap Map<String, String> params);
+    Observable<AppEcho<Void>> register(@FieldMap Map<String, String> params);
 
-    @POST("app_sendmobile")
+    @POST("xiangqu/mobile")
     @FormUrlEncoded
-    Observable<AppEcho> verifyCode(@FieldMap Map<String, String> params);
+    Observable<AppEcho<Void>> verifyCode(@FieldMap Map<String, String> params);
 
+    @POST("xiangqu/mobile")
+    @FormUrlEncoded
+    Observable<AppEcho<UserInfo>> userInfo(@FieldMap Map<String, String> params);
+
+    @POST("xiangqu/mobile")
+    @FormUrlEncoded
+    Observable<AppEcho<WorksDetail>> reporterWorksDetail(@FieldMap Map<String, String> params);
+
+    @POST("xiangqu/mobile")
+    @FormUrlEncoded
+    Observable<AppEcho<Comment>> comments(@FieldMap Map<String, String> params);
 }

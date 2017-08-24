@@ -8,18 +8,9 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 
 import com.binfenjiari.R;
-import com.binfenjiari.activity.LoginActivity;
-import com.binfenjiari.activity.MineCollectionActivity;
-import com.binfenjiari.activity.MineGrowingPathActivity;
-import com.binfenjiari.activity.MineIntegralActivity;
-import com.binfenjiari.activity.MineMovementActivity;
-import com.binfenjiari.activity.MineProjectActivity;
 import com.binfenjiari.activity.MinePublishActivity;
 import com.binfenjiari.activity.ReportWorksPhotoActivity;
-import com.binfenjiari.fragment.contract.NaviMineCenterContract;
-import com.binfenjiari.fragment.presenter.NaviMineCenterPresenter;
 import com.biu.modulebase.common.base.BaseFragment;
-import com.biu.modulebase.common.base.MvpFragment;
 
 /**
  * @author tangjin
@@ -50,7 +41,7 @@ public class OtherPersonCenterFragment extends BaseFragment {
 //        img_head.setOnClickListener(new UserView.OnClickListener() {
 //            @Override
 //            public void onClick(UserView v) {
-//                LoginActivity.beginLogin(getContext());
+//                UserActivity.beginLogin(getContext());
 //            }
 //        });
 

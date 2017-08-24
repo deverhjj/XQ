@@ -22,7 +22,7 @@ public abstract class AppActivity extends BaseActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         hideSysActionbarTitle();
-        mTitle = setCustomViewForToolbar(R.layout.toolbar_title);
+        mTitle = (TextView) setCustomViewForToolbar(R.layout.toolbar_title);
     }
 
     @Override

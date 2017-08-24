@@ -13,7 +13,7 @@ import android.support.v4.app.Fragment;
  * <br>Email: developer.huajianjiang@gmail.com
  */
 public abstract class MvpActivity<V extends MvpFragment<? super P>, P extends BaseContract.BaseIPresenter<? super V>>
-        extends BaseActivity
+        extends BaseActivity<V>
 {
     private static final String TAG = MvpActivity.class.getSimpleName();
 
@@ -38,22 +38,27 @@ public abstract class MvpActivity<V extends MvpFragment<? super P>, P extends Ba
     public abstract P mvpPresenter();
 
     @Override
-    protected Fragment onCreateFragment() {
+    protected V onCreateFragment() {
         mvpView = mvpView();
         mvpPresenter = mvpPresenter();
         return mvpView;
     }
 
     @Override
+    protected void onRestoreFragment(V fragment) {
+        mvpPresenter = mvpPresenter();
+        mvpView = fragment;
+        mvpView.bindPresenter(mvpPresenter);
+        mvpPresenter.bindView(mvpView);
+    }
+
+    @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        mvpView = mvpView();
-        mvpPresenter = mvpPresenter();
-
         if (mvpView != null) {
             mvpView.bindPresenter(mvpPresenter);
         }
-        if (mvpPresenter != null) {
+        if (mvpPresenter != null && mvpView != null) {
             mvpPresenter.bindView(mvpView);
         }
     }

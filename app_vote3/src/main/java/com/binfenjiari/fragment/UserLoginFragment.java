@@ -1,5 +1,6 @@
 package com.binfenjiari.fragment;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.text.TextUtils;
@@ -9,10 +10,9 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.binfenjiari.R;
-import com.binfenjiari.activity.LoginActivity;
-import com.binfenjiari.base.AppExp;
-import com.binfenjiari.base.AppFragment;
-import com.binfenjiari.fragment.contract.UserContract;
+import com.binfenjiari.activity.AAMainVote3Activity;
+import com.binfenjiari.activity.NavigationActivity;
+import com.binfenjiari.activity.UserActivity;
 import com.binfenjiari.utils.Constants;
 import com.binfenjiari.utils.Msgs;
 import com.binfenjiari.utils.Uis;
@@ -23,9 +23,7 @@ import com.binfenjiari.utils.Views;
  * <br>Date: 2017/8/18
  * <br>Email: developer.huajianjiang@gmail.com
  */
-public class UserLoginFragment extends UserFragment
-        implements UserContract.UserView
-{
+public class UserLoginFragment extends UserFragment {
     private static final String TAG = UserLoginFragment.class.getSimpleName();
     private TextView mAccount;
     private TextView mPwd;
@@ -48,6 +46,8 @@ public class UserLoginFragment extends UserFragment
         mPwd = Views.find(root, R.id.login_pwd);
 
         Views.find(root, R.id.btn_submit_login).setOnClickListener(this);
+        Views.find(root, R.id.tv_forget_pwd).setOnClickListener(this);
+        Views.find(root, R.id.tv_register).setOnClickListener(this);
     }
 
     @Override
@@ -59,11 +59,11 @@ public class UserLoginFragment extends UserFragment
                 break;
 
             case R.id.tv_forget_pwd:
-                LoginActivity.beginForgetPwd(this);
+                UserActivity.beginForgetPwd(this);
                 break;
 
             case R.id.tv_register:
-                LoginActivity.beginRegister(this);
+                UserActivity.beginRegister(this);
                 break;
         }
     }
@@ -90,8 +90,9 @@ public class UserLoginFragment extends UserFragment
     }
 
     @Override
-    public void showPostFailureUi(AppExp exp) {
-        super.showPostFailureUi(exp);
-        Msgs.shortToast(getContext(), exp.msg());
+    public void onLoginSuccess() {
+        Intent home = new Intent(getContext(), NavigationActivity.class);
+        home.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        startActivity(home);
     }
 }

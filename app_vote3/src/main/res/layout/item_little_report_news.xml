@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    style="@style/Ripple.Item.Foreground"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:paddingBottom="@dimen/view_margin_8dp"
-    android:paddingTop="@dimen/view_margin_8dp"
-    android:paddingLeft="@dimen/view_margin_16dp"
-    android:paddingRight="@dimen/view_margin_16dp"
-    tools:targetApi="lollipop">
+<FrameLayout android:id="@+id/reportItem"
+             style="@style/Ripple.Item.Foreground"
+             xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:clickable="true"
+             android:paddingBottom="@dimen/view_margin_8dp"
+             android:paddingLeft="@dimen/view_margin_16dp"
+             android:paddingRight="@dimen/view_margin_16dp"
+             android:paddingTop="@dimen/view_margin_8dp"
+             tools:targetApi="lollipop">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -21,7 +23,7 @@
             android:layout_height="80dp"
             android:adjustViewBounds="true"
             android:scaleType="fitXY"
-            android:src="@drawable/test_young_litter_news" />
+            android:src="@drawable/test_young_litter_news"/>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -39,7 +41,7 @@
                 android:text="新学期那些事"
                 android:textColor="@color/app_text_color_primary"
                 android:textSize="@dimen/text_size_16"
-                android:textStyle="bold" />
+                android:textStyle="bold"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -48,7 +50,7 @@
                 android:paddingTop="10dp"
                 android:text="02-12  17:00"
                 android:textColor="@color/app_text_color_secondary"
-                android:textSize="@dimen/text_size_14" />
+                android:textSize="@dimen/text_size_14"/>
 
 
         </LinearLayout>
@@ -56,18 +58,17 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
             android:drawableLeft="@mipmap/good_stroke"
             android:drawablePadding="@dimen/view_margin_4dp"
-            android:layout_alignParentRight="true"
             android:paddingBottom="@dimen/view_margin_4dp"
             android:paddingLeft="@dimen/view_margin_6dp"
             android:paddingRight="@dimen/view_margin_6dp"
             android:paddingTop="@dimen/view_margin_4dp"
             android:text="50"
-            android:textSize="@dimen/text_size_14"
-            android:textColor="@color/app_text_color_secondary" />
-
+            android:textColor="@color/app_text_color_secondary"
+            android:textSize="@dimen/text_size_14"/>
 
 
     </RelativeLayout>

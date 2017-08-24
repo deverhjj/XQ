@@ -14,6 +14,28 @@ import java.util.Map;
 public class Datas {
     public static final String TAG = Datas.class.getSimpleName();
 
+    public static Bundle argsOf(String... argPairs) {
+        return argsOf(null, argPairs);
+    }
+
+    public static Bundle argsOf(Bundle b, String... argPairs) {
+        if (argPairs.length % 2 != 0) {
+            throw new IllegalStateException("must be key-value pair");
+        }
+        if (b == null) {
+            b = new Bundle();
+        }
+        for (int i = 0, j = argPairs.length; i < j; i++) {
+            String key = argPairs[i];
+            String value = argPairs[++i];
+            if (Preconditions.isNullOrEmpty(key) || Preconditions.isNullOrEmpty(value)) {
+                continue;
+            }
+            b.putString(key, value);
+        }
+        return b;
+    }
+
     public static Map<String, String> paramsOf(String... pairs) {
         if (pairs.length % 2 != 0) {
             throw new IllegalStateException("must be key-value pair");

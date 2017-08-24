@@ -11,7 +11,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 import com.binfenjiari.R;
-import com.binfenjiari.activity.LoginActivity;
+import com.binfenjiari.activity.UserActivity;
 import com.binfenjiari.fragment.contract.LoginLoginContract;
 import com.binfenjiari.fragment.presenter.LoginLoginPresenter;
 import com.biu.modulebase.binfenjiari.datastructs.MyApplication;
@@ -73,7 +73,7 @@ public class LoginLoginFragment extends MvpFragment<LoginLoginContract.Presenter
         mTvRegister.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                LoginActivity.beginRegister(LoginLoginFragment.this);
+                UserActivity.beginRegister(LoginLoginFragment.this);
             }
         });
 
@@ -81,7 +81,7 @@ public class LoginLoginFragment extends MvpFragment<LoginLoginContract.Presenter
         tv_forget_pwd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                LoginActivity.beginForgetPwd(LoginLoginFragment.this);
+                UserActivity.beginForgetPwd(LoginLoginFragment.this);
             }
         });
 
@@ -140,7 +140,7 @@ public class LoginLoginFragment extends MvpFragment<LoginLoginContract.Presenter
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        if (requestCode == LoginActivity.TYPE_REGISTER) {
+        if (requestCode == UserActivity.TYPE_REGISTER) {
             //注册
             if (resultCode == Activity.RESULT_OK) {
 //                showTost("登录成功", 0);
@@ -151,7 +151,7 @@ public class LoginLoginFragment extends MvpFragment<LoginLoginContract.Presenter
                 mPresenter.requestLogin(loginAccount, loginPwd, Utils.getDeviceId(getActivity()), callBackLoginSuccess);
             }
 
-        } else if (requestCode == LoginActivity.TYPE_FORGET_PWD) {
+        } else if (requestCode == UserActivity.TYPE_FORGET_PWD) {
             if (resultCode == Activity.RESULT_OK) {
                 //忘记密码
                 Bundle bundle = data.getExtras();

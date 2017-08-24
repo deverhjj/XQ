@@ -21,7 +21,7 @@ import com.binfenjiari.utils.Views;
  * <br>Date: 2017/2/23
  * <br>Email: developer.huajianjiang@gmail.com
  */
-public abstract class BaseActivity extends AppCompatActivity {
+public abstract class BaseActivity<V extends Fragment> extends AppCompatActivity {
     private static final String TAG = BaseActivity.class.getSimpleName();
 
     private OnPreFinishListener mListener;
@@ -29,7 +29,9 @@ public abstract class BaseActivity extends AppCompatActivity {
     private AppBarLayout mAppbar;
     private Toolbar mToolbar;
 
-    protected abstract Fragment onCreateFragment();
+    protected abstract V onCreateFragment();
+
+    protected abstract void onRestoreFragment(V fragment);
 
     protected FrameLayout getFragmentContainer() {
         return (FrameLayout) findViewById(getFragmentContainerId());
@@ -43,6 +45,7 @@ public abstract class BaseActivity extends AppCompatActivity {
         return R.layout.acti_base;
     }
 
+    @SuppressWarnings("unchecked")
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -54,11 +57,13 @@ public abstract class BaseActivity extends AppCompatActivity {
         setSupportActionBar(mToolbar);
 
         FragmentManager fm = getSupportFragmentManager();
-        Fragment content = fm.findFragmentById(getFragmentContainerId());
+        V content = (V) fm.findFragmentById(getFragmentContainerId());
         if (content == null) {
             content = onCreateFragment();
             if (content == null) return;
             fm.beginTransaction().replace(getFragmentContainerId(), content).commit();
+        } else {
+            onRestoreFragment(content);
         }
     }
 
